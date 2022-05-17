@@ -264,7 +264,7 @@
 			},
 			"mogunKnowsBroDead": {
 				"content": [
-					"[mogun] \"I have... had a brother,\" says Mogun. \"My twin. Didn't have a chance to leave things right, and I've been regretting it since.\" The Ravens toast to grief.",
+					"[mogun] \"I have... had a brother,\" says Mogun. \"My twin. Didn't have a chance to leave things right, and I've been regretting it since.\" The Ravens toast to regret.",
 					{
 						"linkPath": "krumr",
 						"ifConditions": [
