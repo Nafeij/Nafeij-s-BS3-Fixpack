@@ -1,3 +1,6 @@
+ 1.1 (Unreleased)
+ 
+    [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1
 
  1.0 
  
