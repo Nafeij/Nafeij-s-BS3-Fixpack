@@ -1,0 +1,1438 @@
+{
+  "boards": [
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "1 12",
+              "1 13",
+              "1 14",
+              "10 12",
+              "10 13",
+              "10 14",
+              "11 12",
+              "11 13",
+              "11 14",
+              "12 12",
+              "12 13",
+              "12 14",
+              "13 12",
+              "13 13",
+              "13 14",
+              "14 12",
+              "14 13",
+              "14 14",
+              "2 12",
+              "2 13",
+              "2 14",
+              "3 12",
+              "3 13",
+              "3 14",
+              "4 14",
+              "5 12",
+              "5 13",
+              "5 14",
+              "6 12",
+              "6 13",
+              "6 14",
+              "7 12",
+              "7 13",
+              "7 14",
+              "8 12",
+              "8 13",
+              "8 14",
+              "9 12",
+              "9 13",
+              "9 14"
+            ]
+          },
+          "facing": "NE",
+          "id": "player0"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "1 1",
+              "1 2",
+              "1 3",
+              "1 4",
+              "1 5",
+              "1 6",
+              "10 -1",
+              "10 -2",
+              "10 0",
+              "10 4",
+              "11 -1",
+              "11 -2",
+              "11 0",
+              "11 1",
+              "11 4",
+              "12 -1",
+              "12 0",
+              "12 1",
+              "12 2",
+              "12 3",
+              "12 4",
+              "13 -1",
+              "13 0",
+              "13 1",
+              "13 2",
+              "13 3",
+              "13 4",
+              "14 0",
+              "14 1",
+              "14 2",
+              "14 3",
+              "14 4",
+              "14 5",
+              "2 1",
+              "2 2",
+              "2 3",
+              "2 4",
+              "2 5",
+              "3 4",
+              "4 -1",
+              "4 -2",
+              "5 -1",
+              "5 -2",
+              "6 -1",
+              "6 -2",
+              "7 -1",
+              "7 -2",
+              "8 -1",
+              "8 -2",
+              "9 -1",
+              "9 -2"
+            ]
+          },
+          "facing": "SW",
+          "id": "bucket_spawn1"
+        }
+      ],
+      "id": "board_0",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": 32.44999999999993,
+        "y": -400.75
+      },
+      "spawners": [
+        {
+          "character": "dredge_grunt_a",
+          "facing": "SW",
+          "id": "ubin_target_a",
+          "ifCondition": "difficulty<3",
+          "location": {
+            "x": 14,
+            "y": 8
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 4
+              },
+              {
+                "stat": "RANK",
+                "value": 0
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_a",
+          "facing": "SW",
+          "id": "ubin_target_a",
+          "location": {
+            "x": 14,
+            "y": 8
+          },
+          "notCondition": "difficulty<3",
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 4
+              },
+              {
+                "stat": "RANK",
+                "value": 0
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 8
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_a",
+          "facing": "SW",
+          "id": "ubin_target_b",
+          "ifCondition": "difficulty<3",
+          "location": {
+            "x": 13,
+            "y": 9
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 4
+              },
+              {
+                "stat": "RANK",
+                "value": 0
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_grunt_a",
+          "facing": "SW",
+          "id": "ubin_target_b",
+          "location": {
+            "x": 13,
+            "y": 9
+          },
+          "notCondition": "difficulty<3",
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 4
+              },
+              {
+                "stat": "RANK",
+                "value": 0
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 8
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "ruin",
+          "facing": "SW",
+          "id": "ruin_normal",
+          "ifCondition": "!18_varl_barrels",
+          "location": {
+            "x": 6,
+            "y": 2
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_gloomwarden_2",
+          "facing": "SW",
+          "id": "goomwardnen_normal",
+          "ifCondition": "!18_varl_barrels",
+          "location": {
+            "x": 5,
+            "y": 6
+          },
+          "notCondition": "hakon_with_party",
+          "team": "npc"
+        },
+        {
+          "character": "dredge_scourge_2",
+          "facing": "SW",
+          "id": "scourge_normal",
+          "ifCondition": "!18_varl_barrels",
+          "location": {
+            "x": 10,
+            "y": 6
+          },
+          "notCondition": "hakon_with_party",
+          "team": "npc"
+        },
+        {
+          "entityClass": "ruin_wreckage_sm",
+          "facing": "SE",
+          "location": {
+            "x": 9,
+            "y": 4
+          },
+          "prop": true,
+          "team": "npc"
+        },
+        {
+          "entityClass": "ruin_wreckage_sm",
+          "facing": "NE",
+          "location": {
+            "x": 4,
+            "y": 4
+          },
+          "prop": true,
+          "team": "npc"
+        },
+        {
+          "entityClass": "ruin_wreckage_lg",
+          "facing": "SE",
+          "location": {
+            "x": 9,
+            "y": 9
+          },
+          "prop": true,
+          "team": "npc"
+        },
+        {
+          "entityClass": "ruin_wreckage_lg",
+          "facing": "SE",
+          "location": {
+            "x": 3,
+            "y": 9
+          },
+          "prop": true,
+          "team": "npc"
+        },
+        {
+          "character": "ubin",
+          "deactivateSpawner": true,
+          "facing": "NW",
+          "id": "ubin_spawner",
+          "location": {
+            "x": 21,
+            "y": 9
+          },
+          "team": "player0"
+        },
+        {
+          "character": "horseborn_female_1",
+          "deactivateSpawner": true,
+          "facing": "NW",
+          "id": "horseborn_female_1_spawner",
+          "location": {
+            "x": 22,
+            "y": 7
+          },
+          "team": "player0"
+        },
+        {
+          "character": "horseborn_male_1",
+          "deactivateSpawner": true,
+          "facing": "NW",
+          "id": "horseborn_male_1_spawner",
+          "location": {
+            "x": 26,
+            "y": 5
+          },
+          "team": "player0"
+        },
+        {
+          "character": "ruin",
+          "facing": "SW",
+          "id": "ruin_damaged",
+          "ifCondition": "18_varl_barrels",
+          "location": {
+            "x": 6,
+            "y": 2
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 17
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 13
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_scourge_2",
+          "facing": "SW",
+          "id": "scourge_damaged",
+          "ifCondition": "18_varl_barrels",
+          "location": {
+            "x": 10,
+            "y": 6
+          },
+          "notCondition": "hakon_with_party",
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 7
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 9
+              }
+            ]
+          },
+          "team": "npc"
+        },
+        {
+          "character": "dredge_gloomwarden_2",
+          "facing": "SW",
+          "id": "goomwardnen_damaged",
+          "ifCondition": "18_varl_barrels",
+          "location": {
+            "x": 5,
+            "y": 6
+          },
+          "notCondition": "hakon_with_party",
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 11
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 12
+              }
+            ]
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": [
+          {
+            "def_id": "fire_dam",
+            "rect": "7 8 1 1",
+            "trigger_id": "fire01"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "2 6 1 2",
+            "trigger_id": "fire02"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "10 5 1 1",
+            "trigger_id": "fire03"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "8 11 1 1",
+            "trigger_id": "fire04"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "0 12 1 4",
+            "trigger_id": "fire05"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "4 12 1 2",
+            "trigger_id": "fire06"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "5 10 1 1",
+            "trigger_id": "fire07"
+          },
+          {
+            "def_id": "fire_dam",
+            "rect": "7 4 1 1",
+            "trigger_id": "fire08"
+          }
+        ]
+      },
+      "triggerdefs": {
+        "triggerdefs": [
+          {
+            "id": "fire_dam",
+            "responses": [
+              {
+                "ability": "abl_firepit_damage",
+                "hazard": true,
+                "id": "fire_dmg",
+                "pulse": true
+              }
+            ],
+            "vfxds": [
+              {
+                "attach": true,
+                "depth": "bg0",
+                "end": "",
+                "fadeIn": true,
+                "fadeOut": true,
+                "id": "flames_back",
+                "loop": "flames_back",
+                "offset": "-1 -1",
+                "randomize": true,
+                "start": ""
+              },
+              {
+                "attach": true,
+                "depth": "main0",
+                "end": "",
+                "fadeIn": true,
+                "fadeOut": true,
+                "id": "flames_front",
+                "loop": "flames_front",
+                "randomize": true,
+                "start": ""
+              }
+            ]
+          }
+        ]
+      },
+      "unwalkableTiles": {
+        "tilesx": [
+          "16 10",
+          "16 5",
+          "16 7",
+          "16 9",
+          "17 10",
+          "17 5",
+          "17 7",
+          "17 9",
+          "18 10",
+          "18 5",
+          "18 7",
+          "18 9",
+          "19 10",
+          "19 5",
+          "19 7",
+          "19 9",
+          "20 10",
+          "20 5",
+          "20 7",
+          "20 9",
+          "21 10",
+          "21 5",
+          "21 7",
+          "21 9",
+          "22 10",
+          "22 5",
+          "22 7",
+          "22 9",
+          "23 10",
+          "23 5",
+          "23 9",
+          "24 10",
+          "24 5",
+          "24 9",
+          "25 10",
+          "25 5",
+          "25 9",
+          "26 5"
+        ]
+      },
+      "vfxlibUrl": "saga3/scene/battle/btl_ruin_fight/btl_ruin_fight.vfx.json.z",
+      "walkableTiles": {
+        "tilesx": [
+          "0 0",
+          "0 1",
+          "0 12",
+          "0 13",
+          "0 14",
+          "0 15",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 14",
+          "1 15",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 -1",
+          "10 -2",
+          "10 -3",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 14",
+          "10 15",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 -1",
+          "11 -2",
+          "11 -3",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 15",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 -1",
+          "12 -2",
+          "12 -3",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 15",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 -1",
+          "13 -2",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 15",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 -1",
+          "14 -2",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 15",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "15 -1",
+          "15 0",
+          "15 1",
+          "15 10",
+          "15 11",
+          "15 12",
+          "15 13",
+          "15 14",
+          "15 15",
+          "15 2",
+          "15 3",
+          "15 4",
+          "15 5",
+          "15 6",
+          "15 7",
+          "15 8",
+          "15 9",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 14",
+          "2 15",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 -1",
+          "3 -2",
+          "3 -3",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 14",
+          "3 15",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 -1",
+          "4 -2",
+          "4 -3",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 14",
+          "4 15",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 -1",
+          "5 -2",
+          "5 -3",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 14",
+          "5 15",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 -1",
+          "6 -2",
+          "6 -3",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 14",
+          "6 15",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 -1",
+          "7 -2",
+          "7 -3",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 14",
+          "7 15",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 -1",
+          "8 -2",
+          "8 -3",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 14",
+          "8 15",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 -1",
+          "9 -2",
+          "9 -3",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 14",
+          "9 15",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    }
+  ],
+  "cameraAnchorSpeed": 1000,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1536,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 720,
+  "cameraMinWidth": 1024,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "WAIT_BATTLE_SETUP"
+        },
+        {
+          "happening": "talking_start",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "ubin_arrives",
+          "type": "HAPPENING"
+        },
+        {
+          "happening": "talking_ready",
+          "type": "HAPPENING"
+        }
+      ],
+      "automatic": true,
+      "id": "auto"
+    },
+    {
+      "actions": [
+        {
+          "param": "restrictInput=1",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE"
+        },
+        {
+          "type": "BATTLE_AI_ENABLE"
+        },
+        {
+          "msg": "$SPEAK:s3_talking_start_hero_00",
+          "param": "camera",
+          "prereq": "18_varl_barrels",
+          "speaker": "$hero,oddleif,aleo,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s3_talking_start_hero_01",
+          "param": "camera",
+          "prereq": "!18_varl_barrels",
+          "speaker": "$hero,oddleif,aleo,*player",
+          "time": 5,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "talking_start"
+    },
+    {
+      "actions": [
+        {
+          "id": "ubin_spawner",
+          "type": "BATTLE_SPAWN",
+          "varvalue": 1
+        },
+        {
+          "id": "horseborn_male_1_spawner",
+          "type": "BATTLE_SPAWN",
+          "varvalue": 1
+        },
+        {
+          "id": "horseborn_female_1_spawner",
+          "type": "BATTLE_SPAWN",
+          "varvalue": 1
+        },
+        {
+          "id": "ubin,horseborn_female_1,horseborn_male_1",
+          "type": "BATTLE_UNIT_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "anchor": "@15,7",
+          "id": "horseborn_female_1",
+          "param": "camera follow",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "@15,5",
+          "id": "horseborn_male_1",
+          "param": "camera follow",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "type": "WAIT"
+        },
+        {
+          "anchor": "@14,9",
+          "id": "ubin",
+          "param": "camera follow",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "id": "ubin",
+          "param": "NEVER_MISS",
+          "type": "BATTLE_UNIT_STAT",
+          "varvalue": 1
+        },
+        {
+          "anchor": "npc+0+dredge_grunt_a",
+          "id": "ubin",
+          "param": "abl_melee_str",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "anchor": "npc+1+dredge_grunt_a",
+          "id": "ubin",
+          "param": "abl_melee_str",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "id": "saga3_vo/vo/vo_18_ubin_battlecry",
+          "type": "VO"
+        },
+        {
+          "msg": "$SPEAK:s3_ubin_arrives_ubin_00",
+          "param": "camera",
+          "speaker": "ubin",
+          "time": 7,
+          "type": "SPEAK"
+        },
+        {
+          "id": "ubin",
+          "param": "NEVER_MISS",
+          "type": "BATTLE_UNIT_STAT"
+        },
+        {
+          "type": "BATTLE_INITIATIVE_RESET"
+        }
+      ],
+      "id": "ubin_arrives"
+    },
+    {
+      "actions": [
+        {
+          "msg": "$SPEAK:s3_talking_ready_hero_00",
+          "param": "camera",
+          "speaker": "$hero,oddleif,aleo,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "param": "restrictInput=0",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_AI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_READY"
+        }
+      ],
+      "id": "talking_ready"
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "18_ruin_battle_lose",
+          "varvalue": 1
+        }
+      ],
+      "id": "lose_results",
+      "triggers": [
+        {
+          "type": "BATTLE_LOSE"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "18_ruin_shield",
+          "varvalue": 1
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "18_ruin_shield_tick"
+        }
+      ],
+      "id": "count_immovableobject",
+      "triggers": [
+        {
+          "location": "abl_ruin_immovableobject",
+          "player_only": false,
+          "type": "BATTLE_ABILITY_EXECUTED",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "18_ruin_shield_tick",
+          "varvalue": 1
+        }
+      ],
+      "id": "count_immovableobject_tick",
+      "triggers": [
+        {
+          "location": "_abl_ruin_immovableobject_tick",
+          "player_only": false,
+          "type": "BATTLE_ABILITY_COMPLETED",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "18_ruin_abl_warninggiven",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s3_explain_ruin_immovableobject_ubin_00",
+          "prereq": "ubin_state",
+          "speaker": "ubin",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s3_explain_ruin_immovableobject_hero_00",
+          "prereq": "!ubin_state",
+          "speaker": "$hero,oddleif,*player",
+          "time": 5,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "explain_ruin_immovableobject",
+      "prereq": "!18_ruin_abl_warninggiven && 18_ruin_shield_tick==1",
+      "triggers": [
+        {
+          "type": "VARIABLE_INCREMENT",
+          "varname": "18_ruin_shield_tick",
+          "varvalue": 1
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "18_ruin_healing_warning_1",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s3_explain_ruin_healing_1_ubin_00",
+          "prereq": "ubin_state",
+          "speaker": "ubin",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s3_explain_ruin_healing_1_ubin_00",
+          "prereq": "!ubin_state",
+          "speaker": "$hero,oddleif,*player",
+          "time": 5,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "explain_ruin_healing_1",
+      "prereq": "!18_ruin_healing_warning_1 && 18_ruin_shield_tick==3",
+      "triggers": [
+        {
+          "type": "VARIABLE_INCREMENT",
+          "varname": "18_ruin_shield_tick",
+          "varvalue": 1
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "18_ruin_healing_warning_2",
+          "varvalue": 1
+        },
+        {
+          "msg": "$SPEAK:s3_explain_ruin_healing_2_ubin_00",
+          "prereq": "ubin_state",
+          "speaker": "ubin",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "enabled": false,
+          "msg": "$SPEAK:s3_explain_ruin_healing_2_hakon_00",
+          "prereq": "18_varl_barrels",
+          "speaker": "hakon,mogr,griss,gunnulf",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s3_explain_ruin_healing_2_ubin_00",
+          "prereq": "!ubin_state",
+          "speaker": "$hero,oddleif,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "enabled": false,
+          "msg": "$SPEAK:s3_explain_ruin_healing_2_hero_00",
+          "prereq": "18_varl_barrels",
+          "speaker": "$hero,oddleif,*player",
+          "time": 5,
+          "type": "SPEAK"
+        }
+      ],
+      "id": "explain_ruin_healing_2",
+      "prereq": "!18_ruin_healing_warning_2 && 18_ruin_shield_tick==9",
+      "triggers": [
+        {
+          "type": "VARIABLE_INCREMENT",
+          "varname": "18_ruin_shield_tick",
+          "varvalue": 1
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "acv_3_20_ruined",
+          "type": "ACHIEVEMENT"
+        }
+      ],
+      "id": "acv_3_20_ruined",
+      "triggers": [
+        {
+          "type": "BATTLE_ENEMY_KILLED",
+          "unit": "ruin"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_MODIFY",
+          "varname": "ruin_fight_counter",
+          "varvalue": 1
+        },
+        {
+          "happening": "ruin_heals",
+          "instant": true,
+          "prereq": "ruin_fight_counter==2",
+          "type": "HAPPENING"
+        }
+      ],
+      "id": "ruin_heal_checker",
+      "prereq": "18_varl_barrels",
+      "triggers": [
+        {
+          "player_only": false,
+          "type": "BATTLE_TURN",
+          "unit": ""
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "BATTLE_AI_ENABLE"
+        },
+        {
+          "id": "npc+2+ruin",
+          "type": "BATTLE_UNIT_ON_START_TURN"
+        },
+        {
+          "anchor": "@6,0",
+          "id": "npc+2+ruin",
+          "type": "BATTLE_UNIT_MOVE"
+        },
+        {
+          "anchor": "npc+2+ruin",
+          "id": "npc+2+ruin",
+          "param": "abl_ruin_immovableobject",
+          "type": "BATTLE_UNIT_ABILITY"
+        },
+        {
+          "id": "npc+2+ruin",
+          "type": "BATTLE_UNIT_ON_END_TURN"
+        },
+        {
+          "type": "BATTLE_AI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_NEXT_TURN"
+        }
+      ],
+      "id": "ruin_heals",
+      "prereq": "18_varl_barrels"
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 2048,
+      "width": 4096,
+      "x": -1992.1666666666667,
+      "y": -1094.6666666666667
+    },
+    "layers": [
+      {
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      },
+      {
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.3
+      },
+      {
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.5
+      },
+      {
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.7
+      },
+      {
+        "always": true,
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_ruin_fight/3_walk_back_a.png",
+            "localrect": {
+              "height": 2048,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_a_1",
+            "offset": {
+              "x": -1990,
+              "y": -1094
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_ruin_fight/3_walk_back_b.png",
+            "localrect": {
+              "height": 2048,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_b_1",
+            "offset": {
+              "x": 58,
+              "y": -1094
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1.3,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1.3,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_ruin_fight/glow_fire.png",
+            "localrect": {
+              "height": 507,
+              "width": 1005,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "glow_fire_1",
+            "offset": {
+              "x": -1030,
+              "y": -290
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_ruin_fight/3_walk_front_a.png",
+            "localrect": {
+              "height": 872,
+              "width": 1919,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_a_1",
+            "offset": {
+              "x": -1192,
+              "y": 80
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_ruin_fight/3_walk_front_b.png",
+            "localrect": {
+              "height": 853,
+              "width": 1376,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_b_1",
+            "offset": {
+              "x": 727,
+              "y": 99
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_horseborn_rampage/lighting.png",
+            "localrect": {
+              "height": 1044,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lighting_1",
+            "offset": {
+              "x": -2185,
+              "y": -1200
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.3
+      },
+      {
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.6
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}
