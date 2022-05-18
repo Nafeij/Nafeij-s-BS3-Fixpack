@@ -1,4 +1,4 @@
- 1.1 (Unreleased)
+ 1.1
  
     [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1
 
@@ -6,6 +6,7 @@
  
     [FIXED] Ranged abilities being capped off by Exertion. So for instance Gunnulf can't use Rank 3 of Forge Ahead and Sparr cannot use max-range Insult if they only have 2 EXE.
     [FIXED] Survival finale cutscene and final scores not triggering properly
+    [ADDED] Secret item from Yak's BS2 Fixpack included for continuity
    
 ------------------------------------------------------------------
 
