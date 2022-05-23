@@ -143,7 +143,7 @@
 						"linkPath": "mogun",
 						"ifConditions": [
 							{
-								"ifCondition": "mogun_state==1 && (hogun_state==1 || 21_hogun_dies_arb==1)"
+								"ifCondition": "mogun_state==1 && (hogun_state==1 || 10_hogun_leaves==1 || 21_hogun_dies_arb==1)"
 							}
 						],
 						"option": "{branch}"
@@ -152,7 +152,7 @@
 						"linkPath": "mogunKnowsBroDead",
 						"ifConditions": [
 							{
-								"ifCondition": "mogun_state==1 && hogun_state==0 && 21_hogun_dies_arb==0"
+								"ifCondition": "mogun_state==1 && hogun_state==0 && 10_hogun_leaves==0 && 21_hogun_dies_arb==0"
 							}
 						],
 						"option": "{branch}"
@@ -191,7 +191,7 @@
 						"linkPath": "mogun",
 						"ifConditions": [
 							{
-								"ifCondition": "mogun_state==1 && (hogun_state==1 || 21_hogun_dies_arb==1)"
+								"ifCondition": "mogun_state==1 && (hogun_state==1 || 10_hogun_leaves==1 || 21_hogun_dies_arb==1)"
 							}
 						],
 						"option": "{branch}"
@@ -200,7 +200,7 @@
 						"linkPath": "mogunKnowsBroDead",
 						"ifConditions": [
 							{
-								"ifCondition": "mogun_state==1 && hogun_state==0 && 21_hogun_dies_arb==0"
+								"ifCondition": "mogun_state==1 && hogun_state==0 && 10_hogun_leaves==0 && 21_hogun_dies_arb==0"
 							}
 						],
 						"option": "{branch}"
