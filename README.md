@@ -1,6 +1,10 @@
  1.1
  
     [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1
+    
+    [FIXED] -WILL and -ARM per turn effects can cause willpower and armor stats to go negative. Fixed by adding Math.max cap in \engine\battle\entity\model\BattleEntity
+    
+    [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
 
  1.0 
  
