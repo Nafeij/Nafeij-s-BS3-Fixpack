@@ -2,14 +2,16 @@
  
     [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1
     
-    [FIXED] -WILL and -ARM per turn effects can cause willpower and armor stats to go negative. Fixed by adding Math.max cap in \engine\battle\entity\model\BattleEntity
-    
     [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
+    
+    [FIXED] Several typos in conversations and cutscene subtitles.
 
  1.0 
  
     [FIXED] Ranged abilities being capped off by Exertion. So for instance Gunnulf can't use Rank 3 of Forge Ahead and Sparr cannot use max-range Insult if they only have 2 EXE.
+    
     [FIXED] Survival finale cutscene and final scores not triggering properly
+    
     [ADDED] Secret item from Yak's BS2 Fixpack included for continuity
    
 ------------------------------------------------------------------
