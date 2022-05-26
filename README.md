@@ -28,7 +28,8 @@ Please report any bugs in Issues.
 
 ------------------------------------------------------------------
 INSTALLATION:
-    Just uncompress the .zip in your "../steamapps/common" folder. It will ask you to overwrite some files, it's all right! The archive comes with backups just in case! (the ones with a .orig extension).
+    Select 'CODE > Download ZIP'. Uncompress the zip archive and place the /tbs3 folder in your "../steamapps/common" folder. It will ask you to overwrite some files.
+    
 UNINSTALLATION:
     Just delete the files and rename the backups OR verify the integrity of game files in Steam.
     
