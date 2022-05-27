@@ -1,5 +1,7 @@
  1.1
  
+    [FIXED] Ekkill is not properly imported from Saga 2, resulting in him being missing from certain conversations
+ 
     [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1
     
     [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
