@@ -11667,6 +11667,31 @@
         {
           "id": "hakon",
           "prereq": "!hakon_with_party || 18_varl_barrels",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "griss",
+          "prereq": "(!hakon_with_party || 18_varl_barrels) && griss_state==1",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "gunnulf",
+          "prereq": "(!hakon_with_party || 18_varl_barrels) && gunnulf_state==1",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "mogr",
+          "prereq": "(!hakon_with_party || 18_varl_barrels) && mogr_state==1",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "fasolt",
+          "prereq": "(!hakon_with_party || 18_varl_barrels || fasolt_defects)",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "hakon",
+          "prereq": "!hakon_with_party || 18_varl_barrels",
           "type": "ROSTER_REMOVE"
         },
         {
