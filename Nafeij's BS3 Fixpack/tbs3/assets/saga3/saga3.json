@@ -6218,6 +6218,14 @@
         },
         {
           "id": "oddleif",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "hakon",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "oddleif",
           "type": "ROSTER_REMOVE"
         },
         {
@@ -8038,6 +8046,10 @@
         },
         {
           "id": "ludin",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "ludin",
           "type": "ROSTER_REMOVE"
         },
         {
@@ -8067,7 +8079,15 @@
         },
         {
           "id": "fasolt",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "fasolt",
           "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "griss",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "griss",
@@ -8075,11 +8095,23 @@
         },
         {
           "id": "gunnulf",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "gunnulf",
           "type": "ROSTER_REMOVE"
         },
         {
           "id": "hakon",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "hakon",
           "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "mogr",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "mogr",
@@ -8112,7 +8144,15 @@
         },
         {
           "id": "fasolt",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "fasolt",
           "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "griss",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "griss",
@@ -8120,11 +8160,23 @@
         },
         {
           "id": "gunnulf",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "gunnulf",
           "type": "ROSTER_REMOVE"
         },
         {
           "id": "hakon",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "hakon",
           "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "mogr",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "mogr",
@@ -8164,7 +8216,15 @@
         },
         {
           "id": "fasolt",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "fasolt",
           "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "griss",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "griss",
@@ -8172,11 +8232,23 @@
         },
         {
           "id": "gunnulf",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "gunnulf",
           "type": "ROSTER_REMOVE"
         },
         {
           "id": "hakon",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "hakon",
           "type": "ROSTER_REMOVE"
+        },
+        {
+          "id": "mogr",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "mogr",
@@ -8317,6 +8389,21 @@
           "type": "VARIABLE_SET",
           "varname": "19_folka_split",
           "varvalue": 1
+        },
+        {
+          "id": "folka",
+          "prereq": "19_folka_split",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "oli",
+          "prereq": "19_folka_split",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "sparr",
+          "prereq": "19_folka_split",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "folka",
@@ -8605,6 +8692,10 @@
       "actions": [
         {
           "id": "alette",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
+        {
+          "id": "alette",
           "type": "ROSTER_REMOVE"
         },
         {
@@ -8621,6 +8712,10 @@
     },
     {
       "actions": [
+        {
+          "id": "rook",
+          "type": "UNIT_TRANSFER_ITEM"
+        },
         {
           "id": "rook",
           "type": "ROSTER_REMOVE"
@@ -9046,6 +9141,10 @@
           "type": "VARIABLE_MODIFY",
           "varname": "21_darkness_ticker",
           "varvalue": 1
+        },
+        {
+          "id": "juno",
+          "type": "UNIT_TRANSFER_ITEM"
         },
         {
           "id": "juno",

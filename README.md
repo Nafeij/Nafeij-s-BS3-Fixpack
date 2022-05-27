@@ -7,6 +7,8 @@
     [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
     
     [FIXED] Several typos in conversations and cutscene subtitles.
+    
+    [TWEAKED] Added several flags to unequip items when characters are removed from the roster.
 
  1.0 
  
