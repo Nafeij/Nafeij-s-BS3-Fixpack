@@ -17220,6 +17220,10 @@
       {
         "dst": "eyeless_kill_importer_check",
         "src": "13_eyeless_killed"
+      },
+      {
+        "dst": "10_hogun_leaves",
+        "src": "10_hogun_leaves"
       }
     ],
     "importSagaId": "saga2",

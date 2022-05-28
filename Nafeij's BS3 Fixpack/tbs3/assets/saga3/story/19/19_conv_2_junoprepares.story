@@ -112,7 +112,7 @@
 			},
 			"_Thesehorntow": {
 				"content": [
-					"[juno] These \"horn\" towers are portals the menders built long ago. They allow us to enter the inner earth. The dredge home.",
+					"[juno] These \"horn\" towers are portals the menders built long ago. They allow us to enter the Inner Earth. The dredge home.",
 					{
 						"divert": "_Iknewthedred"
 					},
@@ -123,7 +123,7 @@
 			},
 			"_Iknewthedred": {
 				"content": [
-					"[iver] I knew the dredge came from below, but... inner earth? Like caverns?",
+					"[iver] I knew the dredge came from below, but... Inner Earth? Like caverns?",
 					{
 						"divert": "_NonotatallIm"
 					},

@@ -1,12 +1,14 @@
  1.1
  
-    [FIXED] Ekkill is not properly imported from Saga 2, resulting in him being missing from certain conversations
+    [FIXED] Ekkill's alive state is not properly imported from Saga 2, resulting in him being missing from certain conversations
  
-    [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1
+    [FIXED] Mogun says a line that makes no sense if Hogun dies in Saga 1, or if he hangs his axe in Saga 2.
     
     [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
     
-    [FIXED] Several typos in conversations and cutscene subtitles.
+    [FIXED] Bug in storyline where it doesn't say Iver and the Ravens return to Arberrang if Oddleif is dead.
+    
+    [FIXED] Many, many typos and broken dialogue trees in conversations, popups and cutscene subtitles.
     
     [TWEAKED] Added several flags to unequip items when characters are removed from the roster.
 

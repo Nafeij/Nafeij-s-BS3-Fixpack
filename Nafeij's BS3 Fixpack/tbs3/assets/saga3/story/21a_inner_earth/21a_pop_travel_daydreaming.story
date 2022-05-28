@@ -67,7 +67,7 @@
 			},
 			"_Asyouallknow": {
 				"content": [
-					"[oli] \"As you all know, I don't drink,\" Oli smirks to a couple laughs, \"But I knew a place back in Boersgard that'd make you glad to be sober.\"",
+					"[oli] \"As you all know, I don't drink,\" Oli smirks to a couple laughs. \"But I knew a place back in Boersgard that'd make you glad to be sober.\"",
 					{
 						"linkPath": "sigbjorn_go",
 						"ifConditions": [
@@ -97,7 +97,7 @@
 			},
 			"sigbjorn_go": {
 				"content": [
-					"[sigbjorn] \"Then you haven't tasted Bjorulf's Blessing, Oli,\" Sigbjorn interjects. \"I'd kill anyone here for another swig...\" he trails off. \"Didn't you already get three Ravens killed over it?\" Sparr slings back, and Sigbjorn grows quiet.",
+					"[sigbjorn] \"Then you haven't tasted Bjorulf's Blessing,\" Sigbjorn interjects. \"I'd kill anyone here for another swig...\" he trails off. \"Didn't you already get three Ravens killed over it?\" Sparr slings back, and Sigbjorn grows quiet.",
 					{
 						"linkPath": "folka",
 						"ifConditions": [
