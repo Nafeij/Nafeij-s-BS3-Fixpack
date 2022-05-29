@@ -1,4 +1,4 @@
- 1.1
+ 1.0
  
     [FIXED] Ekkill's alive state is not properly imported from Saga 2, resulting in him being missing from certain conversations
  
@@ -12,15 +12,13 @@
     
     [FIXED] Many, many typos and broken dialogue trees in conversations, popups and cutscene subtitles.
     
-    [TWEAKED] Gave Stonesingers +1 range
-    
-    [TWEAKED] Added several flags to unequip items when characters are removed from the roster.
-
- 1.0 
- 
     [FIXED] Ranged abilities being capped off by Exertion. So for instance Gunnulf can't use Rank 3 of Forge Ahead and Sparr cannot use max-range Insult if they only have 2 EXE.
     
     [FIXED] Survival finale cutscene and final scores not triggering properly
+    
+    [TWEAKED] Gave Stonesingers +1 range
+    
+    [TWEAKED] Added several flags to unequip items when characters are removed from the roster.
     
     [ADDED] Secret item from Yak's BS2 Fixpack included for continuity
    
