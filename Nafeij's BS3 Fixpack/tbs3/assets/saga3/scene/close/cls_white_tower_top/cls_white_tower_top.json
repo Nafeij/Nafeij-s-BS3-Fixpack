@@ -1,0 +1,2719 @@
+{
+  "cameraAnchor": {
+    "x": 3382,
+    "y": 0
+  },
+  "cameraAnchorSpeed": 10,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "cameraStart": {
+    "x": 0,
+    "y": 0
+  },
+  "cinemascope": true,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "hud_travel_hidden",
+          "varvalue": 1
+        },
+        {
+          "type": "WAIT_READY"
+        }
+      ],
+      "automatic": true,
+      "id": "auto"
+    },
+    {
+      "actions": [
+        {
+          "id": "acv_3_2_bat_out_of_hel",
+          "prereq": "21_arb_return_count==1",
+          "type": "ACHIEVEMENT"
+        }
+      ],
+      "id": "acv_3_2_bat_out_of_hel",
+      "triggers": [
+        {
+          "location": "acv_3_2_bat_out_of_hel",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "acv_3_46_restless",
+          "prereq": "!rested_in_darkness",
+          "type": "ACHIEVEMENT"
+        }
+      ],
+      "id": "acv_3_46_restless",
+      "triggers": [
+        {
+          "location": "acv_3_46_restless",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "msg": "Convo: Iver/Eyvind/Juno. Eyvind makes his tearful goodbye as he begins the ritual. Juno reassures him it’s the right thing to do, and is locked in place as the ritual begins.",
+          "scene": "saga3/scene/stage/stg_valkajokull/stg_valkajokull.json.z",
+          "type": "CONVO",
+          "url": "saga3/story/22/22_conv_1_juno_goodbye.story.z"
+        }
+      ],
+      "id": "juno_goodbye",
+      "triggers": [
+        {
+          "location": "juno_goodbye",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "id": "saga3_vo/vo/vo_22_towertop_iver",
+          "subtitle": "saga3/locale/en/vo_22_towertop_iver.sbv.z",
+          "type": "VO"
+        }
+      ],
+      "id": "vo_22_towertop_iver",
+      "triggers": [
+        {
+          "location": "vo_22_towertop_iver",
+          "type": "LOCATION"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "POPUP",
+          "url": "saga3/story/22/22_pop_1_juno_goodbye.story.z"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "omg_giant_snake",
+          "varvalue": 1
+        },
+        {
+          "scene": "saga3/scene/cinema/cin_serpent_rises/cin_serpent_rises.json.z",
+          "type": "SCENE"
+        }
+      ],
+      "id": "ritual",
+      "triggers": [
+        {
+          "location": "ritual",
+          "type": "LOCATION"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 6113.507142857143,
+      "x": -1365.5,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/6_back_1.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2047,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_1_1",
+            "offset": {
+              "x": 2,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/6_back_2.png",
+            "localrect": {
+              "height": 1162,
+              "width": 898,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "6_back_2_1",
+            "offset": {
+              "x": 2047.5,
+              "y": 3
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 60,
+                  "start": {
+                    "x": 967.5,
+                    "y": 841
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -2330.05,
+                    "y": 841
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_left_large_1.png",
+            "localrect": {
+              "height": 94,
+              "width": 1837,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_left_large_1_1",
+            "offset": {
+              "x": 1067.5,
+              "y": 841
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 30,
+                  "start": {
+                    "x": 1246,
+                    "y": 972
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -1150.05,
+                    "y": 972
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_left_small_1.png",
+            "localrect": {
+              "height": 26,
+              "width": 468,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_left_small_1_1",
+            "offset": {
+              "x": 1346,
+              "y": 972
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "clouds_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/dark_yolk_1.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1883,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "dark_yolk_1_1",
+            "offset": {
+              "x": -1374.05,
+              "y": -585.65
+            },
+            "scale": {
+              "x": 1.0065877437591553,
+              "y": 1.0065877437591553
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/dark_yolk_2.png",
+            "localrect": {
+              "height": 1162,
+              "width": 1504,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "dark_yolk_2_1",
+            "offset": {
+              "x": -1376,
+              "y": -598.05
+            },
+            "scale": {
+              "x": 1.0239360332489014,
+              "y": 1.022374391555786
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.2,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.2,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 9,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 1.5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 14,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 15.5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_5.png",
+            "localrect": {
+              "height": 710,
+              "width": 759,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_5_1",
+            "offset": {
+              "x": -1035.7,
+              "y": -586.7
+            },
+            "scale": {
+              "x": 1.7847900390625,
+              "y": 1.5869160890579224
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_6.png",
+            "localrect": {
+              "height": 791,
+              "width": 592,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_6_1",
+            "offset": {
+              "x": -618,
+              "y": -586
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.1,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_4.png",
+            "localrect": {
+              "height": 873,
+              "width": 660,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_4_1",
+            "offset": {
+              "x": -836,
+              "y": -406
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_2.png",
+            "localrect": {
+              "height": 694,
+              "width": 334,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_2_1",
+            "offset": {
+              "x": -153.95,
+              "y": -594.15
+            },
+            "rotation": -19.0403426828058,
+            "scale": {
+              "x": 0.9326144456863404,
+              "y": 0.7946686148643494
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 2,
+                  "tailpos": 1,
+                  "target": 0.1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.1,
+                  "start_secs": 7,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_6.png",
+            "localrect": {
+              "height": 791,
+              "width": 592,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_6_2",
+            "offset": {
+              "x": 67.45,
+              "y": -618.9
+            },
+            "rotation": -36.34997577385496,
+            "scale": {
+              "x": 0.47332499248757,
+              "y": 0.4856291369716206
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_4.png",
+            "localrect": {
+              "height": 873,
+              "width": 660,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_4_2",
+            "offset": {
+              "x": -980.75,
+              "y": 607.05
+            },
+            "rotation": -85.50319696817368,
+            "scale": {
+              "x": 0.4482220091798439,
+              "y": 0.6691121817125179
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_5.png",
+            "localrect": {
+              "height": 710,
+              "width": 759,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_5_2",
+            "offset": {
+              "x": -318,
+              "y": -240.8
+            },
+            "rotation": -11.861668440149291,
+            "scale": {
+              "x": 0.6498929858207703,
+              "y": 0.5316153764724731
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_1.png",
+            "localrect": {
+              "height": 656,
+              "width": 424,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_1_1",
+            "offset": {
+              "x": -346.05,
+              "y": -271
+            },
+            "rotation": -18.825439884389738,
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_1.png",
+            "localrect": {
+              "height": 656,
+              "width": 424,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_1_2",
+            "offset": {
+              "x": -523.55,
+              "y": 383.2
+            },
+            "rotation": -59.386199955375275,
+            "scale": {
+              "x": 0.5249437599690665,
+              "y": 0.5249437599690665
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 0.1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.1,
+                  "start_secs": 10,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_2.png",
+            "localrect": {
+              "height": 694,
+              "width": 334,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_2_2",
+            "offset": {
+              "x": -636.2,
+              "y": 106.2
+            },
+            "rotation": -49.31876408520984,
+            "scale": {
+              "x": 0.5585267284019686,
+              "y": 0.5585267284019686
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "fractals_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/5_back_3.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2045,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_3_1",
+            "offset": {
+              "x": 614,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/5_back_2.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2042,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_2_1",
+            "offset": {
+              "x": 2659,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 3,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/5_back_3_glow.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2045,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_3_glow_1",
+            "offset": {
+              "x": 615,
+              "y": 0
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 3,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/5_back_2_glow.png",
+            "localrect": {
+              "height": 1162,
+              "width": 2042,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "5_back_2_glow_1",
+            "offset": {
+              "x": 2660,
+              "y": 1
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "params": "lightning_intensity=0.5",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 0,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.1,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.30000000000000004,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0.7000000000000001,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 6.7,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 6.7,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 6.9,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 7.1000000000000005,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 7.500000000000001,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_lightning_1.png",
+            "localrect": {
+              "height": 492,
+              "width": 1064,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_lightning_1_1",
+            "offset": {
+              "x": -5,
+              "y": 641
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 0,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 9,
+                  "x_period": 4,
+                  "y_amplitude": 12,
+                  "y_period": 8
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/broken_shards1.png",
+            "localrect": {
+              "height": 792,
+              "width": 138,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "broken_shards1_1",
+            "offset": {
+              "x": 1711.15,
+              "y": 64.65
+            },
+            "rotation": 42.713279370264246,
+            "scale": {
+              "x": 1.0831180870320811,
+              "y": 1.034708127686242
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 0,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 7,
+                  "x_period": 3,
+                  "y_amplitude": 10,
+                  "y_period": 6
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/broken_shards2.png",
+            "localrect": {
+              "height": 904,
+              "width": 80,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "broken_shards2_1",
+            "offset": {
+              "x": 1628.75,
+              "y": 130.3
+            },
+            "rotation": 42.6638196017255,
+            "scale": {
+              "x": 1.000000113546714,
+              "y": 1.049417939691691
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 0,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 6,
+                  "x_period": 3,
+                  "y_amplitude": 11,
+                  "y_period": 7
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/broken_shards2.png",
+            "localrect": {
+              "height": 904,
+              "width": 80,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "broken_shards2_2",
+            "offset": {
+              "x": 1068.65,
+              "y": 818.95
+            },
+            "rotation": 41.33632142905645,
+            "scale": {
+              "x": 0.5196663534001377,
+              "y": 0.5147787973765345
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "black sun",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 20,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.2,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 18,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 20,
+                  "tailpos": 1,
+                  "target": 0.2,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_1.png",
+            "localrect": {
+              "height": 656,
+              "width": 424,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_1_1",
+            "offset": {
+              "x": 1568,
+              "y": -18
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 4,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_6.png",
+            "localrect": {
+              "height": 791,
+              "width": 592,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_6_1",
+            "offset": {
+              "x": 3169.9,
+              "y": -172.5
+            },
+            "rotation": -17.718034754721224,
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fractal_1.png",
+            "localrect": {
+              "height": 656,
+              "width": 424,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fractal_1_2",
+            "offset": {
+              "x": 2240.2,
+              "y": -97
+            },
+            "scale": {
+              "x": 0.8861151933670044,
+              "y": 0.8861151933670044
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "fractals_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 75,
+                  "start": {
+                    "x": 5285.1,
+                    "y": 615.05
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -3245.05,
+                    "y": 600.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_left_large_1.png",
+            "localrect": {
+              "height": 94,
+              "width": 1837,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_left_large_1_1",
+            "offset": {
+              "x": 3333,
+              "y": 612
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 1.6
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 100,
+                  "start": {
+                    "x": 5237.85,
+                    "y": 311
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -936.7,
+                    "y": 311
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_left_small_1.png",
+            "localrect": {
+              "height": 26,
+              "width": 468,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_left_small_1_1",
+            "offset": {
+              "x": 5337.85,
+              "y": 311
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 80,
+                  "start": {
+                    "x": 3635.05,
+                    "y": 831
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -1965.05,
+                    "y": 800
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_left_small_1.png",
+            "localrect": {
+              "height": 26,
+              "width": 468,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_left_small_1_2",
+            "offset": {
+              "x": 3358,
+              "y": 831
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "clouds_mid",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.7
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 10,
+                  "start": {
+                    "x": 2724,
+                    "y": 886
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 2724,
+                    "y": 2200.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/debris_1.png",
+            "localrect": {
+              "height": 40,
+              "width": 19,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "debris_1_1",
+            "offset": {
+              "x": 2824,
+              "y": 886
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "start": {
+                    "x": 3011,
+                    "y": 757
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 3011,
+                    "y": 1392.9
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/debris_2.png",
+            "localrect": {
+              "height": 13,
+              "width": 14,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "debris_2_1",
+            "offset": {
+              "x": 3111,
+              "y": 757
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 6,
+                  "start": {
+                    "x": 3251,
+                    "y": 658
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 3251,
+                    "y": 1420.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/debris_3.png",
+            "localrect": {
+              "height": 38,
+              "width": 22,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "debris_3_1",
+            "offset": {
+              "x": 3351,
+              "y": 658
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "start": {
+                    "x": 2838.4,
+                    "y": 915
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 2851.7,
+                    "y": 1330.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/debris_4.png",
+            "localrect": {
+              "height": 14,
+              "width": 11,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "debris_4_1",
+            "offset": {
+              "x": 2837,
+              "y": 902
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "start": {
+                    "x": 3340.05,
+                    "y": 688.35
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 3340.05,
+                    "y": 1280.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/debris_5.png",
+            "localrect": {
+              "height": 16,
+              "width": 17,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "debris_5_1",
+            "offset": {
+              "x": 3334,
+              "y": 688
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 4,
+                  "start": {
+                    "x": 2913.4,
+                    "y": 850
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 2913.4,
+                    "y": 1251.7
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/debris_6.png",
+            "localrect": {
+              "height": 8,
+              "width": 7,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "debris_6_1",
+            "offset": {
+              "x": 2942,
+              "y": 818
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "debris",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_railing.png",
+            "localrect": {
+              "height": 394,
+              "width": 867,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_railing_1",
+            "offset": {
+              "x": 2598,
+              "y": 571
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.9,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.3,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.3,
+                  "start_secs": 3,
+                  "tailpos": 1,
+                  "target": 0.7,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.7,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 0.9,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/fork.png",
+            "localrect": {
+              "height": 422,
+              "width": 266,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fork_1",
+            "offset": {
+              "x": 4639,
+              "y": 159
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/stairs.png",
+            "localrect": {
+              "height": 61,
+              "width": 613,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "stairs_1",
+            "offset": {
+              "x": 4449,
+              "y": 578
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_fork.png",
+            "localrect": {
+              "height": 384,
+              "width": 185,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_fork_1",
+            "offset": {
+              "x": 4675,
+              "y": 196
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.7,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.7,
+                  "start_secs": 3,
+                  "tailpos": 1,
+                  "target": 0.7,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.7,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 0.3,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.3,
+                  "start_secs": 6,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "blendMode": "add",
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_aura_2.png",
+            "localrect": {
+              "height": 272,
+              "width": 158,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_aura_2_1",
+            "offset": {
+              "x": 1355,
+              "y": 593
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_front_1.png",
+            "localrect": {
+              "height": 558,
+              "width": 692,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_1_1",
+            "offset": {
+              "x": 1379,
+              "y": 605
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_front_2.png",
+            "localrect": {
+              "height": 604,
+              "width": 2047,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_2_1",
+            "offset": {
+              "x": 2069,
+              "y": 559
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_front_3.png",
+            "localrect": {
+              "height": 604,
+              "width": 2005,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_3_1",
+            "offset": {
+              "x": 4112.65,
+              "y": 559.3
+            },
+            "rotation": -0.074888448391564,
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.2,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0.6000000000000001,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity=0.7",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 4.6,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 4.6,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 4.8999999999999995,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2.5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 5.3,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "blendMode": "add",
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_lightning_2b.png",
+            "localrect": {
+              "height": 739,
+              "width": 428,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_lightning_2b_1",
+            "offset": {
+              "x": 1309,
+              "y": -6
+            },
+            "scale": {
+              "x": 1,
+              "y": 1.0270635986328125
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 0,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.1,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.30000000000000004,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0.7000000000000001,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_lightning_2a.png",
+            "localrect": {
+              "height": 735,
+              "width": 1217,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_lightning_2a_1",
+            "offset": {
+              "x": 230,
+              "y": -17
+            },
+            "scale": {
+              "x": 1,
+              "y": 1.0274348449707031
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 0,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.2,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.4,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2.5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0.8,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 3.3,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 3.3,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 3.5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 3.7,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 4.1000000000000005,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_lightning_3.png",
+            "localrect": {
+              "height": 529,
+              "width": 870,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_lightning_3_1",
+            "offset": {
+              "x": 3906,
+              "y": -10
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 0,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.2,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0.4,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0.8,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 2.8,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 2.8,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 3,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 3.2,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 3.5,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/3_walk_back_lightning_4.png",
+            "localrect": {
+              "height": 411,
+              "width": 738,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_lightning_4_1",
+            "offset": {
+              "x": 4755,
+              "y": -4
+            },
+            "scale": {
+              "x": 1,
+              "y": 1.095959930419922
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 1.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 1.2,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 1.2,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 1.4,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 1.6,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 2,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/lightning_2c.png",
+            "localrect": {
+              "height": 749,
+              "width": 448,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lightning_2c_1",
+            "offset": {
+              "x": 1273,
+              "y": -10
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 3,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 3,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 3.1,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 3.3000000000000003,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 3.7,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "lightning_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun",
+                  "start_secs": 8.7,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 0.1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 8.7,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.2,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 8.8,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 0.4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 9,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/lightning_2c.png",
+            "localrect": {
+              "height": 749,
+              "width": 448,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lightning_2c_2",
+            "offset": {
+              "x": 4680,
+              "y": -263
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "lightning_front",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 100,
+                  "start": {
+                    "x": 5465.05,
+                    "y": 915.05
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -4730.05,
+                    "y": 845.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_bottom_large.png",
+            "localrect": {
+              "height": 164,
+              "width": 1900,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_bottom_large_1",
+            "offset": {
+              "x": 1363,
+              "y": 835
+            },
+            "scale": {
+              "x": 3,
+              "y": 3
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 60,
+                  "start": {
+                    "x": 5255.1,
+                    "y": 870.05
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -755.05,
+                    "y": 870.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/cloud_right_1.png",
+            "localrect": {
+              "height": 87,
+              "width": 1803,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "cloud_right_1_1",
+            "offset": {
+              "x": 5446,
+              "y": 645
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 60,
+                  "start": {
+                    "x": 7035.9,
+                    "y": 917
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -2215.05,
+                    "y": 955.05
+                  },
+                  "type": "MOVE"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/mist1.png",
+            "localrect": {
+              "height": 123,
+              "width": 1729,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "mist1_1",
+            "offset": {
+              "x": 2311.45,
+              "y": 915.45
+            },
+            "scale": {
+              "x": 2,
+              "y": 2.0162601470947266
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 10,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.5,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.2,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 8,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.2,
+                  "start_secs": 10,
+                  "tailpos": 1,
+                  "target": 0.5,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "bmp": "saga3/scene/close/cls_white_tower_top/mist1.png",
+            "localrect": {
+              "height": 123,
+              "width": 1729,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "mist1_2",
+            "offset": {
+              "x": 1527.85,
+              "y": 910
+            },
+            "scale": {
+              "x": 3.0931437015533447,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "clouds_near",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 6,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "thunder_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun_megaflash",
+                  "start_secs": 6,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 6,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 25,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 7,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "params": "thunder_intensity=1",
+                  "sound_url": "world_saga3/ambience_common/lightning_fallen_sun_megaflash",
+                  "start_secs": 32,
+                  "transcendent": false,
+                  "type": "SOUND"
+                },
+                {
+                  "duration_secs": 1,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 32,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 10,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0,
+                  "start_secs": 33,
+                  "tailpos": 1,
+                  "target": 0,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "blendMode": "add",
+            "bmp": "saga3/scene/close/cls_white_tower_top/white_pixel.png",
+            "localrect": {
+              "height": 1,
+              "width": 1,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "white_pixel_1",
+            "offset": {
+              "x": -37,
+              "y": -80
+            },
+            "scale": {
+              "x": 6294.05029296875,
+              "y": 1284
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "full screen overlay",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      }
+    ],
+    "travels": [
+      {
+        "close": true,
+        "locations": [
+          {
+            "id": "start",
+            "position": 418
+          },
+          {
+            "id": "acv_3_2_bat_out_of_hel",
+            "position": 555
+          },
+          {
+            "id": "acv_3_46_restless",
+            "position": 795
+          },
+          {
+            "id": "juno_goodbye",
+            "position": 982
+          },
+          {
+            "id": "vo_22_towertop_iver",
+            "position": 1939
+          },
+          {
+            "id": "ritual",
+            "position": 3156.7
+          },
+          {
+            "id": "end",
+            "position": 4003.4
+          }
+        ],
+        "showBanner": false,
+        "showCartFront": false,
+        "showGlow": true,
+        "showYoxen": false,
+        "splinex": [
+          "-140 372",
+          "250 365",
+          "850 364",
+          "1208 364",
+          "1278 362",
+          "1680 187",
+          "2079 59",
+          "2129 59",
+          "3254 59",
+          "4420 58",
+          "4706 58",
+          "5134 53"
+        ]
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

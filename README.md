@@ -6,6 +6,8 @@
     
     [FIXED] -WILL items can cause willpower to be 'lost' when using horn (The charge goes away but you get no WIL if it's above your "new max WIL"). Fixed by changing the getValue to getBase in \game\gui\HornHelper
     
+    [FIXED] Sprites are positioned too high where it shows the Ravens walking atop the white tower
+    
     [FIXED] Bug in storyline where it doesn't say Iver and the Ravens return to Arberrang if Oddleif is dead.
     
     [FIXED] Many, many typos and broken dialogue trees in conversations, popups and cutscene subtitles.
