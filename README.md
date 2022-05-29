@@ -12,6 +12,8 @@
     
     [FIXED] Many, many typos and broken dialogue trees in conversations, popups and cutscene subtitles.
     
+    [TWEAKED] Gave Stonesingers +1 range
+    
     [TWEAKED] Added several flags to unequip items when characters are removed from the roster.
 
  1.0 
