@@ -45,4 +45,4 @@ UNINSTALLATION:
     
 ------------------------------------------------------------------
 
-Mirrors -  | 
+Mirror - https://www.nexusmods.com/thebannersaga3/mods/3
