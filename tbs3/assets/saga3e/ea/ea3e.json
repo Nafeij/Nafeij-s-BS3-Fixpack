@@ -1,0 +1,4257 @@
+{
+  "castMods": {
+    "characterOverrides": [
+      {
+        "id": "aleo",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 9
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 4
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "alette",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 9
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 11
+          },
+          {
+            "name": "tal_exe_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "alfrun",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 5
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 8
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 8
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 9
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "dredge_stonesinger_ally_1",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 2
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 4
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 4
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 2
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 9
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 6
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "bak",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 9
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "dredge_stoneguard_ally_1",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 14
+          },
+          {
+            "type": "ARMOR",
+            "weight": 16
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 12
+          },
+          {
+            "type": "EXERTION",
+            "weight": 18
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 20
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 12
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "bersi",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "bolverk",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 9
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 3
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 9
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 9
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 8
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "canary",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 5
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 6
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 11
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "dredge_hurler_ally_1",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 11
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "dagr",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "derdriu",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 5
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 6
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 11
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "dytch",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 1
+          },
+          {
+            "type": "ARMOR",
+            "weight": 1
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 1
+          },
+          {
+            "type": "EXERTION",
+            "weight": 1
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 1
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "egil",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "eirik",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 1
+          },
+          {
+            "type": "ARMOR",
+            "weight": 1
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 1
+          },
+          {
+            "type": "EXERTION",
+            "weight": 1
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 1
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "ekkill",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 4
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 6
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "eyvind",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 9
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 12
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 11
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 4
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "fasolt",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 9
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 12
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "folka",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "griss",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 8
+          },
+          {
+            "type": "EXERTION",
+            "weight": 0
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "gudmundr",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 2
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "gunnulf",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 8
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "hakon",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 8
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "hogun",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 9
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "iver",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 5
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 9
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 9
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 8
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "juno",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 4
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 11
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 2
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "dredge_stoneguard_ally_preorder",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 16
+          },
+          {
+            "type": "ARMOR",
+            "weight": 13
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 12
+          },
+          {
+            "type": "EXERTION",
+            "weight": 18
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 20
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 4
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 6
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "krumr",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 6
+          },
+          {
+            "type": "EXERTION",
+            "weight": 7
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "ludin",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 9
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "mogr",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 9
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 6
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 12
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "mogun",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 9
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 1
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "nid",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 5
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 5
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 7
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "nikels",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 2
+          },
+          {
+            "type": "ARMOR",
+            "weight": 4
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 2
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 9
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "oddleif",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 1
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 11
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 11
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "oli",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 5
+          },
+          {
+            "type": "ARMOR",
+            "weight": 4
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 1
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "petrus",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 9
+          },
+          {
+            "type": "ARMOR",
+            "weight": 9
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 1
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "roech",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR",
+            "weight": 8
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 4
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "rook",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 8
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 9
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 11
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "scathach",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR",
+            "weight": 8
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 10
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 4
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "sigbjorn",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 0
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 0
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "sparr",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 7
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 9
+          },
+          {
+            "type": "EXERTION",
+            "weight": 10
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 9
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 4
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 7
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "tryggvi",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR",
+            "weight": 9
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 1
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 3
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 9
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "ubin",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 4
+          },
+          {
+            "type": "ARMOR",
+            "weight": 6
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 5
+          },
+          {
+            "type": "EXERTION",
+            "weight": 1
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 3
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 3
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 8
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "valgard",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 5
+          },
+          {
+            "type": "ARMOR",
+            "weight": 10
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 8
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_arm_0",
+            "weight": 10
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 4
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 2
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "yrsa",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 5
+          },
+          {
+            "type": "ARMOR",
+            "weight": 5
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 7
+          },
+          {
+            "type": "EXERTION",
+            "weight": 8
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 7
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_1",
+            "weight": 12
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 7
+          },
+          {
+            "name": "tal_wil_0",
+            "weight": 6
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 5
+          },
+          {
+            "name": "tal_abk_0",
+            "weight": 10
+          }
+        ],
+        "titles": []
+      },
+      {
+        "id": "zefr",
+        "items": [],
+        "statWeights": [
+          {
+            "type": "STRENGTH",
+            "weight": 6
+          },
+          {
+            "type": "ARMOR",
+            "weight": 8
+          },
+          {
+            "type": "WILLPOWER",
+            "weight": 10
+          },
+          {
+            "type": "EXERTION",
+            "weight": 11
+          },
+          {
+            "type": "ARMOR_BREAK",
+            "weight": 0
+          }
+        ],
+        "talentWeights": [
+          {
+            "name": "tal_str_0",
+            "weight": 2
+          },
+          {
+            "name": "tal_arm_1",
+            "weight": 5
+          },
+          {
+            "name": "tal_wil_1",
+            "weight": 10
+          },
+          {
+            "name": "tal_exe_0",
+            "weight": 7
+          },
+          {
+            "name": "tal_abk_1",
+            "weight": 3
+          }
+        ],
+        "titles": []
+      }
+    ],
+    "defaultItemList": [],
+    "defaultStatWeights": [
+      {
+        "type": "STRENGTH",
+        "weight": 4
+      },
+      {
+        "type": "ARMOR",
+        "weight": 2
+      },
+      {
+        "type": "WILLPOWER",
+        "weight": 1
+      },
+      {
+        "type": "EXERTION",
+        "weight": 5
+      },
+      {
+        "type": "ARMOR_BREAK",
+        "weight": 3
+      }
+    ],
+    "defaultTalentWeights": [
+      {
+        "name": "tal_arm_0",
+        "weight": 1
+      },
+      {
+        "name": "tal_arm_1",
+        "weight": 0
+      },
+      {
+        "name": "tal_str_0",
+        "weight": 1
+      },
+      {
+        "name": "tal_str_1",
+        "weight": 0
+      },
+      {
+        "name": "tal_wil_0",
+        "weight": 1
+      },
+      {
+        "name": "tal_wil_1",
+        "weight": 0
+      },
+      {
+        "name": "tal_exe_0",
+        "weight": 1
+      },
+      {
+        "name": "tal_exe_1",
+        "weight": 0
+      },
+      {
+        "name": "tal_abk_0",
+        "weight": 1
+      },
+      {
+        "name": "tal_abk_1",
+        "weight": 0
+      }
+    ],
+    "defaultTitleList": []
+  },
+  "enemies": [
+    {
+      "baseBucket": "dredge_easy",
+      "id": "dredge_easy",
+      "waveBuckets": [
+        "dredge_easy"
+      ]
+    },
+    {
+      "baseBucket": "dredge_medium",
+      "id": "dredge_medium",
+      "waveBuckets": [
+        "dredge_medium"
+      ]
+    },
+    {
+      "baseBucket": "dredge_hard",
+      "id": "dredge_hard",
+      "waveBuckets": [
+        "dredge_hard"
+      ]
+    },
+    {
+      "baseBucket": "dredge_ultra",
+      "id": "dredge_ultra",
+      "waveBuckets": [
+        "dredge_ultra"
+      ]
+    },
+    {
+      "baseBucket": "dredge_sundr",
+      "id": "dredge_sundr",
+      "waveBuckets": [
+        "dredge_bellower",
+        "dredge_eyeless",
+        "dredge_ruin"
+      ]
+    },
+    {
+      "baseBucket": "dredge_bellower",
+      "id": "dredge_bellower",
+      "waveBuckets": [
+        "dredge_bellower"
+      ]
+    },
+    {
+      "baseBucket": "dredge_eyeless",
+      "id": "dredge_eyeless",
+      "waveBuckets": [
+        "dredge_eyeless"
+      ]
+    },
+    {
+      "baseBucket": "dredge_ruin",
+      "id": "dredge_ruin",
+      "waveBuckets": [
+        "dredge_ruin"
+      ]
+    },
+    {
+      "baseBucket": "dredge_all",
+      "id": "dredge_all",
+      "waveBuckets": [
+        "dredge_all"
+      ]
+    },
+    {
+      "baseBucket": "horseborn_easy",
+      "id": "horseborn_easy",
+      "waveBuckets": [
+        "horseborn_easy"
+      ]
+    },
+    {
+      "baseBucket": "horseborn_medium",
+      "id": "horseborn_medium",
+      "waveBuckets": [
+        "horseborn_medium"
+      ]
+    },
+    {
+      "baseBucket": "horseborn_hard",
+      "id": "horseborn_hard",
+      "waveBuckets": [
+        "horseborn_hard"
+      ]
+    },
+    {
+      "baseBucket": "thugs",
+      "id": "thugs",
+      "waveBuckets": [
+        "thugs"
+      ]
+    },
+    {
+      "baseBucket": "fighters_easy",
+      "id": "fighters_easy",
+      "waveBuckets": [
+        "fighters_easy"
+      ]
+    },
+    {
+      "baseBucket": "fighters_medium",
+      "id": "fighters_medium",
+      "waveBuckets": [
+        "fighters_medium"
+      ]
+    },
+    {
+      "baseBucket": "fighters_hard",
+      "id": "fighters_hard",
+      "waveBuckets": [
+        "fighters_hard"
+      ]
+    },
+    {
+      "baseBucket": "fighters_ultra",
+      "id": "fighters_ultra",
+      "waveBuckets": [
+        "fighters_ultra"
+      ]
+    },
+    {
+      "baseBucket": "kragsmen_easy",
+      "id": "kragsmen_easy",
+      "waveBuckets": [
+        "kragsmen_easy"
+      ]
+    },
+    {
+      "baseBucket": "kragsmen_hard",
+      "id": "kragsmen_hard",
+      "waveBuckets": [
+        "kragsmen_hard"
+      ]
+    },
+    {
+      "baseBucket": "varl_easy",
+      "id": "varl_easy",
+      "waveBuckets": [
+        "varl_easy"
+      ]
+    },
+    {
+      "baseBucket": "varl_hard",
+      "id": "varl_hard",
+      "waveBuckets": [
+        "varl_hard"
+      ]
+    },
+    {
+      "baseBucket": "animals_and_creatures",
+      "id": "animals_and_creatures",
+      "waveBuckets": [
+        "animals_and_creatures"
+      ]
+    },
+    {
+      "baseBucket": "inner_earth_warped",
+      "id": "inner_earth_warped",
+      "waveBuckets": [
+        "inner_earth_warped"
+      ]
+    },
+    {
+      "baseBucket": "warped_dredge_arberrang",
+      "id": "warped_dredge_arberrang",
+      "waveBuckets": [
+        "warped_dredge_arberrang"
+      ]
+    },
+    {
+      "baseBucket": "warped_arberrang_allies",
+      "id": "warped_arberrang_allies",
+      "waveBuckets": [
+        "warped_arberrang_allies"
+      ]
+    },
+    {
+      "baseBucket": "bolverk_warped_army",
+      "id": "bolverk_warped_army",
+      "waveBuckets": [
+        "bolverk_warped_army"
+      ]
+    },
+    {
+      "baseBucket": "bolverk_warped_elite",
+      "id": "bolverk_warped_elite",
+      "waveBuckets": [
+        "bolverk_warped_elite"
+      ]
+    },
+    {
+      "baseBucket": "bolverk_final_battle",
+      "id": "bolverk_final_battle",
+      "waveBuckets": [
+        "bolverk_final_battle"
+      ]
+    },
+    {
+      "baseBucket": "varl",
+      "id": "varl"
+    }
+  ],
+  "items": [
+    {
+      "id": "none",
+      "items": []
+    },
+    {
+      "id": "armor",
+      "items": [
+        "itm_arm_1",
+        "itm_arm_1b",
+        "itm_rest_arm_1",
+        "itm_arm_2",
+        "itm_rest_arm_2",
+        "itm_2_str_2",
+        "itm_regen_arm_1",
+        "itm_2_arm_1",
+        "itm_2_brk_1",
+        "itm_2_resist_str",
+        "itm_aggro_plus_1",
+        "itm_arm_3",
+        "itm_regen_arm_2",
+        "itm_regen_wil_3",
+        "itm_rest_arm_3",
+        "itm_2_rest_wil_1",
+        "itm_2_tal_bonus_arm_1",
+        "itm_2_kill_stop_1",
+        "itm_2_tal_bonus_arm_2",
+        "itm_2_tal_bonus_arm_3",
+        "itm_2_tal_bonus_brk_2",
+        "itm_3_r7_switch_bs3",
+        "itm_2_aggro_plus_1",
+        "itm_2_divert_1",
+        "itm_2_tal_bonus_brk_3",
+        "itm_2_crit_1",
+        "itm_2_range_bonus_2",
+        "itm_2_tal_bonus_all_1",
+        "itm_3_r9_meinolf",
+        "itm_2_regen_arm_1",
+        "itm_2_arm_degen_1",
+        "itm_3_folka",
+        "itm_3_r14_beads",
+        "itm_3_folka",
+        "itm_3_r12_omega",
+        "itm_3_r12_bottle",
+        "itm_3_r15_ocarina"
+      ]
+    },
+    {
+      "id": "break",
+      "items": [
+        "itm_brk_1",
+        "itm_brk_2",
+        "itm_brk_3",
+        "itm_2_brk_1",
+        "itm_aggro_plus_1",
+        "itm_2_tal_bonus_brk_1",
+        "itm_2_mov_3",
+        "itm_2_tal_bonus_brk_3",
+        "itm_2_morale_1",
+        "itm_2_regen_arm_1",
+        "itm_2_tal_bonus_all_5",
+        "itm_2_arm_degen_1",
+        "itm_3_r10_505pub",
+        "itm_3_r12_bell",
+        "itm_3_r12_flowerring",
+        "itm_3_r13_goldtusk",
+        "itm_3_r13_bracelet",
+        "itm_3_whale",
+        "itm_3_r15_ocarina",
+        "itm_3_r13_ringer"
+      ]
+    },
+    {
+      "id": "character",
+      "items": [
+        "item_crit_3b",
+        "itm_arm_1b",
+        "itm_2_dodge_2",
+        "itm_3_r10_tryggvi",
+        "itm_2_regen_wil_1",
+        "itm_3_r10_sculptorstools",
+        "itm_3_singer",
+        "itm_3_bolverk",
+        "itm_3_whale",
+        "itm_3_hadrborg"
+      ]
+    },
+    {
+      "id": "crit",
+      "items": [
+        "item_crit_3b",
+        "item_crit_1",
+        "item_crit_3",
+        "itm_2_dodge_2",
+        "itm_2_r3_switch_bs2",
+        "itm_never_miss",
+        "item_crit_2",
+        "itm_2_tal_bonus_all_3",
+        "itm_2_mov_2",
+        "itm_2_tal_bonus_str_1",
+        "itm_2_tal_bonus_all_4",
+        "itm_2_tal_bonus_arm_3",
+        "itm_2_tal_bonus_exe_2",
+        "itm_2_tal_bonus_str_2",
+        "itm_3_r10_tryggvi",
+        "itm_2_tal_bonus_str_3",
+        "itm_2_tal_bonus_all_2",
+        "itm_2_str_1",
+        "itm_2_crit_1",
+        "itm_2_tal_bonus_all_1",
+        "itm_2_tal_bonus_brk_4",
+        "itm_3_r9_meinolf",
+        "itm_2_regen_arm_1",
+        "itm_2_tal_bonus_all_5",
+        "itm_2_str_attack_1",
+        "itm_2_arm_degen_1",
+        "itm_3_r10_papers",
+        "itm_3_r14_beads",
+        "itm_3_r12_doll",
+        "itm_3_r11_knife",
+        "itm_3_r11_bentsword",
+        "itm_3_r12_bell",
+        "itm_3_r14_greenberet",
+        "itm_3_r14_spiralring",
+        "itm_3_r13_ringer"
+      ]
+    },
+    {
+      "id": "dodge",
+      "items": [
+        "itm_r1_switch_bs1",
+        "itm_dodge_1",
+        "itm_dodge_3",
+        "itm_2_dodge_2",
+        "itm_aggro_plus_2",
+        "itm_dodge_3b",
+        "itm_mov_1",
+        "itm_dodge_2",
+        "itm_2_kill_stop_1",
+        "itm_2_tal_bonus_wil_2",
+        "itm_3_r7_switch_bs3",
+        "itm_2_divert_1",
+        "itm_2_tal_bonus_exe_3",
+        "itm_2_arm_degen_1",
+        "itm_3_r12_necklace",
+        "itm_3_r13_vena",
+        "itm_3_r14_spiralring"
+      ]
+    },
+    {
+      "id": "heirloom",
+      "items": [
+        "itm_r1_switch_bs1",
+        "item_crit_1",
+        "itm_dodge_3",
+        "itm_wil_2",
+        "itm_2_r3_switch_bs2",
+        "itm_dodge_3b",
+        "itm_kill_stop",
+        "itm_regen_wil_1",
+        "itm_resist_str_1",
+        "itm_str_2",
+        "itm_wil_3",
+        "itm_regen_wil_2",
+        "itm_rest_wil_3",
+        "itm_regen_arm_2",
+        "itm_regen_wil_3",
+        "itm_regen_wil_3b",
+        "itm_resist_str_2",
+        "itm_resist_str_2b",
+        "itm_3_r7_switch_bs3",
+        "itm_3_r13_wasp",
+        "itm_3_r9_torch",
+        "itm_3_r10_505pub",
+        "itm_3_r10_papers",
+        "itm_3_r10_sculptorstools",
+        "itm_3_r10_swallows",
+        "itm_3_r14_beads",
+        "itm_3_r15_ring",
+        "itm_3_r11_bentsword",
+        "itm_3_r11_horn",
+        "itm_3_r11_knife",
+        "itm_3_r11_skull",
+        "itm_3_r12_doll",
+        "itm_3_r12_bell",
+        "itm_3_r12_bottle",
+        "itm_3_r12_flowerring",
+        "itm_3_r12_necklace",
+        "itm_3_r12_omega",
+        "itm_3_folka",
+        "itm_3_r13_vena",
+        "itm_3_r13_bracelet",
+        "itm_3_r14_greenberet",
+        "itm_3_r14_spiralring",
+        "itm_3_r15_ocarina",
+        "itm_3_hadrborg"
+      ]
+    },
+    {
+      "id": "knockback",
+      "items": [
+        "itm_knockback_1",
+        "itm_knockback_2",
+        "itm_knockback_3",
+        "itm_2_knockback_1",
+        "itm_2_tal_bonus_str_1",
+        "itm_2_range_bonus_2",
+        "itm_3_r11_horn",
+        "itm_3_r13_ringer"
+      ]
+    },
+    {
+      "id": "movement",
+      "items": [
+        "itm_mov_1",
+        "itm_2_mov_1",
+        "itm_2_str_2",
+        "itm_mov_2",
+        "itm_2_brk_1",
+        "itm_2_resist_str",
+        "itm_2_mov_2",
+        "itm_2_mov_3",
+        "itm_2_tal_bonus_exe_3",
+        "itm_2_regen_wil_1",
+        "itm_3_r13_wasp",
+        "itm_3_r9_amulet",
+        "itm_3_r9_torch",
+        "itm_2_morale_1",
+        "itm_3_r15_ring",
+        "itm_3_r11_skull",
+        "itm_3_singer",
+        "itm_3_r13_vena",
+        "itm_3_r13_bracelet",
+        "itm_3_whale",
+        "itm_3_r14_greenberet",
+        "itm_3_r14_spiralring",
+        "itm_3_r15_ocarina"
+      ]
+    },
+    {
+      "id": "passives",
+      "items": [
+        "itm_3_r13_wasp",
+        "itm_3_r9_torch",
+        "itm_3_r10_sculptorstools",
+        "itm_3_r10_swallows",
+        "itm_3_r15_ring",
+        "itm_3_r11_horn",
+        "itm_3_r11_knife",
+        "itm_3_r11_skull",
+        "itm_3_singer",
+        "itm_3_bolverk",
+        "itm_3_r12_bell",
+        "itm_3_r12_flowerring",
+        "itm_3_r12_omega",
+        "itm_3_folka",
+        "itm_3_r13_vena",
+        "itm_3_r13_bracelet",
+        "itm_3_r13_goldtusk",
+        "itm_3_r14_greenberet",
+        "itm_3_r15_ocarina",
+        "itm_3_hadrborg"
+      ]
+    },
+    {
+      "id": "pros_cons",
+      "items": [
+        "item_crit_1",
+        "itm_2_str_2",
+        "itm_mov_2",
+        "itm_2_resist_str",
+        "itm_aggro_plus_1",
+        "itm_2_kill_stop_1",
+        "itm_2_aggro_plus_1",
+        "itm_2_mov_3",
+        "itm_2_tal_bonus_str_3",
+        "itm_2_crit_1",
+        "itm_2_range_bonus_2",
+        "itm_2_regen_wil_1",
+        "itm_2_arm_degen_1",
+        "itm_2_str_degen_1",
+        "itm_3_r13_wasp",
+        "itm_3_r9_meinolf",
+        "itm_3_r15_ring",
+        "itm_3_r11_bentsword",
+        "itm_3_singer",
+        "itm_3_r12_bell",
+        "itm_3_r12_bottle",
+        "itm_3_folka",
+        "itm_3_r13_bracelet",
+        "itm_3_whale",
+        "itm_3_r14_greenberet",
+        "itm_3_r14_spiralring",
+        "itm_3_r13_ringer",
+        "itm_3_r15_ocarina"
+      ]
+    },
+    {
+      "id": "strength",
+      "items": [
+        "itm_str_1",
+        "itm_str_2",
+        "itm_2_str_2",
+        "itm_str_3",
+        "itm_2_tal_bonus_str_1",
+        "itm_2_tal_bonus_arm_3",
+        "itm_2_tal_bonus_str_2",
+        "itm_2_mov_3",
+        "itm_2_str_1",
+        "itm_2_tal_bonus_str_3",
+        "itm_3_r9_meinolf",
+        "itm_2_tal_bonus_all_5",
+        "itm_2_str_degen_1",
+        "itm_3_r10_505pub",
+        "itm_3_r15_ring",
+        "itm_3_r11_bentsword",
+        "itm_3_r11_knife",
+        "itm_3_range",
+        "itm_3_bolverk",
+        "itm_3_r12_doll",
+        "itm_3_r12_bottle",
+        "itm_3_r12_necklace",
+        "itm_3_r13_goldtusk",
+        "itm_3_whale",
+        "itm_3_r14_spiralring",
+        "itm_3_r13_ringer",
+        "itm_3_hadrborg"
+      ]
+    },
+    {
+      "id": "talent",
+      "items": [
+        "itm_2_tal_bonus_all_3",
+        "itm_2_tal_bonus_arm_1",
+        "itm_2_tal_bonus_brk_1",
+        "itm_2_tal_bonus_exe_1",
+        "itm_2_tal_bonus_str_1",
+        "itm_2_tal_bonus_wil_1",
+        "itm_2_range_bonus_1",
+        "itm_2_tal_bonus_all_4",
+        "itm_2_tal_bonus_arm_2",
+        "itm_2_tal_bonus_arm_3",
+        "itm_2_tal_bonus_brk_2",
+        "itm_2_tal_bonus_exe_2",
+        "itm_2_tal_bonus_str_2",
+        "itm_2_tal_bonus_wil_2",
+        "itm_2_tal_bonus_wil_3",
+        "itm_2_tal_bonus_all_2",
+        "itm_2_tal_bonus_brk_3",
+        "itm_2_tal_bonus_exe_3",
+        "itm_2_tal_bonus_str_3",
+        "itm_3_r10_tryggvi",
+        "itm_2_tal_bonus_all_1",
+        "itm_2_tal_bonus_brk_4",
+        "itm_3_r9_amulet",
+        "itm_3_r9_meinolf",
+        "itm_2_regen_arm_1",
+        "itm_2_str_attack_1",
+        "itm_2_tal_bonus_all_5",
+        "itm_2_arm_degen_1",
+        "itm_3_r10_papers",
+        "itm_3_r10_swallows",
+        "itm_3_r11_skull",
+        "itm_3_range",
+        "itm_3_r12_doll",
+        "itm_3_r12_flowerring",
+        "itm_3_r14_greenberet",
+        "itm_3_r14_spiralring",
+        "itm_3_r13_ringer"
+      ]
+    },
+    {
+      "id": "type_jewelry",
+      "items": [
+        "item_crit_3b",
+        "itm_arm_1b",
+        "itm_dodge_1",
+        "itm_r1_switch_bs1",
+        "itm_rest_wil_1",
+        "itm_dodge_3",
+        "itm_dodge_3b",
+        "itm_kill_stop",
+        "itm_rest_arm_2",
+        "itm_aggro_plus_1",
+        "itm_dodge_2",
+        "itm_regen_arm_2",
+        "itm_resist_str_2",
+        "itm_resist_str_2b",
+        "itm_2_mov_2",
+        "itm_2_tal_bonus_exe_1",
+        "itm_2_tal_bonus_wil_1",
+        "itm_2_tal_bonus_all_4",
+        "itm_2_tal_bonus_arm_2",
+        "itm_2_tal_bonus_wil_2",
+        "itm_2_divert_1",
+        "itm_3_r10_tryggvi",
+        "itm_2_regen_wil_1",
+        "itm_3_r13_wasp",
+        "itm_3_r9_amulet",
+        "itm_3_r9_meinolf",
+        "itm_2_regen_arm_1",
+        "itm_2_arm_degen_1",
+        "itm_3_hadrborg",
+        "itm_3_r14_beads",
+        "itm_3_r15_ring",
+        "itm_3_r11_skull",
+        "itm_3_r12_bell",
+        "itm_3_r12_flowerring",
+        "itm_3_r12_omega",
+        "itm_3_r13_bracelet",
+        "itm_3_r14_spiralring"
+      ]
+    },
+    {
+      "id": "type_weapon",
+      "items": [
+        "itm_aggro_minus_1",
+        "itm_knockback_1",
+        "itm_rest_wil_3",
+        "itm_2_brk_1",
+        "itm_2_tal_bonus_brk_4",
+        "itm_2_str_degen_1",
+        "itm_3_r11_bentsword",
+        "itm_3_r11_knife",
+        "itm_3_singer",
+        "itm_3_range",
+        "itm_3_bolverk",
+        "itm_3_folka"
+      ]
+    },
+    {
+      "id": "type_broken",
+      "items": [
+        "itm_aggro_minus_2",
+        "itm_2_tal_bonus_brk_2",
+        "itm_3_r10_505pub",
+        "itm_3_r11_bentsword",
+        "itm_3_singer",
+        "itm_3_folka",
+        "itm_3_r13_bracelet"
+      ]
+    },
+    {
+      "id": "type_instrument",
+      "items": [
+        "itm_aggro_plus_2",
+        "itm_3_r10_505pub",
+        "itm_3_r11_horn",
+        "itm_3_r12_bell",
+        "itm_3_r13_ringer",
+        "itm_3_r15_ocarina"
+      ]
+    },
+    {
+      "id": "type_clothing",
+      "items": [
+        "itm_arm_1",
+        "itm_mov_1",
+        "itm_2_mov_1",
+        "itm_never_miss",
+        "itm_arm_3",
+        "itm_str_3",
+        "itm_2_aggro_plus_1",
+        "itm_2_str_attack_1",
+        "itm_3_r14_greenberet"
+      ]
+    },
+    {
+      "id": "type_body_part",
+      "items": [
+        "itm_2_str_2",
+        "itm_mov_2",
+        "itm_2_tal_bonus_wil_1",
+        "itm_2_kill_stop_1",
+        "itm_2_tal_bonus_arm_3",
+        "itm_2_str_1",
+        "itm_2_tal_bonus_all_2",
+        "itm_2_tal_bonus_brk_3",
+        "itm_2_tal_bonus_exe_3",
+        "itm_3_bolverk",
+        "itm_3_whale"
+      ]
+    },
+    {
+      "id": "willpower",
+      "items": [
+        "itm_arm_1b",
+        "itm_kill_wil_1",
+        "itm_rest_wil_1",
+        "itm_wil_1",
+        "itm_kill_wil_2",
+        "itm_rest_wil_2",
+        "itm_wil_2",
+        "itm_regen_wil_1",
+        "itm_wil_3",
+        "itm_kill_wil_3",
+        "itm_regen_wil_2",
+        "itm_rest_wil_3",
+        "itm_2_wil_1",
+        "itm_aggro_plus_1",
+        "itm_regen_wil_3",
+        "itm_regen_wil_3b",
+        "itm_resist_str_2b",
+        "itm_2_knockback_1",
+        "itm_2_rest_wil_1",
+        "itm_2_tal_bonus_exe_1",
+        "itm_2_tal_bonus_wil_1",
+        "itm_2_tal_bonus_all_4",
+        "itm_2_tal_bonus_wil_2",
+        "itm_2_tal_bonus_wil_3",
+        "itm_2_tal_bonus_all_2",
+        "itm_2_tal_bonus_str_3",
+        "itm_2_regen_wil_1",
+        "itm_3_r13_wasp",
+        "itm_3_r9_torch",
+        "itm_2_regen_arm_1",
+        "itm_3_r10_papers",
+        "itm_3_r10_swallows",
+        "itm_2_arm_degen_1",
+        "itm_3_r11_horn",
+        "itm_3_r11_skull",
+        "itm_3_singer",
+        "itm_3_r12_doll",
+        "itm_3_r12_bottle",
+        "itm_3_r12_flowerring",
+        "itm_3_r15_ocarina"
+      ]
+    },
+    {
+      "id": "all",
+      "items": [
+        "item_crit_3b",
+        "itm_arm_1",
+        "itm_arm_1b",
+        "itm_brk_1",
+        "itm_dodge_1",
+        "itm_kill_wil_1",
+        "itm_r1_switch_bs1",
+        "itm_rest_arm_1",
+        "itm_rest_wil_1",
+        "itm_str_1",
+        "itm_wil_1",
+        "item_crit_1",
+        "itm_aggro_minus_1",
+        "itm_brk_2",
+        "itm_dodge_3",
+        "itm_kill_wil_2",
+        "itm_rest_wil_2",
+        "itm_wil_2",
+        "item_crit_3",
+        "itm_2_dodge_2",
+        "itm_2_r3_switch_bs2",
+        "itm_aggro_minus_2",
+        "itm_aggro_plus_2",
+        "itm_arm_2",
+        "itm_dodge_3b",
+        "itm_kill_stop",
+        "itm_knockback_1",
+        "itm_mov_1",
+        "itm_never_miss_2",
+        "itm_regen_wil_1",
+        "itm_resist_str_1",
+        "itm_rest_arm_2",
+        "itm_str_2",
+        "itm_wil_3",
+        "itm_2_mov_1",
+        "itm_2_str_2",
+        "itm_brk_3",
+        "itm_kill_wil_3",
+        "itm_knockback_2",
+        "itm_mov_2",
+        "itm_never_miss",
+        "itm_regen_arm_1",
+        "itm_regen_wil_2",
+        "itm_rest_wil_3",
+        "item_crit_2",
+        "itm_2_arm_1",
+        "itm_2_brk_1",
+        "itm_2_resist_str",
+        "itm_2_wil_1",
+        "itm_aggro_plus_1",
+        "itm_arm_3",
+        "itm_dodge_2",
+        "itm_knockback_3",
+        "itm_regen_arm_2",
+        "itm_regen_wil_3",
+        "itm_regen_wil_3b",
+        "itm_resist_str_2",
+        "itm_resist_str_2b",
+        "itm_rest_arm_3",
+        "itm_str_3",
+        "itm_2_knockback_1",
+        "itm_2_mov_2",
+        "itm_2_rest_wil_1",
+        "itm_2_tal_bonus_all_3",
+        "itm_2_tal_bonus_arm_1",
+        "itm_2_tal_bonus_brk_1",
+        "itm_2_tal_bonus_exe_1",
+        "itm_2_tal_bonus_str_1",
+        "itm_2_tal_bonus_wil_1",
+        "itm_2_kill_stop_1",
+        "itm_2_range_bonus_1",
+        "itm_2_tal_bonus_all_4",
+        "itm_2_tal_bonus_arm_2",
+        "itm_2_tal_bonus_arm_3",
+        "itm_2_tal_bonus_brk_2",
+        "itm_2_tal_bonus_exe_2",
+        "itm_2_tal_bonus_str_2",
+        "itm_2_tal_bonus_wil_2",
+        "itm_2_tal_bonus_wil_3",
+        "itm_3_r7_switch_bs3",
+        "itm_2_aggro_plus_1",
+        "itm_2_divert_1",
+        "itm_2_mov_3",
+        "itm_2_str_1",
+        "itm_2_tal_bonus_all_2",
+        "itm_2_tal_bonus_brk_3",
+        "itm_2_tal_bonus_exe_3",
+        "itm_2_tal_bonus_str_3",
+        "itm_3_r10_tryggvi",
+        "itm_2_crit_1",
+        "itm_2_range_bonus_2",
+        "itm_2_regen_wil_1",
+        "itm_2_tal_bonus_all_1",
+        "itm_2_tal_bonus_brk_4",
+        "itm_3_r13_wasp",
+        "itm_3_r9_amulet",
+        "itm_3_r9_meinolf",
+        "itm_3_r9_torch",
+        "itm_2_morale_1",
+        "itm_2_regen_arm_1",
+        "itm_2_str_attack_1",
+        "itm_2_tal_bonus_all_5",
+        "itm_3_r10_505pub",
+        "itm_3_r10_papers",
+        "itm_3_r10_sculptorstools",
+        "itm_3_r10_swallows",
+        "itm_2_arm_degen_1",
+        "itm_2_str_degen_1",
+        "itm_3_r14_beads",
+        "itm_3_r15_ring",
+        "itm_3_r11_bentsword",
+        "itm_3_r11_horn",
+        "itm_3_r11_knife",
+        "itm_3_r11_skull",
+        "itm_3_singer",
+        "itm_3_range",
+        "itm_3_bolverk",
+        "itm_3_r12_doll",
+        "itm_3_r12_bell",
+        "itm_3_r12_bottle",
+        "itm_3_r12_flowerring",
+        "itm_3_r12_necklace",
+        "itm_3_r12_omega",
+        "itm_3_folka",
+        "itm_3_r13_vena",
+        "itm_3_r13_bracelet",
+        "itm_3_r13_goldtusk",
+        "itm_3_whale",
+        "itm_3_r14_greenberet",
+        "itm_3_r14_spiralring",
+        "itm_3_r13_ringer",
+        "itm_3_r15_ocarina",
+        "itm_3_hadrborg"
+      ]
+    }
+  ],
+  "optionGroups": {
+    "groups": [
+      {
+        "id": "rules",
+        "options": [
+          {
+            "choices": [
+              "easy",
+              "medium",
+              "hard"
+            ],
+            "id": "difficulty"
+          },
+          {
+            "choices": [
+              "none",
+              "empty_satchel",
+              "the_forgotten",
+              "stay_in_the_fight",
+              "big_hits",
+              "battle_of_strength",
+              "battle_of_will",
+              "battle_of_motion"
+            ],
+            "id": "scoring"
+          },
+          {
+            "choices": [
+              "horn",
+              "spear"
+            ],
+            "id": "artifact"
+          },
+          {
+            "choices": [
+              "on",
+              "off"
+            ],
+            "id": "timer"
+          },
+          {
+            "choices": [
+              "pillage",
+              "alternating"
+            ],
+            "id": "initiative"
+          }
+        ]
+      },
+      {
+        "id": "combatants",
+        "options": [
+          {
+            "choices": [
+              "a",
+              "b",
+              "c",
+              "d",
+              "e",
+              "f",
+              "g",
+              "h",
+              "i",
+              "j",
+              "k",
+              "l",
+              "m",
+              "n",
+              "o"
+            ],
+            "id": "tier"
+          },
+          {
+            "choices": [
+              "all",
+              "arberrang_caravan",
+              "darkness_caravan",
+              "dredge",
+              "horseborn",
+              "humans",
+              "varl",
+              "ranged",
+              "melee",
+              "menders",
+              "ravens",
+              "skogr"
+            ],
+            "id": "roster"
+          },
+          {
+            "choices": [
+              "none",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(a)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(b)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "dodge",
+              "heirloom",
+              "type_jewelry",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(c)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "crit",
+              "dodge",
+              "heirloom",
+              "type_jewelry",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(d)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "crit",
+              "dodge",
+              "heirloom",
+              "type_jewelry",
+              "movement",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(e)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "break",
+              "crit",
+              "dodge",
+              "pros_cons",
+              "heirloom",
+              "type_jewelry",
+              "movement",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(f)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "break",
+              "crit",
+              "dodge",
+              "pros_cons",
+              "heirloom",
+              "type_jewelry",
+              "movement",
+              "strength",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(g)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "break",
+              "crit",
+              "dodge",
+              "pros_cons",
+              "heirloom",
+              "type_jewelry",
+              "movement",
+              "strength",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(h)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "break",
+              "crit",
+              "dodge",
+              "pros_cons",
+              "heirloom",
+              "knockback",
+              "type_jewelry",
+              "movement",
+              "strength",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(i)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "break",
+              "character",
+              "crit",
+              "dodge",
+              "pros_cons",
+              "heirloom",
+              "knockback",
+              "type_jewelry",
+              "movement",
+              "passives",
+              "strength",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(j)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "none",
+              "armor",
+              "break",
+              "type_broken",
+              "character",
+              "type_clothing",
+              "crit",
+              "dodge",
+              "pros_cons",
+              "heirloom",
+              "type_instrument",
+              "type_jewelry",
+              "knockback",
+              "type_body_part",
+              "movement",
+              "passives",
+              "strength",
+              "talent",
+              "type_weapon",
+              "willpower",
+              "all"
+            ],
+            "filter": {
+              "tier": "^(k|l|m|n|o)$"
+            },
+            "id": "items"
+          },
+          {
+            "choices": [
+              "dredge_easy",
+              "dredge_medium",
+              "dredge_hard",
+              "dredge_ultra",
+              "dredge_bellower",
+              "dredge_eyeless",
+              "dredge_ruin",
+              "dredge_sundr",
+              "dredge_all",
+              "horseborn_easy",
+              "horseborn_medium",
+              "horseborn_hard",
+              "thugs",
+              "fighters_easy",
+              "fighters_medium",
+              "fighters_hard",
+              "fighters_ultra",
+              "kragsmen_easy",
+              "kragsmen_hard",
+              "varl_easy",
+              "varl_hard",
+              "animals_and_creatures",
+              "warped_dredge_arberrang",
+              "warped_arberrang_allies",
+              "inner_earth_warped",
+              "bolverk_warped_army",
+              "bolverk_warped_elite",
+              "bolverk_final_battle"
+            ],
+            "id": "enemies"
+          }
+        ]
+      }
+    ]
+  },
+  "rosters": [
+    {
+      "id": "all",
+      "units": [
+        "rook",
+        "alette",
+        "nid",
+        "oddleif",
+        "yrsa",
+        "aleo",
+        "sparr",
+        "alfrun",
+        "dredge_stonesinger_ally_1",
+        "eyvind",
+        "juno",
+        "nikels",
+        "zefr",
+        "bak",
+        "ludin",
+        "tryggvi",
+        "folka",
+        "oli",
+        "dagr",
+        "egil",
+        "ekkill",
+        "gudmundr",
+        "hogun",
+        "mogun",
+        "valgard",
+        "petrus",
+        "dredge_hurler_ally_1",
+        "eirik",
+        "dytch",
+        "roech",
+        "scathach",
+        "canary",
+        "derdriu",
+        "bolverk",
+        "bersi",
+        "gunnulf",
+        "hakon",
+        "iver",
+        "krumr",
+        "sigbjorn",
+        "ubin",
+        "fasolt",
+        "griss",
+        "mogr",
+        "dredge_stoneguard_ally_preorder",
+        "dredge_stoneguard_ally_1"
+      ]
+    },
+    {
+      "id": "arberrang_caravan",
+      "units": [
+        "rook",
+        "alette",
+        "nid",
+        "oddleif",
+        "yrsa",
+        "aleo",
+        "zefr",
+        "ludin",
+        "tryggvi",
+        "egil",
+        "gudmundr",
+        "hakon",
+        "hogun",
+        "petrus",
+        "eirik",
+        "roech",
+        "scathach",
+        "canary",
+        "derdriu",
+        "gunnulf",
+        "ubin",
+        "fasolt",
+        "griss",
+        "mogr",
+        "dredge_stoneguard_ally_1"
+      ]
+    },
+    {
+      "id": "darkness_caravan",
+      "units": [
+        "sparr",
+        "alfrun",
+        "dredge_stonesinger_ally_1",
+        "eyvind",
+        "juno",
+        "bak",
+        "folka",
+        "oli",
+        "ekkill",
+        "mogun",
+        "valgard",
+        "dredge_hurler_ally_1",
+        "eirik",
+        "dytch",
+        "bersi",
+        "krumr",
+        "iver",
+        "sigbjorn",
+        "dredge_stoneguard_ally_preorder"
+      ]
+    },
+    {
+      "id": "varl",
+      "units": [
+        "bolverk",
+        "bersi",
+        "gunnulf",
+        "hakon",
+        "iver",
+        "krumr",
+        "sigbjorn",
+        "ubin",
+        "fasolt",
+        "griss",
+        "mogr"
+      ]
+    },
+    {
+      "id": "humans",
+      "units": [
+        "rook",
+        "alette",
+        "nid",
+        "oddleif",
+        "yrsa",
+        "aleo",
+        "sparr",
+        "alfrun",
+        "eyvind",
+        "juno",
+        "nikels",
+        "zefr",
+        "bak",
+        "ludin",
+        "tryggvi",
+        "folka",
+        "oli",
+        "dagr",
+        "egil",
+        "ekkill",
+        "gudmundr",
+        "hogun",
+        "mogun",
+        "valgard",
+        "petrus",
+        "eirik",
+        "dytch"
+      ]
+    },
+    {
+      "id": "dredge",
+      "units": [
+        "dredge_stonesinger_ally_1",
+        "dredge_hurler_ally_1",
+        "dredge_stoneguard_ally_preorder",
+        "dredge_stoneguard_ally_1"
+      ]
+    },
+    {
+      "id": "horseborn",
+      "units": [
+        "roech",
+        "scathach",
+        "canary",
+        "derdriu"
+      ]
+    },
+    {
+      "id": "ranged",
+      "units": [
+        "rook",
+        "alette",
+        "nid",
+        "oddleif",
+        "yrsa",
+        "oli",
+        "canary",
+        "derdriu",
+        "dredge_hurler_ally_1"
+      ]
+    },
+    {
+      "id": "melee",
+      "units": [
+        "rook",
+        "aleo",
+        "sparr",
+        "roech",
+        "scathach",
+        "bak",
+        "ludin",
+        "tryggvi",
+        "folka",
+        "dagr",
+        "egil",
+        "ekkill",
+        "gudmundr",
+        "hogun",
+        "mogun",
+        "valgard",
+        "petrus",
+        "dytch",
+        "eirik",
+        "bolverk",
+        "bersi",
+        "gunnulf",
+        "hakon",
+        "iver",
+        "krumr",
+        "sigbjorn",
+        "ubin",
+        "fasolt",
+        "griss",
+        "mogr",
+        "dredge_stoneguard_ally_1",
+        "dredge_stoneguard_ally_preorder"
+      ]
+    },
+    {
+      "id": "menders",
+      "units": [
+        "alette",
+        "alfrun",
+        "dredge_stonesinger_ally_1",
+        "eyvind",
+        "juno",
+        "nikels",
+        "zefr",
+        "oli"
+      ]
+    },
+    {
+      "id": "ravens",
+      "units": [
+        "sparr",
+        "nikels",
+        "zefr",
+        "bak",
+        "folka",
+        "oli",
+        "ekkill",
+        "gudmundr",
+        "mogun",
+        "dytch",
+        "bolverk",
+        "bersi",
+        "krumr",
+        "sigbjorn"
+      ]
+    },
+    {
+      "id": "skogr",
+      "units": [
+        "rook",
+        "alette",
+        "nid",
+        "oddleif",
+        "yrsa",
+        "aleo",
+        "ludin",
+        "tryggvi",
+        "dagr",
+        "egil",
+        "hogun",
+        "mogun",
+        "eirik",
+        "bersi",
+        "hakon",
+        "iver",
+        "griss"
+      ]
+    }
+  ],
+  "scorings": {
+    "entries": [
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "none"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "char_without_item=party_count-party_items",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "bonus_score=(char_without_item*(char_without_item+1)/2)*150",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "empty_satchel"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "char_without_title=party_count-party_titles",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "bonus_score=(char_without_title*(char_without_title+1)/2)*150",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "the_forgotten"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "total_seconds=turns_player*30",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "bonus_score=(total_seconds-seconds)*10",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "speed_run"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "bonus_score=danger*(multi_wave_hero_sum*(multi_wave_hero_sum+1)/2)*10",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "stay_in_the_fight"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "bonus_score=(big_hits*(big_hits+1)/2)*15",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "big_hits"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "bonus_score=kills_str*500",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "battle_of_strength"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "bonus_score=kills_ability*500",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "battle_of_will"
+      },
+      {
+        "functions": [
+          {
+            "functionStr": "victory_score=g_victory_score",
+            "stringKey": "ea_score_victory"
+          },
+          {
+            "functionStr": "turns_penalty=g_turns_penalty",
+            "stringKey": "ea_score_turns"
+          },
+          {
+            "functionStr": "kills_score=g_kills_score",
+            "stringKey": "ea_score_kills"
+          },
+          {
+            "functionStr": "deaths_score=g_deaths_score",
+            "stringKey": "ea_score_deaths"
+          },
+          {
+            "functionStr": "total_steps=tiles_moved_player+tiles_moved_enemy",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "bonus_score=total_steps*100",
+            "stringKey": "ea_score_bonus_rule"
+          },
+          {
+            "functionStr": "sub_total=victory_score+turns_penalty+kills_score+deaths_score+bonus_score",
+            "stringKey": ""
+          },
+          {
+            "functionStr": "dif_bonus=sub_total*difficulty_mult",
+            "stringKey": "ea_score_difficulty"
+          },
+          {
+            "functionStr": "score=sub_total+dif_bonus",
+            "stringKey": ""
+          }
+        ],
+        "id": "battle_of_motion"
+      }
+    ],
+    "globals": [
+      {
+        "functionStr": "g_victory_score=danger*500*victory"
+      },
+      {
+        "functionStr": "g_turns_penalty=turns*-50"
+      },
+      {
+        "functionStr": "g_kills_score=kills*50"
+      },
+      {
+        "functionStr": "g_deaths_score=injuries*-15"
+      }
+    ]
+  },
+  "thumbnailsUrl": "saga3e/ea/thumb",
+  "tiers": [
+    {
+      "danger": 7,
+      "id": "a",
+      "player_maxrank": 2,
+      "player_minrank": 2
+    },
+    {
+      "danger": 8,
+      "id": "b",
+      "player_maxrank": 3,
+      "player_minrank": 3
+    },
+    {
+      "danger": 9,
+      "id": "c",
+      "player_maxrank": 4,
+      "player_minrank": 4
+    },
+    {
+      "danger": 10,
+      "id": "d",
+      "player_maxrank": 5,
+      "player_minrank": 5
+    },
+    {
+      "danger": 11,
+      "id": "e",
+      "player_maxrank": 6,
+      "player_minrank": 6
+    },
+    {
+      "danger": 12,
+      "id": "f",
+      "player_maxrank": 7,
+      "player_minrank": 7
+    },
+    {
+      "danger": 13,
+      "id": "g",
+      "player_maxrank": 8,
+      "player_minrank": 8
+    },
+    {
+      "danger": 14,
+      "id": "h",
+      "player_maxrank": 9,
+      "player_minrank": 9
+    },
+    {
+      "danger": 15,
+      "id": "i",
+      "player_maxrank": 10,
+      "player_minrank": 10
+    },
+    {
+      "danger": 16,
+      "id": "j",
+      "player_maxrank": 11,
+      "player_minrank": 11
+    },
+    {
+      "danger": 17,
+      "id": "k",
+      "player_maxrank": 12,
+      "player_minrank": 12
+    },
+    {
+      "danger": 18,
+      "id": "l",
+      "player_maxrank": 13,
+      "player_minrank": 13
+    },
+    {
+      "danger": 19,
+      "id": "m",
+      "player_maxrank": 14,
+      "player_minrank": 14
+    },
+    {
+      "danger": 20,
+      "id": "n",
+      "player_maxrank": 15,
+      "player_minrank": 15
+    },
+    {
+      "danger": 20,
+      "id": "o",
+      "player_maxrank": 16,
+      "player_minrank": 16
+    }
+  ],
+  "version": "2"
+}

@@ -2187,10 +2187,6 @@
           "stat": "DODGE_BONUS"
         },
         {
-          "amount": -1,
-          "stat": "MOVEMENT"
-        },
-        {
           "amount": 2,
           "stat": "RESIST_STRENGTH"
         },
@@ -2199,6 +2195,134 @@
           "stat": "ARMOR_BREAK"
         }
       ]
+    },
+    {
+      "icon": "common/item/icon/itm_2_str_degen_1.png",
+      "id": "itm_2_str_degen_1",
+      "rank": 10,
+      "statmods": [
+        {
+          "amount": -1,
+          "stat": "REGEN_STR"
+        },
+        {
+          "amount": 3,
+          "stat": "KILL_STR"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_3_singer.png",
+      "id": "itm_3_singer",
+      "passive": "pas_dredge_disease_strike_player/1",
+      "rank": 11,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "RANGEMOD_MELEE"
+        },
+        {
+          "amount": 3,
+          "stat": "WILLPOWER"
+        },
+        {
+          "amount": -1,
+          "stat": "MOVEMENT"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_3_folka.png",
+      "id": "itm_3_folka",
+      "passive": "pas_shield_mastery_item/1",
+      "rank": 12,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RESIST_ARMOR"
+        },
+        {
+          "amount": 2,
+          "stat": "RESIST_STRENGTH"
+        },
+        {
+          "amount": 1,
+          "stat": "REGEN_ARMOR"
+        },
+        {
+          "amount": 3,
+          "stat": "AI_AGGRO_MOD"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_3_range.png",
+      "id": "itm_3_range",
+      "rank": 11,
+      "statmods": [
+        {
+          "amount": 2,
+          "stat": "RANGEMOD_RANGED"
+        },
+        {
+          "amount": 1,
+          "stat": "NEVER_MISS"
+        },
+        {
+          "amount": 1,
+          "stat": "STRENGTH_ATTACK"
+        },
+        {
+          "amount": 3,
+          "stat": "TAL_BONUS_WIL"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_3_whale.png",
+      "id": "itm_3_whale",
+      "rank": 13,
+      "statmods": [
+        {
+          "amount": -5,
+          "stat": "STRENGTH"
+        },
+        {
+          "amount": 60,
+          "stat": "MISS_CHANCE_MINIMUM"
+        },
+        {
+          "amount": 7,
+          "stat": "MOVEMENT"
+        },
+        {
+          "amount": 8,
+          "stat": "ARMOR_BREAK"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_3_hadrborg.png",
+      "id": "itm_3_hadrborg",
+      "passive": "pas_ht_twiceborn/5",
+      "rank": 15,
+      "statmods": [
+        {
+          "amount": 1,
+          "stat": "REGEN_STR"
+        },
+        {
+          "amount": 1,
+          "stat": "KILL_STOP"
+        }
+      ]
+    },
+    {
+      "icon": "common/item/icon/itm_3_bolverk.png",
+      "id": "itm_3_bolverk",
+      "passive": "pas_frenzy/1",
+      "omitFromMarketplace": true,
+      "rank": 11
     }
   ]
 }

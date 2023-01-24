@@ -320,17 +320,6 @@
 					}
 				]
 			},
-			"_Youdontpully": {
-				"content": [
-					"[$hero] /=You don't pull your punch, Rugga's head swings back as if on a hinge. He is no longer smiling.=/",
-					{
-						"divert": "ruggabeating"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
 			"_Idratherkill": {
 				"content": [
 					"[$hero] I'd rather kill every motherless wretch you throw at me than spend another minute dancing to your tune, Rugga.",
@@ -446,7 +435,7 @@
 						"option": "I'll do it if your men join the fight, instead of giving us trouble."
 					},
 					{
-						"linkPath": "_Youdontpully0",
+						"linkPath": "_Youdontpully",
 						"option": "I've heard as much as I can stand. (pummel Rugga)"
 					},
 					{
@@ -520,28 +509,6 @@
 					},
 					{
 						"flagName": "18_rugga_prison_chat=2"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"_Youdontpully0": {
-				"content": [
-					"[$hero] /=You don't pull your punch, Rugga's head whips back as if on a hinge. He is no longer smiling.",
-					{
-						"divert": "_MythanksThes"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"_MythanksThes": {
-				"content": [
-					"[rugga] My thanks. These bruises are the clearest evidence, that you are who I say you are.",
-					{
-						"divert": "ruggabeating"
 					},
 					{
 						"pageNum": 0
@@ -693,15 +660,12 @@
 			},
 			"_YoubludgeonR": {
 				"content": [
-					"[$hero] /=You bludgeon Rugga mercilessly, laying into him again and again with your fists. He chokes on blood as you continue.=/",
+					"[$hero] /=You bludgeon Rugga mercilessly, laying into him again and again with your fists. He keels over and chokes on blood as you continue.=/",
 					{
 						"divert": "ruggadies"
 					},
 					{
 						"flagName": "@hide=rugga"
-					},
-					{
-						"flagName": "@show=new_rugga"
 					},
 					{
 						"pageNum": 0
@@ -804,9 +768,6 @@
 						"divert": "_Asyoudeparta1"
 					},
 					{
-						"flagName": "@hide=new_rugga"
-					},
-					{
 						"pageNum": 0
 					}
 				]
@@ -853,9 +814,6 @@
 						"divert": "_Leavingthebo"
 					},
 					{
-						"flagName": "@hide=new_rugga"
-					},
-					{
 						"pageNum": 0
 					}
 				]
@@ -878,6 +836,197 @@
 					},
 					{
 						"flagName": "18_rugga_prison_chat=5"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Youdontpully": {
+				"content": [
+					"[$hero] /=You don't pull your punches and Rugga's head whips back as if on a hinge. He is no longer smiling.",
+					{
+						"divert": "_MythanksThes"
+					},
+          {
+						"flagName": "@hide=rugga"
+					},
+					{
+						"flagName": "@show=new_rugga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_MythanksThes": {
+				"content": [
+					"[new_rugga] My thanks. These bruises are the clearest evidence, that you are who I say you are.",
+					{
+						"divert": "ruggabeatingb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"ruggabeatingb": {
+				"content": [
+					"[new_rugga $hero] Do you know why I do this?",
+					{
+						"divert": "_Dowhatyoupieb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Dowhatyoupieb": {
+				"content": [
+					"[oddleif] Do what, you piece of trash? Deceive? Leech on mankind?",
+					{
+						"divert": "_WhyIspeakonbb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_WhyIspeakonbb": {
+				"content": [
+					"[new_rugga] Why I speak on behalf of the people you despise so much? Why I have always done so?",
+					{
+						"divert": "_Becausetheywb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Becausetheywb": {
+				"content": [
+					"[new_rugga] Because they will always be here, no matter how hard you pretend they don't exist.",
+					{
+						"divert": "_Thereisnothib"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Thereisnothib": {
+				"content": [
+					"[new_rugga] There is nothing more infuriating, or terrifying, than not being heard!",
+					{
+						"divert": "_Sotheygivemeb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Sotheygivemeb": {
+				"content": [
+					"[new_rugga] So they give me their power. I am the will of the people.",
+					{
+						"divert": "_Aslongasthatb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Aslongasthatb": {
+				"content": [
+					"[new_rugga] As long as that's true, you can't brush me aside. I will always be here!",
+					{
+						"divert": "_Aslongasthat0b"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Aslongasthat0b": {
+				"content": [
+					"[new_rugga $hero] As long as that's true, you can't brush me aside. I will always be here!",
+					{
+						"linkPath": "_Wellseewhichb",
+						"option": "You've poisoned enough minds for one lifetime. Stay here and rot."
+					},
+					{
+						"linkPath": "_YoubludgeonRb",
+						"option": "You won't come back from this. (kill Rugga)"
+					},
+					{
+						"linkPath": "_Hestammerssub",
+						"option": "/=Leave without a response.=/"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Wellseewhichb": {
+				"content": [
+					"[new_rugga] We'll see which of us ends up rotting first.",
+					{
+						"divert": "_Youdontliketb"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Youdontliketb": {
+				"content": [
+					"[$hero] /=You don't like the implication. As you call for extra guards on the cell, an excited man runs to meet you. \"They're ready with the barrels!\" he shouts.=/",
+					{
+						"divert": "__18_rugga_pr0"
+					},
+          {
+						"flagName": "@hide=new_rugga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_YoubludgeonRb": {
+				"content": [
+					"[$hero] /=You bludgeon Rugga mercilessly, laying into him again and again with your fists. He keels over and chokes on blood as you continue.=/",
+					{
+						"divert": "ruggadies"
+					},
+					{
+						"flagName": "@hide=new_rugga"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Hestammerssub": {
+				"content": [
+					"[$hero] /=He stammers, surprised, as the cell door slams behind you.=/",
+					{
+						"divert": "__hideruggab"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"__hideruggab": {
+				"content": [
+					{
+						"divert": "_Asyoudeparta0"
+					},
+					{
+						"runOn": "true"
+					},
+					{
+						"flagName": "@hide=new_rugga"
 					},
 					{
 						"pageNum": 0

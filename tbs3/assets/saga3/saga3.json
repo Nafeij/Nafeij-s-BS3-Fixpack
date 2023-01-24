@@ -6164,6 +6164,24 @@
     {
       "actions": [
         {
+          "id": "itm_3_bolverk",
+          "type": "ITEM_ADD"
+        }
+      ],
+      "id": "19_bolverk_giveitem"
+    },
+    {
+      "actions": [
+        {
+          "param": "itm_3_bolverk",
+          "type": "ITEM_REMOVE"
+        }
+      ],
+      "id": "19_bolverk_removeitem"
+    },
+    {
+      "actions": [
+        {
           "msg": "$saga3_ch20",
           "time": 3,
           "type": "FLASH_PAGE",
