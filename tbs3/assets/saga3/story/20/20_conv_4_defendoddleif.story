@@ -26,7 +26,7 @@
 			},
 			"_Myfriendishu": {
 				"content": [
-					"[$hero] My friend is hurt badly. You have to help, do something, please!",
+					"[$hero] My friend is hurt badly. You have to help... do something, please!",
 					{
 						"divert": "_Thestoneguar"
 					},
@@ -145,7 +145,7 @@
 			},
 			"defendhero1": {
 				"content": [
-					"[zefr] Listen carefully. I devised a shield of light that holds back the darkness, but its reach is limited.",
+					"[zefr] Listen carefully. I have devised a shield of light that holds back the darkness, but its reach is limited.",
 					{
 						"divert": "_Withthemende"
 					},

@@ -341,7 +341,7 @@
 			},
 			"_Ivegottolive": {
 				"content": [
-					"[alfrun] I've got to live here, too, you know.",
+					"[alfrun] I've got to live here too, you know.",
 					{
 						"pageNum": 0
 					}

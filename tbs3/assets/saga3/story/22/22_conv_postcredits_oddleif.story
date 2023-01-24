@@ -37,7 +37,7 @@
 			},
 			"_Thegodsarede": {
 				"content": [
-					"[zefr] The gods are dead, the world turned to dust, and still we survive.",
+					"[zefr] The gods are dead, the world turned to dust, and on we go.",
 					{
 						"divert": "_Thegodsarede0"
 					},
@@ -48,7 +48,7 @@
 			},
 			"_Thegodsarede0": {
 				"content": [
-					"[zefr $hero] The gods are dead, the world turned to dust, and still we survive.",
+					"[zefr $hero] The gods are dead, the world turned to dust, and on we go.",
 					{
 						"linkPath": "_Timepasses",
 						"option": "What now?"
@@ -363,7 +363,7 @@
 			},
 			"_Weliveaswewi": {
 				"content": [
-					"[aleo] \"We live as we will live, with the mighty grief that was ours and theirs.\"",
+					"[aleo] \"We live as we will live, with a mighty grief that was ours and theirs.\"",
 					{
 						"divert": "_Onlywefewrem"
 					},
@@ -526,7 +526,7 @@
 			},
 			"_IsthatIver": {
 				"content": [
-					"[$hero] Is that Iver?",
+					"[$hero] Iver?",
 					{
 						"pageNum": 0
 					}

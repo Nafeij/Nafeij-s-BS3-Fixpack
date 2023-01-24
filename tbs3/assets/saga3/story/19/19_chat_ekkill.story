@@ -190,7 +190,7 @@
 			},
 			"_Itstrikesyou": {
 				"content": [
-					"[iver] /=It strikes you odd that Ekkill seems to care so much about Rook's opinion of him.=/",
+					"[iver] /=It strikes you as odd that Ekkill seems to care so much about Rook's opinion of him.=/",
 					{
 						"divert": "_Justbeenthin"
 					},
@@ -355,7 +355,7 @@
 			},
 			"_Wellthebigna": {
 				"content": [
-					"[ekkill] Well, the big names in Frostvellr, when the dredge start showing up they go for each others throats. They were all trying to come out on top.",
+					"[ekkill] Well, the big names in Frostvellr, when the dredge started showing up they went for each others throats. They were all trying to come out on top.",
 					{
 						"divert": "_Nothingsurpr"
 					},

@@ -227,7 +227,7 @@
 			},
 			"_TheValkawere": {
 				"content": [
-					"[juno] The Valka were the Loom-mothers favored few. She taught them weaving. Eyvind and I are descendants of those first people.",
+					"[juno] The Valka were the Loom-mother's favored few. She taught them weaving. Eyvind and I are descendants of those first people.",
 					{
 						"divert": "junoquestions"
 					},
@@ -282,7 +282,7 @@
 			},
 			"_Itwasputhere": {
 				"content": [
-					"[juno] It was put here to eventually swallow the Loom-mothers creations. A cruel trick to destroy them in secret.",
+					"[juno] It was put here to eventually swallow the Loom-mother's creations. A cruel trick to destroy them in secret.",
 					{
 						"divert": "_Whentheblack"
 					},

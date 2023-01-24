@@ -145,7 +145,7 @@
 			},
 			"defendhero1": {
 				"content": [
-					"[zefr] Listen carefully. I devised a shield of light that holds back the darkness, but its reach is limited.",
+					"[zefr] Listen carefully. I have devised a shield of light that holds back the darkness, but its reach is limited.",
 					{
 						"divert": "_Withthemende"
 					},

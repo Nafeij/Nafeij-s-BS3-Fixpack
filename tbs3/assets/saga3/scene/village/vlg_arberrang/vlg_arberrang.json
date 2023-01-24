@@ -1210,6 +1210,12 @@
           "varvalue": 1
         },
         {
+          "prereq": "eirik_state>0 && !talked_to_eirik",
+          "type": "VARIABLE_SET",
+          "varname": "eirik.talk",
+          "varvalue": 1
+        },
+        {
           "id": "click_fighting",
           "prereq": "!21_event1_click1",
           "type": "ENABLE_CLICKABLE",
@@ -1269,6 +1275,10 @@
         {
           "type": "VARIABLE_SET",
           "varname": "hogun.talk"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "eirik.talk"
         },
         {
           "param": " ;tally_add_fire, doomsday_fire, doomsday_default_mult;tally_add_horseborn, doomsday_horseborn, doomsday_default_mult;tally_add_warpedallies, doomsday_warpedallies, doomsday_default_mult;",
@@ -12571,6 +12581,15 @@
             "offset": {
               "x": -802.15,
               "y": 231.9
+            },
+            "smoothing": true
+          },
+          {
+            "anchor": true,
+            "nameId": "talk_eirik_left",
+            "offset": {
+              "x": -1724.05,
+              "y": 527.4
             },
             "smoothing": true
           }

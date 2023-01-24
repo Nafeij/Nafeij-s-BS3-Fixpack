@@ -277,7 +277,7 @@
 			},
 			"_Themenderswr": {
 				"content": [
-					"[ubin] The menders write about what's in the past, and the scalds stretch fantasies about what happened.",
+					"[ubin] The menders write about what's in the past, and the skalds stretch fantasies about what happened.",
 					{
 						"divert": "_Thehistorica"
 					},
@@ -354,7 +354,7 @@
 			},
 			"_Oneofthereas": {
 				"content": [
-					"[ubin] One of the reason I learn to talk to people, like the horseborn.",
+					"[ubin] One of the reasons I learned to talk to people, like the horseborn.",
 					{
 						"divert": "_Idliketospea"
 					},

@@ -83,7 +83,7 @@
 			},
 			"_Itlookslikea": {
 				"content": [
-					"[sparr] It looks like a mushroom. It doesn't smell strange or display the same warped weirdness that everything else does. There seem to be quite a few more still clinging on to the cliff side. \"So, whose gonna try it first?\" Sparr wonders aloud.",
+					"[sparr] It looks like a mushroom. It doesn't smell strange or display the same warped weirdness that everything else does. There seem to be quite a few more still clinging on to the cliff side. \"So, who's gonna try it first?\" Sparr wonders aloud.",
 					{
 						"linkPath": "_Mushroomsare",
 						"option": "Don't risk eating the plant."

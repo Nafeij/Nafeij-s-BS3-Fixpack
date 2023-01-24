@@ -118,7 +118,7 @@
 			},
 			"folka": {
 				"content": [
-					"[folka] \"What about you, Folka?\", Dytch asks. \"Me?\" she thinks for a moment. \"I want to go to that place Oli was talking about.\" More laughter.",
+					"[folka] \"What about you, Folka?\" Dytch asks. \"Me?\" she thinks for a moment. \"I want to go to that place Oli was talking about.\" More laughter.",
 					{
 						"divert": "valgard"
 					},
@@ -294,7 +294,7 @@
 			},
 			"krumr": {
 				"content": [
-					"[krumr] Noticing his stoic silence, Sparr points at Krumr and starts shouting random guesses. \"I know what mighty Krumr needs. A feast! A longship! A throne made of fallen foes!\". Krumr snorts at this last one. \"No, but if you wrote a song about that, I wouldn't correct you!\"",
+					"[krumr] Noticing his stoic silence, Sparr points at Krumr and starts shouting random guesses. \"I know what mighty Krumr needs. A feast! A longship! A throne made of fallen foes!\" Krumr snorts at this last one. \"No, but if you wrote a song about that, I wouldn't correct you!\"",
 					{
 						"linkPath": "dredge",
 						"ifConditions": [

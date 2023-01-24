@@ -63,7 +63,7 @@
 			},
 			"_Astormfunnel": {
 				"content": [
-					"[zefr] A storm funnel approaches, crawling above the gates. Riding it is Zefr, her platinum hair curiously untouched by the maelstrom. She lands amidst the fighters like a leaf delicately falling from a tree, somehow terrifying in its grace. \"Stop this lunacy!\" she howls.",
+					"[zefr] A storm funnel approaches, crawling above the gates. Riding it is a Valka, her platinum hair curiously untouched by the maelstrom. She lands amidst the fighters like a leaf delicately falling from a tree, somehow terrifying in its grace. \"Stop this lunacy!\" she howls.",
 					{
 						"pageNum": 0
 					}

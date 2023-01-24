@@ -11612,6 +11612,18 @@
     {
       "actions": [
         {
+          "prereq": "eirik_in_strand",
+          "scene": "saga3/scene/stage/stg_ridgehorn_road/stg_ridgehorn_road.json.z",
+          "type": "CONVO",
+          "url": "saga3/story/19/19_chat_eirik.story.z"
+        },
+        {
+          "prereq": "!eirik_in_strand",
+          "scene": "saga3/scene/stage/stg_arberrang_city/stg_arberrang_city.json.z",
+          "type": "CONVO",
+          "url": "saga3/story/21b_arberrang/21b_chat_eirik.story.z"
+        },
+        {
           "type": "VARIABLE_SET",
           "varname": "eirik.talk"
         },
@@ -11619,12 +11631,6 @@
           "type": "VARIABLE_SET",
           "varname": "talked_to_eirik",
           "varvalue": 1
-        },
-        {
-          "prereq": "eirik_in_strand",
-          "scene": "saga3/scene/stage/stg_ridgehorn_road/stg_ridgehorn_road.json.z",
-          "type": "CONVO",
-          "url": "saga3/story/19/19_chat_eirik.story.z"
         },
         {
           "type": "VARIABLE_MODIFY",

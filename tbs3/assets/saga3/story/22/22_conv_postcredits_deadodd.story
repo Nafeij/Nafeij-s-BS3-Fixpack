@@ -134,7 +134,7 @@
 			},
 			"_EventhoughAr": {
 				"content": [
-					"[zefr] Even though Arberrang is gone, I believe there are other survivors. Varl in the north, perhaps huddled around godstones.",
+					"[zefr] I believe there are other survivors. Varl in the north, perhaps huddled around godstones.",
 					{
 						"divert": "_Southoftheda"
 					},
@@ -295,7 +295,7 @@
 			},
 			"_Aleosmilesan": {
 				"content": [
-					"[aleo] /=Aleo smiles, and draws his lute from around his back. He sings with a brightness in a his voice.=/",
+					"[aleo] /=Aleo smiles, and draws his lute from around his back. He sings with a brightness in his voice.=/",
 					{
 						"divert": "_Onlythesunha"
 					},
@@ -306,7 +306,7 @@
 			},
 			"_Onlythesunha": {
 				"content": [
-					"[aleo] Only the sun has stopped, cut with keen-edged Sword.",
+					"[aleo] \"Only the sun has stopped, cut with keen-edged Sword.\"",
 					{
 						"divert": "_Littledidthe"
 					},
@@ -317,7 +317,7 @@
 			},
 			"_Littledidthe": {
 				"content": [
-					"[aleo] Little did they sleep, lest they not come home.",
+					"[aleo] \"Little did they sleep, lest they not come home.\"",
 					{
 						"divert": "_Wearytheweig"
 					},
@@ -328,7 +328,7 @@
 			},
 			"_Wearytheweig": {
 				"content": [
-					"[aleo] Weary, the weight of the Sun! Of our bones, the hills...",
+					"[aleo] \"Weary, the weight of the Sun! Of our bones, the hills...\"",
 					{
 						"divert": "_TheSlayerand"
 					},
@@ -339,7 +339,7 @@
 			},
 			"_TheSlayerand": {
 				"content": [
-					"[aleo] The Slayer, and the Slain.",
+					"[aleo] \"The Slayer, and the Slain.\"",
 					{
 						"divert": "_Fromtheirhom"
 					},
@@ -350,7 +350,7 @@
 			},
 			"_Fromtheirhom": {
 				"content": [
-					"[aleo] From their homes must all flee, and cast their Hone into the air!",
+					"[aleo] \"From their homes must all flee, and cast their Hone into the air!\"",
 					{
 						"divert": "_Tospeakinall"
 					},
@@ -361,7 +361,7 @@
 			},
 			"_Tospeakinall": {
 				"content": [
-					"[aleo] To speak in all tongues where a foe may lurk, the destined day shall come:",
+					"[aleo] \"To speak in all tongues where a foe may lurk, the destined day shall come:\"",
 					{
 						"divert": "_TheFetterswi"
 					},
@@ -372,7 +372,7 @@
 			},
 			"_TheFetterswi": {
 				"content": [
-					"[aleo] The Fetters will burst, brothers fight, and kinship stain...",
+					"[aleo] \"The Fetters will burst, brothers fight, and kinship stain...\"",
 					{
 						"divert": "_AndinFearqua"
 					},
@@ -383,7 +383,7 @@
 			},
 			"_AndinFearqua": {
 				"content": [
-					"[aleo] And in Fear quake all.",
+					"[aleo] \"And in Fear quake all.\"",
 					{
 						"divert": "_ThetrueHeroc"
 					},
@@ -394,7 +394,7 @@
 			},
 			"_ThetrueHeroc": {
 				"content": [
-					"[aleo] The true Hero comes reluctantly, raising high their Shining light...",
+					"[aleo] \"The true Hero comes reluctantly, raising high their Shining light...\"",
 					{
 						"divert": "_Alastheseais"
 					},
@@ -405,7 +405,7 @@
 			},
 			"_Alastheseais": {
 				"content": [
-					"[aleo] Alas, the sea is still dead and wide, the hounds are a-hungered.",
+					"[aleo] \"Alas, the sea is still dead and wide, the hounds are a-hungered.\"",
 					{
 						"divert": "_Weliveaswewi"
 					},
@@ -416,7 +416,7 @@
 			},
 			"_Weliveaswewi": {
 				"content": [
-					"[aleo] We live as we will live, with the mighty grief that was ours and theirs.",
+					"[aleo] \"We live as we will live, with a mighty grief that was ours and theirs.\"",
 					{
 						"divert": "_Onlywefewrem"
 					},
@@ -427,7 +427,7 @@
 			},
 			"_Onlywefewrem": {
 				"content": [
-					"[aleo] Only we few remember it now.",
+					"[aleo] \"Only we few remember it now.\"",
 					{
 						"divert": "_Aleorestshis"
 					},
@@ -438,7 +438,7 @@
 			},
 			"_Aleorestshis": {
 				"content": [
-					"[aleo] /=Aleo rests his throat, and then gives a little cough to indicate he's done.=/",
+					"[aleo] /=Aleo gives a little cough to indicate he's done.=/",
 					{
 						"divert": "_Itsnotbadasf"
 					},
@@ -579,7 +579,7 @@
 			},
 			"_Isthat": {
 				"content": [
-					"[$hero] Is that Iver?",
+					"[$hero] Iver?",
 					{
 						"pageNum": 0
 					}
