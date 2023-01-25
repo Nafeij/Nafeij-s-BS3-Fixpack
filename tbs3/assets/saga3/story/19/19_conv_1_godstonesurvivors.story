@@ -1,7 +1,19 @@
 {
 	"data": {
-		"initial": "__hidedredge_",
+		"initial": "skipMark",
 		"stitches": {
+			"skipMark": {
+				"content": [
+					"{skip} mark1=peasant_female1 mark2=iver mark3=dredge_hurler_ally_1 mark4=alfrun",
+					{
+						"linkPath": "__hidedredge_",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
 			"__hidedredge_": {
 				"content": [
 					{

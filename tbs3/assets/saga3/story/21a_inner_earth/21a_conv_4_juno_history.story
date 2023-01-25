@@ -89,8 +89,7 @@
 								"ifCondition": "ONCE"
 							}
 						],
-						"option": "This goes back all the way to the time of the gods?",
-						"flagName": "cnv.juno_count += 1"
+						"option": "This goes back all the way to the time of the gods?"
 					},
 					{
 						"linkPath": "_Illadmiteven",
@@ -99,8 +98,7 @@
 								"ifCondition": "ONCE"
 							}
 						],
-						"option": "What does the serpent have to do with any of this?",
-						"flagName": "cnv.juno_count += 1"
+						"option": "What does the serpent have to do with any of this?"
 					},
 					{
 						"linkPath": "_Thestonesing",
@@ -109,8 +107,7 @@
 								"ifCondition": "ONCE"
 							}
 						],
-						"option": "If the dredge were taught by the Valka, why are they attacking us?",
-						"flagName": "cnv.juno_count += 1"
+						"option": "If the dredge were taught by the Valka, why are they attacking us?"
 					},
 					{
 						"linkPath": "_Nowwereturnt",
@@ -120,6 +117,9 @@
 							}
 						],
 						"option": "I've heard enough. What now?"
+					},
+					{
+						"flagName": "cnv.juno_count+=1"
 					},
 					{
 						"pageNum": 0

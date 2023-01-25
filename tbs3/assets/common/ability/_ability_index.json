@@ -21672,7 +21672,7 @@
                 "ownerMustBeAlive": false,
                 "responseCaster": "CASTER",
                 "responseCountLimit": 0,
-                "responsePhase": "POST_CHILDREN_COMPLETE",
+                "responsePhase": "POST_COMPLETE",
                 "responseTarget": "SELF",
                 "tagReqs": {
                   "all": [],

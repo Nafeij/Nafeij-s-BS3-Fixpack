@@ -1,7 +1,19 @@
 {
 	"data": {
-		"initial": "__hideserpent",
+		"initial": "skipMark",
 		"stitches": {
+			"skipMark": {
+				"content": [
+					"{skip} mark1=iver mark2=serpent mark3=eyvind",
+					{
+						"linkPath": "__hideserpent",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
 			"__hideserpent": {
 				"content": [
 					{
@@ -2308,9 +2320,12 @@
 			},
 			"trust": {
 				"content": [
-					"[eyvind] /=Eyvind debates with the serpent, tension rising, until only a terrifying silence suddenly hangs between them.=/",
+					"[eyvind iver] /=Eyvind debates with the serpent, tension rising, until only a terrifying silence suddenly hangs between them.=/",
 					{
 						"divert": "_ItsoverThere"
+					},
+					{
+						"flagName": "@show=eyvind"
 					},
 					{
 						"pageNum": 0

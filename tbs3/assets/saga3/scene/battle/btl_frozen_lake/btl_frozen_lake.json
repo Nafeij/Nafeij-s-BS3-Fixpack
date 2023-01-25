@@ -1,0 +1,1588 @@
+{
+  "boards": [
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "0 -1",
+              "0 -2",
+              "1 -1",
+              "1 -2",
+              "10 -1",
+              "10 -2",
+              "11 -1",
+              "11 -2",
+              "12 -1",
+              "12 -2",
+              "13 -1",
+              "13 -2",
+              "14 -1",
+              "14 -2",
+              "15 -1",
+              "15 -2",
+              "2 -1",
+              "2 -2",
+              "3 -1",
+              "3 -2",
+              "4 -1",
+              "4 -2",
+              "5 -1",
+              "5 -2",
+              "6 -1",
+              "6 -2",
+              "7 -1",
+              "7 -2",
+              "8 -1",
+              "8 -2",
+              "9 -1",
+              "9 -2"
+            ]
+          },
+          "facing": "SW",
+          "id": "wave_respawn"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "16 0",
+              "16 1",
+              "16 10",
+              "16 11",
+              "16 12",
+              "16 13",
+              "16 14",
+              "16 15",
+              "16 2",
+              "16 3",
+              "16 4",
+              "16 5",
+              "16 6",
+              "16 7",
+              "16 8",
+              "16 9",
+              "17 0",
+              "17 1",
+              "17 10",
+              "17 11",
+              "17 12",
+              "17 13",
+              "17 14",
+              "17 15",
+              "17 2",
+              "17 3",
+              "17 4",
+              "17 5",
+              "17 6",
+              "17 7",
+              "17 8",
+              "17 9"
+            ]
+          },
+          "facing": "NW",
+          "id": "wave_respawn1"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "0 16",
+              "0 17",
+              "1 16",
+              "1 17",
+              "10 16",
+              "10 17",
+              "11 16",
+              "11 17",
+              "12 16",
+              "12 17",
+              "13 16",
+              "13 17",
+              "14 16",
+              "14 17",
+              "15 16",
+              "15 17",
+              "2 16",
+              "2 17",
+              "3 16",
+              "3 17",
+              "4 16",
+              "4 17",
+              "5 16",
+              "5 17",
+              "6 16",
+              "6 17",
+              "7 16",
+              "7 17",
+              "8 16",
+              "8 17",
+              "9 16",
+              "9 17"
+            ]
+          },
+          "facing": "NE",
+          "id": "wave_respawn2"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "-1 0",
+              "-1 1",
+              "-1 10",
+              "-1 11",
+              "-1 12",
+              "-1 13",
+              "-1 14",
+              "-1 15",
+              "-1 2",
+              "-1 3",
+              "-1 4",
+              "-1 5",
+              "-1 6",
+              "-1 7",
+              "-1 8",
+              "-1 9",
+              "-2 0",
+              "-2 1",
+              "-2 10",
+              "-2 11",
+              "-2 12",
+              "-2 13",
+              "-2 14",
+              "-2 15",
+              "-2 2",
+              "-2 3",
+              "-2 4",
+              "-2 5",
+              "-2 6",
+              "-2 7",
+              "-2 8",
+              "-2 9"
+            ]
+          },
+          "facing": "SE",
+          "id": "wave_respawn3"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "1 1",
+              "1 10",
+              "1 11",
+              "1 12",
+              "1 13",
+              "1 14",
+              "1 2",
+              "1 3",
+              "1 4",
+              "1 5",
+              "1 6",
+              "1 7",
+              "1 8",
+              "1 9",
+              "10 1",
+              "10 10",
+              "10 11",
+              "10 12",
+              "10 13",
+              "10 14",
+              "10 2",
+              "10 3",
+              "10 4",
+              "10 5",
+              "10 6",
+              "10 7",
+              "10 8",
+              "10 9",
+              "11 1",
+              "11 10",
+              "11 11",
+              "11 12",
+              "11 13",
+              "11 14",
+              "11 2",
+              "11 3",
+              "11 4",
+              "11 5",
+              "11 6",
+              "11 7",
+              "11 8",
+              "11 9",
+              "12 1",
+              "12 10",
+              "12 11",
+              "12 12",
+              "12 13",
+              "12 14",
+              "12 2",
+              "12 3",
+              "12 4",
+              "12 5",
+              "12 6",
+              "12 7",
+              "12 8",
+              "12 9",
+              "13 1",
+              "13 10",
+              "13 11",
+              "13 12",
+              "13 13",
+              "13 14",
+              "13 2",
+              "13 3",
+              "13 4",
+              "13 5",
+              "13 6",
+              "13 7",
+              "13 8",
+              "13 9",
+              "14 1",
+              "14 10",
+              "14 11",
+              "14 12",
+              "14 13",
+              "14 14",
+              "14 2",
+              "14 3",
+              "14 4",
+              "14 5",
+              "14 6",
+              "14 7",
+              "14 8",
+              "14 9",
+              "2 1",
+              "2 10",
+              "2 11",
+              "2 12",
+              "2 13",
+              "2 14",
+              "2 2",
+              "2 3",
+              "2 4",
+              "2 5",
+              "2 6",
+              "2 7",
+              "2 8",
+              "2 9",
+              "3 1",
+              "3 10",
+              "3 11",
+              "3 12",
+              "3 13",
+              "3 14",
+              "3 2",
+              "3 3",
+              "3 4",
+              "3 5",
+              "3 6",
+              "3 7",
+              "3 8",
+              "3 9",
+              "4 1",
+              "4 10",
+              "4 11",
+              "4 12",
+              "4 13",
+              "4 14",
+              "4 2",
+              "4 3",
+              "4 4",
+              "4 5",
+              "4 6",
+              "4 7",
+              "4 8",
+              "4 9",
+              "5 1",
+              "5 10",
+              "5 11",
+              "5 12",
+              "5 13",
+              "5 14",
+              "5 2",
+              "5 3",
+              "5 4",
+              "5 5",
+              "5 6",
+              "5 7",
+              "5 8",
+              "5 9",
+              "6 1",
+              "6 10",
+              "6 11",
+              "6 12",
+              "6 13",
+              "6 14",
+              "6 2",
+              "6 3",
+              "6 4",
+              "6 5",
+              "6 6",
+              "6 7",
+              "6 8",
+              "6 9",
+              "7 1",
+              "7 10",
+              "7 11",
+              "7 12",
+              "7 13",
+              "7 14",
+              "7 2",
+              "7 3",
+              "7 4",
+              "7 5",
+              "7 6",
+              "7 7",
+              "7 8",
+              "7 9",
+              "8 1",
+              "8 10",
+              "8 11",
+              "8 12",
+              "8 13",
+              "8 14",
+              "8 2",
+              "8 3",
+              "8 4",
+              "8 5",
+              "8 6",
+              "8 7",
+              "8 8",
+              "8 9",
+              "9 1",
+              "9 10",
+              "9 11",
+              "9 12",
+              "9 13",
+              "9 14",
+              "9 2",
+              "9 3",
+              "9 4",
+              "9 5",
+              "9 6",
+              "9 7",
+              "9 8",
+              "9 9"
+            ]
+          },
+          "facing": "NE",
+          "id": "redeploy"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "1 1",
+              "1 2",
+              "1 3",
+              "1 4",
+              "1 5",
+              "1 6",
+              "1 7",
+              "10 1",
+              "10 2",
+              "11 1",
+              "11 2",
+              "11 3",
+              "12 1",
+              "12 2",
+              "12 3",
+              "12 4",
+              "12 5",
+              "13 1",
+              "13 2",
+              "13 3",
+              "13 4",
+              "13 5",
+              "13 6",
+              "13 7",
+              "14 1",
+              "14 2",
+              "14 3",
+              "14 4",
+              "14 5",
+              "14 6",
+              "14 7",
+              "2 1",
+              "2 2",
+              "2 3",
+              "2 4",
+              "2 5",
+              "2 6",
+              "2 7",
+              "3 1",
+              "3 2",
+              "3 3",
+              "3 4",
+              "3 5",
+              "4 1",
+              "4 2",
+              "4 3",
+              "5 1",
+              "5 2",
+              "6 1",
+              "6 2",
+              "7 1",
+              "7 2",
+              "8 1",
+              "8 2",
+              "9 1",
+              "9 2"
+            ]
+          },
+          "facing": "SW",
+          "id": "bucket_spawn"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "10 10",
+              "10 11",
+              "10 12",
+              "10 13",
+              "11 12",
+              "11 13",
+              "4 12",
+              "4 13",
+              "5 10",
+              "5 11",
+              "5 12",
+              "5 13",
+              "6 10",
+              "6 11",
+              "6 12",
+              "6 13",
+              "6 6",
+              "6 7",
+              "6 8",
+              "6 9",
+              "7 10",
+              "7 11",
+              "7 12",
+              "7 13",
+              "7 6",
+              "7 7",
+              "7 8",
+              "7 9",
+              "8 10",
+              "8 11",
+              "8 12",
+              "8 13",
+              "8 6",
+              "8 7",
+              "8 8",
+              "8 9",
+              "9 10",
+              "9 11",
+              "9 12",
+              "9 13",
+              "9 6",
+              "9 7",
+              "9 8",
+              "9 9"
+            ]
+          },
+          "facing": "NE",
+          "id": "player0"
+        }
+      ],
+      "id": "board_waves",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": 169.25,
+        "y": -417.7000000000001
+      },
+      "spawners": [],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": [
+          "-1 -1",
+          "-1 -2",
+          "-1 0",
+          "-1 1",
+          "-1 10",
+          "-1 11",
+          "-1 12",
+          "-1 13",
+          "-1 14",
+          "-1 15",
+          "-1 16",
+          "-1 17",
+          "-1 2",
+          "-1 3",
+          "-1 4",
+          "-1 5",
+          "-1 6",
+          "-1 7",
+          "-1 8",
+          "-1 9",
+          "-2 -1",
+          "-2 -2",
+          "-2 0",
+          "-2 1",
+          "-2 10",
+          "-2 11",
+          "-2 12",
+          "-2 13",
+          "-2 14",
+          "-2 15",
+          "-2 16",
+          "-2 17",
+          "-2 2",
+          "-2 3",
+          "-2 4",
+          "-2 5",
+          "-2 6",
+          "-2 7",
+          "-2 8",
+          "-2 9",
+          "0 -1",
+          "0 -2",
+          "0 16",
+          "0 17",
+          "1 -1",
+          "1 -2",
+          "1 16",
+          "1 17",
+          "10 -1",
+          "10 -2",
+          "10 16",
+          "10 17",
+          "11 -1",
+          "11 -2",
+          "11 16",
+          "11 17",
+          "12 -1",
+          "12 -2",
+          "12 16",
+          "12 17",
+          "13 -1",
+          "13 -2",
+          "13 16",
+          "13 17",
+          "14 -1",
+          "14 -2",
+          "14 16",
+          "14 17",
+          "15 -1",
+          "15 -2",
+          "15 16",
+          "15 17",
+          "16 -1",
+          "16 -2",
+          "16 0",
+          "16 1",
+          "16 10",
+          "16 11",
+          "16 12",
+          "16 13",
+          "16 14",
+          "16 15",
+          "16 16",
+          "16 17",
+          "16 2",
+          "16 3",
+          "16 4",
+          "16 5",
+          "16 6",
+          "16 7",
+          "16 8",
+          "16 9",
+          "17 -1",
+          "17 -2",
+          "17 0",
+          "17 1",
+          "17 10",
+          "17 11",
+          "17 12",
+          "17 13",
+          "17 14",
+          "17 15",
+          "17 16",
+          "17 17",
+          "17 2",
+          "17 3",
+          "17 4",
+          "17 5",
+          "17 6",
+          "17 7",
+          "17 8",
+          "17 9",
+          "2 -1",
+          "2 -2",
+          "2 16",
+          "2 17",
+          "3 -1",
+          "3 -2",
+          "3 16",
+          "3 17",
+          "4 -1",
+          "4 -2",
+          "4 16",
+          "4 17",
+          "5 -1",
+          "5 -2",
+          "5 16",
+          "5 17",
+          "6 -1",
+          "6 -2",
+          "6 16",
+          "6 17",
+          "7 -1",
+          "7 -2",
+          "7 16",
+          "7 17",
+          "8 -1",
+          "8 -2",
+          "8 16",
+          "8 17",
+          "9 -1",
+          "9 -2",
+          "9 16",
+          "9 17"
+        ]
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 14",
+          "0 15",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 14",
+          "1 15",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 14",
+          "10 15",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 15",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 15",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 15",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 15",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "15 0",
+          "15 1",
+          "15 10",
+          "15 11",
+          "15 12",
+          "15 13",
+          "15 14",
+          "15 15",
+          "15 2",
+          "15 3",
+          "15 4",
+          "15 5",
+          "15 6",
+          "15 7",
+          "15 8",
+          "15 9",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 14",
+          "2 15",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 14",
+          "3 15",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 14",
+          "4 15",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 14",
+          "5 15",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 14",
+          "6 15",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 14",
+          "7 15",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 14",
+          "8 15",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 14",
+          "9 15",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      },
+      "waves": {
+        "loseDangerAdjustment": -4,
+        "lowTurnColor": "",
+        "lowTurnWarning": 0,
+        "turnsPerWave": 30,
+        "turnsToPreserveBodies": 25,
+        "waves": [
+          {
+            "buckets": [
+              {
+                "bucketId": "inner_earth_warped",
+                "dangerMod": -1,
+                "deploymentId": "wave_respawn",
+                "guaranteedSpawns": [],
+                "suppressBucketOnLoss": false
+              }
+            ],
+            "name": "wave_1",
+            "playerDeployment": "redeploy"
+          },
+          {
+            "buckets": [
+              {
+                "bucketId": "inner_earth_warped",
+                "dangerMod": -1,
+                "deploymentId": "wave_respawn",
+                "guaranteedSpawns": [
+                  {
+                    "entityList": [
+                      {
+                        "entityId": "warped_scourge_elite_1"
+                      }
+                    ],
+                    "lootTable": [
+                      {
+                        "itemId": "itm_3_r15_ocarina"
+                      }
+                    ],
+                    "name": "new_spawn",
+                    "spawnInLoss": false
+                  }
+                ],
+                "suppressBucketOnLoss": false
+              }
+            ],
+            "name": "wave_2",
+            "playerDeployment": "redeploy"
+          }
+        ]
+      }
+    }
+  ],
+  "cameraAnchorSpeed": 1000,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1536,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 720,
+  "cameraMinWidth": 1024,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_density",
+          "varvalue": 0.5
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_variance"
+        },
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "happening": "talk_found_juno",
+          "type": "HAPPENING"
+        }
+      ],
+      "automatic": true,
+      "id": "auto"
+    },
+    {
+      "actions": [
+        {
+          "param": "restrictInput=1",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE"
+        },
+        {
+          "type": "BATTLE_AI_ENABLE"
+        },
+        {
+          "msg": "$SPEAK:s3_talk_found_juno_iver_00",
+          "param": "camera",
+          "speaker": "iver,alfrun,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s3_talk_found_juno_folka_00",
+          "param": "camera sIndex=1",
+          "speaker": "folka,oli,mogun,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "type": "VARIABLE_SET",
+          "varname": "weather_fog_density",
+          "varvalue": 0.15
+        },
+        {
+          "param": "restrictInput=0",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_AI_ENABLE",
+          "varvalue": 1
+        }
+      ],
+      "id": "talk_found_juno"
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 1986,
+      "width": 3992,
+      "x": -1806.5,
+      "y": -1013
+    },
+    "layers": [
+      {
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      },
+      {
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.3
+      },
+      {
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.5
+      },
+      {
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.7
+      },
+      {
+        "always": true,
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/3_walk_back1.png",
+            "localrect": {
+              "height": 2000,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back1_1",
+            "offset": {
+              "x": 195,
+              "y": -1020
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/3_walk_back2.png",
+            "localrect": {
+              "height": 2000,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back2_1",
+            "offset": {
+              "x": -1805,
+              "y": -1020
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 40,
+                  "start": {
+                    "x": 975,
+                    "y": 1635
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -2980.05,
+                    "y": -1780.05
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.6
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/seamonster1.png",
+            "localrect": {
+              "height": 534,
+              "width": 645,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "seamonster1_1",
+            "offset": {
+              "x": 320,
+              "y": 957.9
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 35,
+                  "start": {
+                    "x": 3410.05,
+                    "y": 640
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": -4340.05,
+                    "y": -1420.05
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.4
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/seamonster2.png",
+            "localrect": {
+              "height": 323,
+              "width": 842,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "seamonster2_1",
+            "offset": {
+              "x": 2205,
+              "y": 275
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 60,
+                  "start": {
+                    "x": -4290.05,
+                    "y": 1395
+                  },
+                  "start_secs": 0,
+                  "target": {
+                    "x": 1275,
+                    "y": -2205.05
+                  },
+                  "type": "MOVE"
+                }
+              ],
+              "start_t": 0.4
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/seamonster3.png",
+            "localrect": {
+              "height": 467,
+              "width": 637,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "seamonster3_1",
+            "offset": {
+              "x": -3050,
+              "y": 708
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/3_walk_front1.png",
+            "localrect": {
+              "height": 1064,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front1_1",
+            "offset": {
+              "x": -1810,
+              "y": -1020
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/3_walk_front2.png",
+            "localrect": {
+              "height": 631,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front2_1",
+            "offset": {
+              "x": -1810,
+              "y": 349
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/3_walk_front3.png",
+            "localrect": {
+              "height": 753,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front3_1",
+            "offset": {
+              "x": 190,
+              "y": -1020
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/3_walk_front4.png",
+            "localrect": {
+              "height": 1232,
+              "width": 2000,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front4_1",
+            "offset": {
+              "x": 189,
+              "y": -252
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_frozen_lake/juno_dead.png",
+            "localrect": {
+              "height": 127,
+              "width": 129,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "juno_dead_1",
+            "offset": {
+              "x": 760,
+              "y": -197
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 5,
+                  "x_period": 4,
+                  "y_amplitude": 7,
+                  "y_period": 4
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice1.png",
+            "localrect": {
+              "height": 957,
+              "width": 1586,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice1_1",
+            "offset": {
+              "x": 689,
+              "y": 115
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 7,
+                  "x_period": 5,
+                  "y_amplitude": 9,
+                  "y_period": 5
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice2.png",
+            "localrect": {
+              "height": 401,
+              "width": 778,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice2_1",
+            "offset": {
+              "x": -1216.15,
+              "y": 303.95
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 4,
+                  "x_period": 4,
+                  "y_amplitude": 8,
+                  "y_period": 4
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice3.png",
+            "localrect": {
+              "height": 706,
+              "width": 1281,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice3_1",
+            "offset": {
+              "x": -1907.9,
+              "y": -459.9
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 5,
+                  "x_period": 4,
+                  "y_amplitude": 8,
+                  "y_period": 4
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice4.png",
+            "localrect": {
+              "height": 379,
+              "width": 718,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice4_1",
+            "offset": {
+              "x": 99,
+              "y": -700
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 7,
+                  "x_period": 4,
+                  "y_amplitude": 6,
+                  "y_period": 4
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice5.png",
+            "localrect": {
+              "height": 666,
+              "width": 1097,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice5_1",
+            "offset": {
+              "x": 989.3,
+              "y": -677.95
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 18,
+                  "x_period": 7,
+                  "y_amplitude": 18,
+                  "y_period": 6
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice_close1.png",
+            "localrect": {
+              "height": 561,
+              "width": 1230,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice_close1_1",
+            "offset": {
+              "x": -2130.35,
+              "y": 43.4
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 16,
+                  "x_period": 7,
+                  "y_amplitude": 14,
+                  "y_period": 8
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice_close2.png",
+            "localrect": {
+              "height": 532,
+              "width": 1074,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice_close2_1",
+            "offset": {
+              "x": 582,
+              "y": 84
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 0,
+                  "rot_amplitude": 30,
+                  "rot_period": 3,
+                  "start_secs": 0,
+                  "type": "FLOAT",
+                  "x_amplitude": 16,
+                  "x_period": 8,
+                  "y_amplitude": 14,
+                  "y_period": 6
+                }
+              ]
+            },
+            "bmp": "saga3/scene/battle/btl_frozen_lake/float_ice_close3.png",
+            "localrect": {
+              "height": 465,
+              "width": 909,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "float_ice_close3_1",
+            "offset": {
+              "x": -1739,
+              "y": -1110
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.6
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

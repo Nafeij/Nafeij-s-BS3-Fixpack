@@ -1,7 +1,19 @@
 {
 	"data": {
-		"initial": "__hidenew_rug",
+		"initial": "skipMark",
 		"stitches": {
+			"skipMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=rugga mark3=oddleif mark4=new_rugga",
+					{
+						"linkPath": "__hidenew_rug",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
 			"__hidenew_rug": {
 				"content": [
 					{
@@ -34,7 +46,7 @@
 			},
 			"_Thishastoend": {
 				"content": [
-					"[$hero] This has to end. Now!",
+					"[$hero] This ends, now!",
 					{
 						"divert": "_Therearepeop"
 					},
@@ -298,7 +310,7 @@
 					},
 					{
 						"linkPath": "_Youdontpully",
-						"option": "No, you're going to listen to me, now! (Pummel Rugga)"
+						"option": "No, you're going to listen to me! (Pummel Rugga)"
 					},
 					{
 						"linkPath": "_Idratherkill",
@@ -861,7 +873,7 @@
 			},
 			"_MythanksThes": {
 				"content": [
-					"[new_rugga] My thanks. These bruises are the clearest evidence, that you are who I say you are.",
+					"[new_rugga] My thanks. These bruises are the clearest evidence that you are who I say you are.",
 					{
 						"divert": "ruggabeatingb"
 					},

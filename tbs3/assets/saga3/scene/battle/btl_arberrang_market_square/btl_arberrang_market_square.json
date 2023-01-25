@@ -1,0 +1,1365 @@
+{
+  "boards": [
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "1 11",
+              "1 12",
+              "1 13",
+              "1 14",
+              "10 11",
+              "10 12",
+              "10 13",
+              "10 14",
+              "11 11",
+              "11 12",
+              "11 13",
+              "11 14",
+              "12 11",
+              "12 12",
+              "12 13",
+              "12 14",
+              "13 11",
+              "13 12",
+              "13 13",
+              "13 14",
+              "14 11",
+              "14 12",
+              "14 13",
+              "14 14",
+              "2 11",
+              "2 12",
+              "2 13",
+              "2 14",
+              "3 11",
+              "3 12",
+              "3 13",
+              "3 14",
+              "4 11",
+              "4 12",
+              "4 13",
+              "4 14",
+              "5 11",
+              "5 12",
+              "5 13",
+              "5 14",
+              "6 11",
+              "6 12",
+              "6 13",
+              "6 14",
+              "7 11",
+              "7 12",
+              "7 13",
+              "7 14",
+              "8 11",
+              "8 12",
+              "8 13",
+              "8 14",
+              "9 11",
+              "9 12",
+              "9 13",
+              "9 14"
+            ]
+          },
+          "facing": "NE",
+          "id": "player0"
+        },
+        {
+          "area": {
+            "tilesx": [
+              "1 1",
+              "1 2",
+              "1 3",
+              "10 1",
+              "10 2",
+              "10 3",
+              "11 1",
+              "11 2",
+              "11 3",
+              "12 1",
+              "12 2",
+              "12 3",
+              "13 1",
+              "13 2",
+              "13 3",
+              "14 1",
+              "14 2",
+              "14 3",
+              "2 1",
+              "2 2",
+              "2 3",
+              "3 1",
+              "3 2",
+              "3 3",
+              "4 1",
+              "4 2",
+              "4 3",
+              "5 1",
+              "5 2",
+              "5 3",
+              "6 1",
+              "6 2",
+              "6 3",
+              "7 1",
+              "7 2",
+              "7 3",
+              "8 1",
+              "8 2",
+              "8 3",
+              "9 1",
+              "9 2",
+              "9 3"
+            ]
+          },
+          "facing": "SW",
+          "id": "bucket_spawn1"
+        }
+      ],
+      "id": "board_0",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": -26.399999999999864,
+        "y": -470.65
+      },
+      "spawners": [
+        {
+          "character": "dagr",
+          "facing": "SW",
+          "location": {
+            "x": 8,
+            "y": 3
+          },
+          "notCondition": "14_battle_rugga",
+          "stats": {
+            "stats": [
+              {
+                "stat": "RANK",
+                "value": 2
+              }
+            ]
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": []
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 14",
+          "0 15",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 14",
+          "1 15",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 14",
+          "10 15",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 15",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 15",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 15",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 15",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "15 0",
+          "15 1",
+          "15 10",
+          "15 11",
+          "15 12",
+          "15 13",
+          "15 14",
+          "15 15",
+          "15 2",
+          "15 3",
+          "15 4",
+          "15 5",
+          "15 6",
+          "15 7",
+          "15 8",
+          "15 9",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 14",
+          "2 15",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 14",
+          "3 15",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 14",
+          "4 15",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 14",
+          "5 15",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 14",
+          "6 15",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 14",
+          "7 15",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 14",
+          "8 15",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 14",
+          "9 15",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    },
+    {
+      "deploymentAreas": [
+        {
+          "area": {
+            "tilesx": [
+              "1 11",
+              "1 12",
+              "1 13",
+              "1 14",
+              "10 11",
+              "10 12",
+              "10 13",
+              "10 14",
+              "11 11",
+              "11 12",
+              "11 13",
+              "11 14",
+              "12 11",
+              "12 12",
+              "12 13",
+              "12 14",
+              "13 11",
+              "13 12",
+              "13 13",
+              "13 14",
+              "14 11",
+              "14 12",
+              "14 13",
+              "14 14",
+              "2 11",
+              "2 12",
+              "2 13",
+              "2 14",
+              "3 11",
+              "3 12",
+              "3 13",
+              "3 14",
+              "4 11",
+              "4 12",
+              "4 13",
+              "4 14",
+              "5 11",
+              "5 12",
+              "5 13",
+              "5 14",
+              "6 11",
+              "6 12",
+              "6 13",
+              "6 14",
+              "7 11",
+              "7 12",
+              "7 13",
+              "7 14",
+              "8 11",
+              "8 12",
+              "8 13",
+              "8 14",
+              "9 11",
+              "9 12",
+              "9 13",
+              "9 14"
+            ]
+          },
+          "facing": "NE",
+          "id": "player0"
+        }
+      ],
+      "id": "board_horseborn_video_capture",
+      "layer": "layer_3_walk_back",
+      "pos": {
+        "x": -26.399999999999864,
+        "y": -470.65
+      },
+      "spawners": [
+        {
+          "character": "warped_axeman_1",
+          "entityClass": "warped_axeman",
+          "facing": "SW",
+          "id": "warped_axeman",
+          "location": {
+            "x": 6,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warped_archer_1",
+          "entityClass": "warped_archer",
+          "facing": "SW",
+          "id": "warped_archer",
+          "location": {
+            "x": 7,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warped_shieldbanger_1",
+          "entityClass": "warped_shieldbanger",
+          "facing": "SW",
+          "id": "warped_shieldbanger",
+          "location": {
+            "x": 3,
+            "y": 5
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warped_spearman_1",
+          "entityClass": "warped_spearman",
+          "facing": "SW",
+          "id": "warped_spearman",
+          "location": {
+            "x": 8,
+            "y": 3
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warped_warrior_1",
+          "entityClass": "warped_warrior",
+          "facing": "SW",
+          "id": "warped_warrior",
+          "location": {
+            "x": 11,
+            "y": 4
+          },
+          "team": "npc"
+        },
+        {
+          "character": "warped_grunt_1",
+          "entityClass": "warped_grunt",
+          "facing": "SW",
+          "id": "warped_grunt",
+          "location": {
+            "x": 5,
+            "y": 5
+          },
+          "team": "npc"
+        },
+        {
+          "character": "canary",
+          "entityClass": "canary",
+          "facing": "NE",
+          "id": "canary",
+          "location": {
+            "x": 12,
+            "y": 11
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "ARMOR",
+                "value": 12
+              },
+              {
+                "stat": "ARMOR_BREAK",
+                "value": 3
+              },
+              {
+                "stat": "STRENGTH",
+                "value": 16
+              },
+              {
+                "stat": "WILLPOWER",
+                "value": 11
+              }
+            ]
+          },
+          "team": "player0"
+        },
+        {
+          "character": "scathach",
+          "entityClass": "scathach",
+          "facing": "NE",
+          "id": "scathach",
+          "location": {
+            "x": 4,
+            "y": 11
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "WILLPOWER",
+                "value": 10
+              }
+            ]
+          },
+          "team": "player0"
+        },
+        {
+          "character": "derdriu",
+          "entityClass": "derdriu",
+          "facing": "NE",
+          "id": "derdriu",
+          "location": {
+            "x": 10,
+            "y": 10
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "WILLPOWER",
+                "value": 12
+              }
+            ]
+          },
+          "team": "player0"
+        },
+        {
+          "character": "roech",
+          "entityClass": "roech",
+          "facing": "NE",
+          "id": "roech",
+          "location": {
+            "x": 5,
+            "y": 10
+          },
+          "stats": {
+            "stats": [
+              {
+                "stat": "WILLPOWER",
+                "value": 10
+              },
+              {
+                "stat": "EXERTION",
+                "value": 3
+              },
+              {
+                "stat": "ARMOR_BREAK",
+                "value": 4
+              }
+            ]
+          },
+          "team": "player0"
+        },
+        {
+          "character": "iver",
+          "entityClass": "iver",
+          "facing": "NE",
+          "id": "iver",
+          "location": {
+            "x": 8,
+            "y": 11
+          },
+          "team": "player0"
+        },
+        {
+          "character": "warped_axeman_1",
+          "entityClass": "warped_axeman",
+          "facing": "SW",
+          "id": "warped_axeman",
+          "location": {
+            "x": 6,
+            "y": 2
+          },
+          "team": "npc"
+        }
+      ],
+      "triggerSpawners": {
+        "triggers": []
+      },
+      "unwalkableTiles": {
+        "tilesx": []
+      },
+      "walkableTiles": {
+        "tilesx": [
+          "0 0",
+          "0 1",
+          "0 10",
+          "0 11",
+          "0 12",
+          "0 13",
+          "0 14",
+          "0 15",
+          "0 2",
+          "0 3",
+          "0 4",
+          "0 5",
+          "0 6",
+          "0 7",
+          "0 8",
+          "0 9",
+          "1 0",
+          "1 1",
+          "1 10",
+          "1 11",
+          "1 12",
+          "1 13",
+          "1 14",
+          "1 15",
+          "1 2",
+          "1 3",
+          "1 4",
+          "1 5",
+          "1 6",
+          "1 7",
+          "1 8",
+          "1 9",
+          "10 0",
+          "10 1",
+          "10 10",
+          "10 11",
+          "10 12",
+          "10 13",
+          "10 14",
+          "10 15",
+          "10 2",
+          "10 3",
+          "10 4",
+          "10 5",
+          "10 6",
+          "10 7",
+          "10 8",
+          "10 9",
+          "11 0",
+          "11 1",
+          "11 10",
+          "11 11",
+          "11 12",
+          "11 13",
+          "11 14",
+          "11 15",
+          "11 2",
+          "11 3",
+          "11 4",
+          "11 5",
+          "11 6",
+          "11 7",
+          "11 8",
+          "11 9",
+          "12 0",
+          "12 1",
+          "12 10",
+          "12 11",
+          "12 12",
+          "12 13",
+          "12 14",
+          "12 15",
+          "12 2",
+          "12 3",
+          "12 4",
+          "12 5",
+          "12 6",
+          "12 7",
+          "12 8",
+          "12 9",
+          "13 0",
+          "13 1",
+          "13 10",
+          "13 11",
+          "13 12",
+          "13 13",
+          "13 14",
+          "13 15",
+          "13 2",
+          "13 3",
+          "13 4",
+          "13 5",
+          "13 6",
+          "13 7",
+          "13 8",
+          "13 9",
+          "14 0",
+          "14 1",
+          "14 10",
+          "14 11",
+          "14 12",
+          "14 13",
+          "14 14",
+          "14 15",
+          "14 2",
+          "14 3",
+          "14 4",
+          "14 5",
+          "14 6",
+          "14 7",
+          "14 8",
+          "14 9",
+          "15 0",
+          "15 1",
+          "15 10",
+          "15 11",
+          "15 12",
+          "15 13",
+          "15 14",
+          "15 15",
+          "15 2",
+          "15 3",
+          "15 4",
+          "15 5",
+          "15 6",
+          "15 7",
+          "15 8",
+          "15 9",
+          "2 0",
+          "2 1",
+          "2 10",
+          "2 11",
+          "2 12",
+          "2 13",
+          "2 14",
+          "2 15",
+          "2 2",
+          "2 3",
+          "2 4",
+          "2 5",
+          "2 6",
+          "2 7",
+          "2 8",
+          "2 9",
+          "3 0",
+          "3 1",
+          "3 10",
+          "3 11",
+          "3 12",
+          "3 13",
+          "3 14",
+          "3 15",
+          "3 2",
+          "3 3",
+          "3 4",
+          "3 5",
+          "3 6",
+          "3 7",
+          "3 8",
+          "3 9",
+          "4 0",
+          "4 1",
+          "4 10",
+          "4 11",
+          "4 12",
+          "4 13",
+          "4 14",
+          "4 15",
+          "4 2",
+          "4 3",
+          "4 4",
+          "4 5",
+          "4 6",
+          "4 7",
+          "4 8",
+          "4 9",
+          "5 0",
+          "5 1",
+          "5 10",
+          "5 11",
+          "5 12",
+          "5 13",
+          "5 14",
+          "5 15",
+          "5 2",
+          "5 3",
+          "5 4",
+          "5 5",
+          "5 6",
+          "5 7",
+          "5 8",
+          "5 9",
+          "6 0",
+          "6 1",
+          "6 10",
+          "6 11",
+          "6 12",
+          "6 13",
+          "6 14",
+          "6 15",
+          "6 2",
+          "6 3",
+          "6 4",
+          "6 5",
+          "6 6",
+          "6 7",
+          "6 8",
+          "6 9",
+          "7 0",
+          "7 1",
+          "7 10",
+          "7 11",
+          "7 12",
+          "7 13",
+          "7 14",
+          "7 15",
+          "7 2",
+          "7 3",
+          "7 4",
+          "7 5",
+          "7 6",
+          "7 7",
+          "7 8",
+          "7 9",
+          "8 0",
+          "8 1",
+          "8 10",
+          "8 11",
+          "8 12",
+          "8 13",
+          "8 14",
+          "8 15",
+          "8 2",
+          "8 3",
+          "8 4",
+          "8 5",
+          "8 6",
+          "8 7",
+          "8 8",
+          "8 9",
+          "9 0",
+          "9 1",
+          "9 10",
+          "9 11",
+          "9 12",
+          "9 13",
+          "9 14",
+          "9 15",
+          "9 2",
+          "9 3",
+          "9 4",
+          "9 5",
+          "9 6",
+          "9 7",
+          "9 8",
+          "9 9"
+        ]
+      }
+    }
+  ],
+  "cameraAnchorSpeed": 1000,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1536,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 720,
+  "cameraMinWidth": 1024,
+  "happenings": [
+    {
+      "actions": [
+        {
+          "type": "WAIT_READY"
+        },
+        {
+          "happening": "20_battle_talk",
+          "prereq": "battle_board==\"board_0\" && curr_chapter==20",
+          "type": "HAPPENING"
+        }
+      ],
+      "automatic": true,
+      "id": "auto"
+    },
+    {
+      "actions": [
+        {
+          "param": "restrictInput=1",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE"
+        },
+        {
+          "type": "BATTLE_AI_ENABLE"
+        },
+        {
+          "msg": "$SPEAK:s3_16_battle_talk_oddleif_00",
+          "param": "camera",
+          "speaker": "oddleif,$hero,aleo,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "param": "restrictInput=0",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_AI_ENABLE",
+          "varvalue": 1
+        }
+      ],
+      "id": "16_battle_talk",
+      "prereq": "battle_board='board_0' && curr_chapter==16"
+    },
+    {
+      "actions": [
+        {
+          "param": "restrictInput=1",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE"
+        },
+        {
+          "type": "BATTLE_AI_ENABLE"
+        },
+        {
+          "msg": "$SPEAK:s3_20_battle_talk_oddleif_00",
+          "param": "camera",
+          "speaker": "oddleif,$hero,aleo,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "msg": "$SPEAK:s3_20_battle_talk_egil_00",
+          "param": "camera sIndex=1",
+          "speaker": "egil,hakon,hogun,*player",
+          "time": 5,
+          "type": "SPEAK"
+        },
+        {
+          "param": "restrictInput=0",
+          "type": "BATTLE_CONTROLLER_CONFIG"
+        },
+        {
+          "type": "BATTLE_GUI_ENABLE",
+          "varvalue": 1
+        },
+        {
+          "type": "BATTLE_AI_ENABLE",
+          "varvalue": 1
+        }
+      ],
+      "id": "20_battle_talk",
+      "prereq": "battle_board='board_0' && curr_chapter==20"
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "21_ubin_survived",
+          "varvalue": 1
+        }
+      ],
+      "id": "21_ubin_battle_won",
+      "prereq": "battle_board='board_0' && 21_ubin_battle",
+      "triggers": [
+        {
+          "type": "BATTLE_WIN"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "type": "VARIABLE_SET",
+          "varname": "21_ubin_survived"
+        }
+      ],
+      "id": "21_ubin_battle_lost",
+      "prereq": "battle_board='board_0' && 21_ubin_battle",
+      "triggers": [
+        {
+          "type": "BATTLE_LOSE"
+        }
+      ]
+    }
+  ],
+  "landscape": {
+    "boundary": {
+      "height": 2048,
+      "width": 4096,
+      "x": -1992.1666666666667,
+      "y": -1094.6666666666667
+    },
+    "layers": [
+      {
+        "nameId": "layer_7_sky",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      },
+      {
+        "nameId": "layer_6_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.3
+      },
+      {
+        "nameId": "layer_5_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.5
+      },
+      {
+        "nameId": "layer_4_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0.7
+      },
+      {
+        "always": true,
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/3_walk_back_a.png",
+            "localrect": {
+              "height": 2048,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_a_1",
+            "offset": {
+              "x": -1995,
+              "y": -1096
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/3_walk_back_b.png",
+            "localrect": {
+              "height": 2048,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_back_b_1",
+            "offset": {
+              "x": 53,
+              "y": -1096
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_back",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/3_walk_front_a.png",
+            "localrect": {
+              "height": 589,
+              "width": 1108,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_a_1",
+            "offset": {
+              "x": -1158,
+              "y": 15
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/3_walk_front_b.png",
+            "localrect": {
+              "height": 725,
+              "width": 1275,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "3_walk_front_b_1",
+            "offset": {
+              "x": -50,
+              "y": -82
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_3_walk_front",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/2_close_a.png",
+            "localrect": {
+              "height": 614,
+              "width": 970,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_a_1",
+            "offset": {
+              "x": -2182.15,
+              "y": -210
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/2_close_b.png",
+            "localrect": {
+              "height": 588,
+              "width": 891,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2_close_b_1",
+            "offset": {
+              "x": 557.7,
+              "y": -168.15
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_horseborn_rampage/lighting.png",
+            "localrect": {
+              "height": 1044,
+              "width": 2048,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "lighting_1",
+            "offset": {
+              "x": -2186,
+              "y": -1201
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/1_close_a.png",
+            "localrect": {
+              "height": 904,
+              "width": 463,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_a_1",
+            "offset": {
+              "x": -2386,
+              "y": -1321
+            },
+            "scale": {
+              "x": 2.65,
+              "y": 2.65
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/1_close_b.png",
+            "localrect": {
+              "height": 304,
+              "width": 730,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_b_1",
+            "offset": {
+              "x": -1160,
+              "y": 269
+            },
+            "scale": {
+              "x": 2.65,
+              "y": 2.65
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/1_close_c.png",
+            "localrect": {
+              "height": 433,
+              "width": 689,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1_close_c_1",
+            "offset": {
+              "x": 774,
+              "y": -73
+            },
+            "scale": {
+              "x": 2.65,
+              "y": 2.65
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1_close",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 1.6
+      },
+      {
+        "layerSprites": [
+          {
+            "blendMode": "multiply",
+            "bmp": "saga3/scene/battle/btl_arberrang_market_square/darken_multiply.png",
+            "ifCondition": "curr_chapter==20",
+            "localrect": {
+              "height": 10,
+              "width": 10,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "darken_multiply_1",
+            "offset": {
+              "x": -1374,
+              "y": -776
+            },
+            "scale": {
+              "x": 277.00018310546875,
+              "y": 157
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "darken_multiply",
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "speed": 0
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": true
+}

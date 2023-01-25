@@ -1,0 +1,290 @@
+{
+  "cameraAnchorSpeed": 500,
+  "cameraDrift": 0,
+  "cameraMaxHeight": 1162,
+  "cameraMaxWidth": 2731,
+  "cameraMinHeight": 1162,
+  "cameraMinWidth": 2048,
+  "landscape": {
+    "boundary": {
+      "height": 1162,
+      "width": 4416.25,
+      "x": -2220.5,
+      "y": -581
+    },
+    "layers": [
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/stage/stg_ridgehorn_godstone/2b.png",
+            "localrect": {
+              "height": 581,
+              "width": 1791,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2b_1",
+            "offset": {
+              "x": -466,
+              "y": 0
+            },
+            "scale": {
+              "x": 2.022334337234497,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2b",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "randomGroup": "layer_2",
+        "speed": 0.5,
+        "view_index": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/stage/stg_ridgehorn_godstone/2a.png",
+            "localrect": {
+              "height": 581,
+              "width": 1791,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "2a_1",
+            "offset": {
+              "x": -425,
+              "y": 0
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_2a",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.5,
+        "view_index": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/stage/stg_ridgehorn_godstone/1b.png",
+            "localrect": {
+              "height": 175,
+              "width": 513,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1b_2",
+            "offset": {
+              "x": 2366,
+              "y": 815
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          },
+          {
+            "bmp": "saga3/scene/stage/stg_ridgehorn_godstone/1b_2.png",
+            "localrect": {
+              "height": 176,
+              "width": 696,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1b_2_1",
+            "offset": {
+              "x": -651,
+              "y": 812
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1b",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.75,
+        "view_index": 1
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/stage/stg_ridgehorn_godstone/1a.png",
+            "localrect": {
+              "height": 525,
+              "width": 2047,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "1a_1",
+            "offset": {
+              "x": -642,
+              "y": 117
+            },
+            "scale": {
+              "x": 2,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "layer_1a",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0.75,
+        "view_index": 0
+      },
+      {
+        "layerSprites": [
+          {
+            "anim_path": {
+              "nodes": [
+                {
+                  "duration_secs": 5,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 0,
+                  "tailpos": 1,
+                  "target": 0.3,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 4,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.3,
+                  "start_secs": 5,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 1,
+                  "start_secs": 9,
+                  "tailpos": 1,
+                  "target": 0.5,
+                  "type": "ALPHA"
+                },
+                {
+                  "duration_secs": 3,
+                  "ease": "linear",
+                  "easeIn": true,
+                  "easeOut": true,
+                  "start": 0.5,
+                  "start_secs": 12,
+                  "tailpos": 1,
+                  "target": 1,
+                  "type": "ALPHA"
+                }
+              ]
+            },
+            "blendMode": "add",
+            "bmp": "saga3/scene/stage/stg_strand_ext/golden_glow.png",
+            "localrect": {
+              "height": 230,
+              "width": 1,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "golden_glow_1",
+            "offset": {
+              "x": -28.5,
+              "y": -19
+            },
+            "scale": {
+              "x": 2800,
+              "y": 2
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "glow",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0
+      },
+      {
+        "always": true,
+        "nameId": "layer_actors_facing",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 1
+      },
+      {
+        "always": true,
+        "nameId": "layer_actors_back",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 3
+      },
+      {
+        "layerSprites": [
+          {
+            "bmp": "saga3/scene/stage/stg_strand_ext/fade.png",
+            "localrect": {
+              "height": 452,
+              "width": 1,
+              "x": 0,
+              "y": 0
+            },
+            "nameId": "fade_1",
+            "offset": {
+              "x": -69.5,
+              "y": 725
+            },
+            "scale": {
+              "x": 2800,
+              "y": 1
+            },
+            "smoothing": true
+          }
+        ],
+        "nameId": "fade",
+        "offset": {
+          "x": -1365.5,
+          "y": -581
+        },
+        "speed": 0
+      }
+    ]
+  },
+  "loadAudio": true,
+  "reverb": "caves",
+  "soundLibrary": {
+    "sku": "common",
+    "sounds": []
+  },
+  "split_happenings": false
+}

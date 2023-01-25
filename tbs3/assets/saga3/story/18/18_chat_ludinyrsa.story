@@ -1,7 +1,19 @@
 {
 	"data": {
-		"initial": "_Ludinthereyo",
+		"initial": "skipMark",
 		"stitches": {
+			"skipMark": {
+				"content": [
+					"{skip} mark1=$hero mark2=ludin mark4=yrsa",
+					{
+						"linkPath": "_Ludinthereyo",
+						"option": "{skip}"
+					},
+					{
+						"pageNum": 1
+					}
+				]
+			},
 			"_Ludinthereyo": {
 				"content": [
 					"[$hero] Ludin, there you are. I wasn't sure where you went after the bells.",
