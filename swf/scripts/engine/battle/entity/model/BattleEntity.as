@@ -1325,7 +1325,7 @@ package engine.battle.entity.model
          else if(this.saga)
          {
             _loc3_ = item;
-            if(_loc3_)
+            if(_loc3_ && !this._effects.hasTag(EffectTag.UNPOSSESSABLE) && !this._effects.hasTag(EffectTag.WARPED_POSSESSED))
             {
                this._board.dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_SURVIVAL_ITEM,this,null));
                this.entityItem = null;
@@ -1595,7 +1595,7 @@ package engine.battle.entity.model
             this._effects.update(param1);
          }
          var _loc2_:uint = 16777215;
-         var _loc3_:Number = 1;
+         var _loc3_:* = 1;
          if(this._pulsators)
          {
             for each(_loc4_ in this._pulsators)
@@ -1922,8 +1922,8 @@ package engine.battle.entity.model
             return null;
          }
          var _loc5_:* = _loc4_.level;
-         var _loc6_:int = param3.targets.length;
-         var _loc7_:int = param3.tiles.length;
+         var _loc6_:int = int(param3.targets.length);
+         var _loc7_:int = int(param3.tiles.length);
          var _loc8_:Boolean = _loc4_.targetRule.isTile;
          var _loc12_:Boolean = false;
          var _loc13_:int = 1;
@@ -2405,9 +2405,9 @@ package engine.battle.entity.model
          {
             return _loc3_;
          }
-         var _loc5_:Number = Math.abs(param1.center.x - _loc3_.center.x) + Math.abs(param1.center.y - _loc3_.center.y);
+         var _loc5_:* = Math.abs(param1.center.x - _loc3_.center.x) + Math.abs(param1.center.y - _loc3_.center.y);
          var _loc6_:TileRect = _loc3_.flip(null);
-         var _loc7_:Number = Math.abs(param1.center.x - _loc6_.center.x) + Math.abs(param1.center.y - _loc6_.center.y);
+         var _loc7_:* = Math.abs(param1.center.x - _loc6_.center.x) + Math.abs(param1.center.y - _loc6_.center.y);
          if(!param2 && _loc5_ < _loc7_ || param2 && _loc5_ > _loc7_)
          {
             return _loc3_;

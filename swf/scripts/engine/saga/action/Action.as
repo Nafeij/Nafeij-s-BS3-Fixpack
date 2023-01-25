@@ -242,7 +242,7 @@ package engine.saga.action
          catch(err:Error)
          {
             logger.error("Failed to start action: (" + id + ") [" + this.toStringNoId() + "]");
-            st = err.getStackTrace();
+            st = String(err.getStackTrace());
             if(!logger.isDebugEnabled && !saga.appinfo.isDebugger)
             {
                st = StringUtil.truncateLines(st,3,1000);
@@ -424,9 +424,34 @@ package engine.saga.action
          var _loc4_:IEntityDef = this.saga.getCastMember(param1);
          if(_loc4_)
          {
-            param1 = _loc4_.id;
+            param1 = String(_loc4_.id);
          }
          return _loc3_.getEntityByIdOrByDefId(param1,null,param2);
+      }
+      
+      public function findSpeakerEntityFromList(param1:String, param2:Boolean, param3:int) : IBattleEntity
+      {
+         var _loc7_:String = null;
+         var _loc8_:IBattleEntity = null;
+         var _loc4_:Array = param1.split(",");
+         var _loc6_:BattleBoard = this.saga.getBattleBoard();
+         if(!_loc6_)
+         {
+            return null;
+         }
+         for each(_loc7_ in _loc4_)
+         {
+            if(_loc7_ == "*player")
+            {
+               break;
+            }
+            _loc8_ = this.findBattleEntity(_loc7_,param2);
+            if(_loc8_)
+            {
+               return _loc8_;
+            }
+         }
+         return _loc6_.getNthSpeakerEntity(param3);
       }
       
       public function extractEntities(param1:String, param2:Boolean, param3:Vector.<String> = null) : Vector.<IEntity>
@@ -461,7 +486,7 @@ package engine.saga.action
             _loc9_ = this.saga.getCastMember(_loc8_);
             if(_loc9_)
             {
-               _loc8_ = _loc9_.id;
+               _loc8_ = String(_loc9_.id);
             }
             _loc10_ = _loc5_.getEntityByIdOrByDefId(_loc8_,null,param2);
             if(_loc10_)

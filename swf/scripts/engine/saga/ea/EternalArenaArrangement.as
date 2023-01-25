@@ -59,9 +59,9 @@ package engine.saga.ea
       
       private function generateComparisonString() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Dictionary = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc1_:String = "";
          for(_loc2_ in this.valuesByType)
          {
@@ -78,9 +78,9 @@ package engine.saga.ea
       
       public function fromJson(param1:Object) : EternalArenaArrangement
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Object = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          for(_loc2_ in param1)
          {
             _loc3_ = param1[_loc2_];
@@ -160,9 +160,9 @@ package engine.saga.ea
       
       public function toJson() : Object
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Dictionary = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc1_:Object = {};
          for(_loc2_ in this.valuesByType)
          {
@@ -215,10 +215,10 @@ package engine.saga.ea
       
       public function isValid(param1:EternalArenaOptionGroups, param2:BoxString) : Boolean
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:Dictionary = null;
          var _loc5_:EternalArenaOptionGroup = null;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:String = null;
          if(!param1)
          {
@@ -236,7 +236,7 @@ package engine.saga.ea
             }
             for(_loc6_ in _loc4_)
             {
-               _loc7_ = _loc4_[_loc6_];
+               _loc7_ = String(_loc4_[_loc6_]);
                if(!_loc5_.hasValidChoice(this,_loc6_,_loc7_,param2))
                {
                   param2.value = "Arrangement choice " + _loc3_ + "." + _loc6_ + "=" + _loc7_ + " is invalid: " + param2.value;

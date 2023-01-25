@@ -157,7 +157,7 @@ package engine.saga
       
       private function _processOldTexts(param1:Object) : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:Object = null;
          var _loc4_:SagaCreditsTextDef = null;
          if(!param1)

@@ -184,7 +184,7 @@ package engine.saga.ea
       
       private function updateHeroWaveTracking() : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:IBattleParty = null;
          var _loc4_:int = 0;
          var _loc5_:IBattleEntity = null;
@@ -200,7 +200,7 @@ package engine.saga.ea
                while(_loc4_ < _loc3_.numAlive)
                {
                   _loc5_ = _loc3_.getAliveMember(_loc4_);
-                  _loc6_ = _loc5_.id;
+                  _loc6_ = String(_loc5_.id);
                   if(this._heroWaveCounts.hasOwnProperty(_loc6_))
                   {
                      this._heroWaveCounts[_loc6_] += 1;

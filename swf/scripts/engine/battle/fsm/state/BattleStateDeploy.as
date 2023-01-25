@@ -264,7 +264,7 @@ package engine.battle.fsm.state
             }
             return true;
          }
-         logger.info(!!("BattleStateDeploy can\'t handle " + param1) ? param1["class"] : null);
+         logger.info(!!("BattleStateDeploy can\'t handle " + param1) ? String(param1["class"]) : null);
          return false;
       }
       

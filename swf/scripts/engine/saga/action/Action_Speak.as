@@ -31,6 +31,8 @@ package engine.saga.action
       
       private var races:String;
       
+      private var sIndex:int = 0;
+      
       public function Action_Speak(param1:ActionDef, param2:Saga)
       {
          super(param1,param2);
@@ -70,7 +72,7 @@ package engine.saga.action
                {
                   this.races = "human,varl,horseborn";
                }
-               _loc2_ = super.findBattleEntityFromList(def.speaker,true,this.races);
+               _loc2_ = super.findSpeakerEntityFromList(def.speaker,true,this.sIndex);
                if(_loc2_)
                {
                   _loc1_ = _loc2_.def;
@@ -86,7 +88,7 @@ package engine.saga.action
                end();
                return;
             }
-            _loc7_ = _loc1_.entityClass.race;
+            _loc7_ = String(_loc1_.entityClass.race);
             if(def.speaker == "*player" && !(_loc7_ == "human" || _loc7_ == "varl" || _loc7_ == "horseborn"))
             {
                logger.info("No valid roster members for \'*player\' for " + this);
@@ -189,16 +191,24 @@ package engine.saga.action
             {
                this.notranslate = true;
             }
+            else if(_loc3_.indexOf("sIndex") == 0)
+            {
+               if(_loc3_.indexOf("sIndex=") == 0)
+               {
+                  _loc4_ = _loc3_.substr("sIndex=".length);
+                  if(_loc4_)
+                  {
+                     this.sIndex = int(_loc4_);
+                  }
+               }
+            }
             else
             {
-               if(_loc3_ != "races")
+               if(_loc3_.indexOf("races=") != 0)
                {
                   throw new ArgumentError("Invalid arg [" + _loc3_ + "] in param [" + _loc1_ + "]: " + this);
                }
-               if(_loc3_.indexOf("races=") == 0)
-               {
-                  this.races = _loc3_.substr("races=".length);
-               }
+               this.races = _loc3_.substr("races=".length);
             }
          }
       }

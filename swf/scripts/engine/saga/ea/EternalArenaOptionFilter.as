@@ -26,7 +26,7 @@ package engine.saga.ea
       
       public function fromJson(param1:Object, param2:ILogger) : EternalArenaOptionFilter
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          for(_loc3_ in param1)
          {
             this.addFiltration(_loc3_,param1[_loc3_]);
@@ -36,7 +36,7 @@ package engine.saga.ea
       
       public function checkFilter(param1:String, param2:EternalArenaArrangement) : Boolean
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:RegExp = null;
          var _loc5_:String = null;
          var _loc6_:Array = null;

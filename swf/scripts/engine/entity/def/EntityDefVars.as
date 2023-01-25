@@ -452,7 +452,7 @@ package engine.entity.def
          }
          if(classes)
          {
-            cn = json.entityClass;
+            cn = String(json.entityClass);
             this._entityClass = classes.fetch(cn);
          }
          this._name = json.name;
@@ -468,7 +468,7 @@ package engine.entity.def
          this.parseStatRanges(json,logger);
          for each(statvar in json.stats)
          {
-            sn = statvar.stat;
+            sn = String(statvar.stat);
             if(!(Boolean(sn) && (sn.indexOf("ABILITY_") == 0 || sn == "RANGE")))
             {
                try
@@ -554,7 +554,7 @@ package engine.entity.def
          _overrideStatRanges = new StatRanges();
          for each(statvar in vars.stat_ranges)
          {
-            sn = statvar.stat;
+            sn = String(statvar.stat);
             if(!(Boolean(sn) && (sn.indexOf("ABILITY_") == 0 || sn == "RANGE")))
             {
                try

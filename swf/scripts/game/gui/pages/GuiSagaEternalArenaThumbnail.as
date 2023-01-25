@@ -56,7 +56,7 @@ package game.gui.pages
       
       public function clear() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          for(_loc1_ in this._icons)
          {
             this.setIcon(_loc1_,null);

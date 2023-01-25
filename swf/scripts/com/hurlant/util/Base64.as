@@ -41,10 +41,10 @@ package com.hurlant.util
                _loc3_[_loc5_] = param1.readUnsignedByte();
                _loc5_++;
             }
-            _loc4_[0] = (Number(_loc3_[0]) & 252) >> 2;
-            _loc4_[1] = (Number(_loc3_[0]) & 3) << 4 | Number(_loc3_[1]) >> 4;
-            _loc4_[2] = (Number(_loc3_[1]) & 15) << 2 | Number(_loc3_[2]) >> 6;
-            _loc4_[3] = Number(_loc3_[2]) & 63;
+            _loc4_[0] = (_loc3_[0] & 252) >> 2;
+            _loc4_[1] = (_loc3_[0] & 3) << 4 | _loc3_[1] >> 4;
+            _loc4_[2] = (_loc3_[1] & 15) << 2 | _loc3_[2] >> 6;
+            _loc4_[3] = _loc3_[2] & 63;
             _loc6_ = _loc3_.length;
             while(_loc6_ < 3)
             {
@@ -83,9 +83,9 @@ package com.hurlant.util
                _loc3_[_loc6_] = BASE64_CHARS.indexOf(param1.charAt(_loc5_ + _loc6_));
                _loc6_++;
             }
-            _loc4_[0] = (Number(_loc3_[0]) << 2) + ((Number(_loc3_[1]) & 48) >> 4);
-            _loc4_[1] = ((Number(_loc3_[1]) & 15) << 4) + ((Number(_loc3_[2]) & 60) >> 2);
-            _loc4_[2] = ((Number(_loc3_[2]) & 3) << 6) + _loc3_[3];
+            _loc4_[0] = (_loc3_[0] << 2) + ((_loc3_[1] & 48) >> 4);
+            _loc4_[1] = ((_loc3_[1] & 15) << 4) + ((_loc3_[2] & 60) >> 2);
+            _loc4_[2] = ((_loc3_[2] & 3) << 6) + _loc3_[3];
             _loc7_ = 0;
             while(_loc7_ < _loc4_.length)
             {

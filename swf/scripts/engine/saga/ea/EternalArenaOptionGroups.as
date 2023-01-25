@@ -66,7 +66,7 @@ package engine.saga.ea
             _loc6_ = this.groupsById[_loc4_];
             for each(_loc7_ in _loc6_.optionIds)
             {
-               _loc8_ = _loc5_[_loc7_];
+               _loc8_ = String(_loc5_[_loc7_]);
                param2(_loc4_,_loc7_,_loc8_);
                if(_loc3_)
                {

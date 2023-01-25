@@ -415,6 +415,7 @@ package engine.saga
       
       public function Saga(param1:SagaDef, param2:ISoundSystem, param3:ResourceManager, param4:ILogger, param5:BattleAbilityDefFactory, param6:AppInfo, param7:Boolean, param8:Ccs, param9:Locale, param10:SaveManager)
       {
+         this.rest_speed = 0.001;
          var _loc12_:CaravanDef = null;
          var _loc13_:IEntityDef = null;
          var _loc14_:Caravan = null;
@@ -460,7 +461,7 @@ package engine.saga
          while(_loc11_ < param1.cast.numEntityDefs)
          {
             _loc13_ = param1.cast.getEntityDef(_loc11_);
-            if(_loc13_.talents)
+            if(!_loc13_.talents)
             {
             }
             _loc11_++;
@@ -560,7 +561,7 @@ package engine.saga
       
       private function _applyForceVars() : void
       {
-         var _loc1_:* = null;
+         var _loc1_:String = null;
          var _loc2_:* = undefined;
          if(SagaConfig.FORCE_VARS)
          {
@@ -886,7 +887,7 @@ package engine.saga
       
       private function checkCensorVars() : void
       {
-         var _loc1_:String = !!this.resman ? this.resman.censorId : null;
+         var _loc1_:String = String(!!this.resman ? this.resman.censorId : null);
          if(!_loc1_)
          {
             this.logger.i("CENS","Saga null censor id, no variable possible");
@@ -1003,17 +1004,17 @@ package engine.saga
          var _loc4_:IVariable = this.getVar(SagaVar.VAR_NUM_PEASANTS,VariableType.INTEGER);
          if(_loc4_)
          {
-            _loc1_ = _loc4_.asInteger;
+            _loc1_ = int(_loc4_.asInteger);
          }
          _loc4_ = this.getVar(SagaVar.VAR_NUM_FIGHTERS,VariableType.INTEGER);
          if(_loc4_)
          {
-            _loc2_ = _loc4_.asInteger;
+            _loc2_ = int(_loc4_.asInteger);
          }
          _loc4_ = this.getVar(SagaVar.VAR_NUM_VARL,VariableType.INTEGER);
          if(_loc4_)
          {
-            _loc3_ = _loc4_.asInteger;
+            _loc3_ = int(_loc4_.asInteger);
          }
          var _loc5_:int = _loc1_ + _loc2_ + _loc3_;
          this.logger.info("    %%%% Updating caravan size stat");
@@ -1145,8 +1146,8 @@ package engine.saga
          }
          else if(!_loc7_ && _loc3_ < _loc4_ || _loc7_ && Math.ceil(_loc9_) > Math.ceil(_loc8_))
          {
-            this.triggerVariableIncrement(_loc2_,_loc7_ ? _loc9_ : _loc4_);
-            this.triggerVariableThresholdDown(_loc2_,_loc7_ ? _loc9_ : _loc4_);
+            this.triggerVariableIncrement(_loc2_,!!_loc7_ ? int(_loc9_) : _loc4_);
+            this.triggerVariableThresholdDown(_loc2_,!!_loc7_ ? _loc9_ : _loc4_);
             _loc6_ = this.getVarBool(VAR_STARVING);
             if(_loc6_ && this.caravan && this.caravan.def.saves)
             {
@@ -1176,13 +1177,21 @@ package engine.saga
             {
                if(_loc17_.progressCount <= _loc3_)
                {
-                  if(Saga.ONLY_UNLOCK_PROGRESS_ACHIEVMENT_LOCALLY)
+                  if(!this.getVarBool(_loc17_.id + "_unlk"))
                   {
-                     SagaAchievements.unlockAchievementLocal(_loc17_,this.minutesPlayed);
+                     this.logger.info("Local prg_class acv awarded: " + _loc17_.id);
+                     if(Saga.ONLY_UNLOCK_PROGRESS_ACHIEVMENT_LOCALLY)
+                     {
+                        SagaAchievements.unlockAchievementLocal(_loc17_,this.minutesPlayed);
+                     }
+                     else
+                     {
+                        SagaAchievements.unlockAchievement(_loc17_,this.minutesPlayed,true);
+                     }
                   }
                   else
                   {
-                     SagaAchievements.unlockAchievement(_loc17_,this.minutesPlayed,true);
+                     this.logger.info("Local prg_class acv suppressed: " + _loc17_.id);
                   }
                }
             }
@@ -1368,7 +1377,7 @@ package engine.saga
                      _loc4_ = _loc3_.fetch(SagaVar.VAR_UNIT_TALK,null);
                      if(_loc4_)
                      {
-                        _loc5_ = _loc4_.asInteger;
+                        _loc5_ = int(_loc4_.asInteger);
                         if(_loc5_ > 0)
                         {
                            _loc4_.asAny = _loc5_ - 1;
@@ -1498,7 +1507,7 @@ package engine.saga
       
       private function _retroactivelyUpdateEaKills() : void
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:int = 0;
          if(!this.masterSave || !this.isEternalArena)
          {
@@ -1711,7 +1720,7 @@ package engine.saga
       public function sendCaravanCheckpointItemGa(param1:String, param2:Caravan, param3:String, param4:String = null) : void
       {
          var _loc5_:IVariableBag = param2.vars;
-         var _loc6_:int = _loc5_.getVarInt(param3);
+         var _loc6_:int = int(_loc5_.getVarInt(param3));
          var _loc7_:String = param2.def.shortname;
          if(!param4)
          {
@@ -2350,7 +2359,7 @@ package engine.saga
       
       public function triggerBattleUnitAttacked(param1:IBattleEntity, param2:IBattleEntity) : void
       {
-         var _loc3_:String = param2.def.entityClass.race;
+         var _loc3_:String = String(param2.def.entityClass.race);
          if(param1.def.id == "alette" && (_loc3_ == "human" || _loc3_ == "varl"))
          {
             if(!this.inTrainingBattle)
@@ -2481,10 +2490,10 @@ package engine.saga
          if(!this.inTrainingBattle)
          {
             this.incrementGlobalVar(VAR_PRG_BATTLES_FOUGHT);
-            this.incrementGlobalVar(_loc7_ ? VAR_PRG_BATTLES_WON : VAR_PRG_BATTLES_LOST);
+            this.incrementGlobalVar(!!_loc7_ ? VAR_PRG_BATTLES_WON : VAR_PRG_BATTLES_LOST);
             if(this.isEternalArena)
             {
-               this.incrementGlobalVar(_loc7_ ? VAR_PRG_EA_VICTORY_COUNT : VAR_PRG_EA_DEFEAT_COUNT);
+               this.incrementGlobalVar(!!_loc7_ ? VAR_PRG_EA_VICTORY_COUNT : VAR_PRG_EA_DEFEAT_COUNT);
                if(this.eternalArena.arrangement)
                {
                   _loc8_ = this.eternalArena.arrangement.getValue(EternalArenaOptionGroupTypes.BOARD,EternalArenaBoards.KEY_SAGA);
@@ -2566,7 +2575,7 @@ package engine.saga
          {
             return;
          }
-         var _loc2_:int = this.caravan._legend.party.totalPower;
+         var _loc2_:int = int(this.caravan._legend.party.totalPower);
          var _loc3_:int = this.getVarInt(param1 + "_ranks");
          _loc3_ = !!_loc3_ ? _loc3_ : 30;
          if(_loc2_ >= _loc3_)
@@ -3221,7 +3230,7 @@ package engine.saga
       
       public function endAllHappenings() : void
       {
-         var _loc2_:* = null;
+         var _loc2_:Object = null;
          var _loc3_:Happening = null;
          var _loc4_:Vector.<Action> = null;
          var _loc5_:Action = null;
@@ -4254,7 +4263,7 @@ package engine.saga
             if(!(_loc3_.ended || _loc3_ == param1 || _loc3_.def.allow_saves))
             {
                _loc4_ = !!_loc3_.def ? _loc3_.def.id : "UNKNOWN";
-               _loc5_ = Boolean(_loc3_.def) && Boolean(_loc3_.def.bag) ? _loc3_.def.bag.providerName : "UNKNOWN";
+               _loc5_ = String(Boolean(_loc3_.def) && Boolean(_loc3_.def.bag) ? _loc3_.def.bag.providerName : "UNKNOWN");
                _loc6_ = Boolean(_loc3_.action) && Boolean(_loc3_.action.def) ? _loc3_.action.def.labelString : "UNKNOWN";
                this.cannotSaveReason = "happening: [" + _loc4_ + "] action [ " + _loc6_ + "] in [" + _loc5_ + "] bag";
                return false;
@@ -4671,7 +4680,7 @@ package engine.saga
       public function getCampSceneUrl() : String
       {
          var _loc1_:IVariable = this.getVar(SagaVar.VAR_BIOME,VariableType.INTEGER);
-         var _loc2_:int = !!_loc1_ ? _loc1_.asInteger : 1;
+         var _loc2_:int = int(!!_loc1_ ? _loc1_.asInteger : 1);
          if(this.caravan)
          {
             return this.caravan.def.getCampUrlForBiome(_loc2_);
@@ -4690,7 +4699,7 @@ package engine.saga
          {
             return null;
          }
-         var _loc2_:int = this.getVar(SagaVar.VAR_NUM_POPULATION,VariableType.INTEGER).asInteger;
+         var _loc2_:int = int(this.getVar(SagaVar.VAR_NUM_POPULATION,VariableType.INTEGER).asInteger);
          var _loc3_:int = this.getVar(SagaVar.VAR_BANNER,VariableType.INTEGER).asInteger - 1;
          return this.def.getBannerLengthDef(param1,_loc3_,_loc2_);
       }
@@ -4920,8 +4929,8 @@ package engine.saga
             this.trainingBucket = new SagaBucket();
          }
          this.trainingBucket.clear();
-         var _loc3_:int = this.getVar(SagaVar.VAR_NUM_FIGHTERS,VariableType.INTEGER).asInteger;
-         var _loc4_:int = this.getVar(SagaVar.VAR_NUM_VARL,VariableType.INTEGER).asInteger;
+         var _loc3_:int = int(this.getVar(SagaVar.VAR_NUM_FIGHTERS,VariableType.INTEGER).asInteger);
+         var _loc4_:int = int(this.getVar(SagaVar.VAR_NUM_VARL,VariableType.INTEGER).asInteger);
          var _loc5_:int = 0;
          _loc5_ = 0;
          while(_loc5_ < _loc1_._ents.length)
@@ -4981,7 +4990,7 @@ package engine.saga
          }
          _loc2_ = Math.min(20,_loc2_);
          _loc2_ += this.getDifficultyDanger();
-         return Math.max(1,_loc2_);
+         return int(Math.max(1,_loc2_));
       }
       
       public function performTrainingBattle() : void
@@ -5093,12 +5102,12 @@ package engine.saga
          if(param1 && this._vars && Boolean(this._vars._global))
          {
             Ga.trackScreen(param1);
-            _loc2_ = this._vars._global.fetch(SagaVar.VAR_PLAY_MINUTES,VariableType.INTEGER).asInteger;
+            _loc2_ = int(this._vars._global.fetch(SagaVar.VAR_PLAY_MINUTES,VariableType.INTEGER).asInteger);
             if(_loc2_ != this.lastPlayMinutes)
             {
                this.lastPlayMinutes = _loc2_;
             }
-            _loc3_ = this._vars._global.fetch(SagaVar.VAR_DAY,VariableType.INTEGER).asInteger;
+            _loc3_ = int(this._vars._global.fetch(SagaVar.VAR_DAY,VariableType.INTEGER).asInteger);
             if(_loc3_ != this.lastDay)
             {
                this.lastDay = _loc3_;
@@ -5306,7 +5315,7 @@ package engine.saga
          _loc5_.bucket = null;
          _loc5_.battle_snap = param1;
          var _loc6_:Action_Battle = this.executeActionDef(_loc5_,null,null) as Action_Battle;
-         if(!_loc6_)
+         if(_loc6_)
          {
          }
          return _loc6_;
@@ -5314,7 +5323,7 @@ package engine.saga
       
       public function getMoraleIconUrl() : String
       {
-         var _loc1_:int = this.getVar(SagaVar.VAR_MORALE_CATEGORY,VariableType.INTEGER).asInteger;
+         var _loc1_:int = int(this.getVar(SagaVar.VAR_MORALE_CATEGORY,VariableType.INTEGER).asInteger);
          _loc1_--;
          if(_loc1_ >= 0 && _loc1_ < _moraleIconUrls.length)
          {
@@ -5784,8 +5793,8 @@ package engine.saga
          {
             return null;
          }
-         var _loc3_:int = _loc2_.rankMin;
-         var _loc4_:int = _loc2_.rankMax;
+         var _loc3_:int = int(_loc2_.rankMin);
+         var _loc4_:int = int(_loc2_.rankMax);
          return this._generateRandomItem(_loc3_,_loc4_);
       }
       
@@ -5796,7 +5805,7 @@ package engine.saga
          _loc3_--;
          _loc4_--;
          var _loc5_:Vector.<ItemDef> = this.generateRandomItemList(_loc3_,_loc4_);
-         var _loc6_:int = _loc5_.length;
+         var _loc6_:int = int(_loc5_.length);
          if(_loc6_ <= 0)
          {
             return null;
@@ -5815,7 +5824,7 @@ package engine.saga
             return null;
          }
          var _loc3_:Vector.<ItemDef> = this.def.itemDefs.marketitems.concat();
-         var _loc4_:int = _loc3_.length;
+         var _loc4_:int = int(_loc3_.length);
          if(_loc4_ <= 0)
          {
             return _loc3_;
@@ -5825,7 +5834,7 @@ package engine.saga
          var _loc7_:Dictionary = new Dictionary();
          this.removeOwnedItems(_loc7_);
          var _loc9_:Vector.<ItemDef> = new Vector.<ItemDef>();
-         var _loc10_:int = _loc3_.length;
+         var _loc10_:int = int(_loc3_.length);
          var _loc11_:int = 0;
          while(_loc11_ < _loc10_)
          {

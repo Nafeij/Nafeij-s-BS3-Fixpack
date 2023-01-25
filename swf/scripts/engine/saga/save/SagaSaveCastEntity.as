@@ -197,9 +197,9 @@ package engine.saga.save
          var _loc5_:StatType = null;
          var _loc6_:StatRange = null;
          var _loc7_:int = 0;
-         var _loc8_:* = null;
+         var _loc8_:String = null;
          var _loc9_:int = 0;
-         var _loc10_:* = null;
+         var _loc10_:String = null;
          var _loc11_:TalentDef = null;
          var _loc12_:int = 0;
          var _loc13_:Talent = null;
@@ -281,14 +281,14 @@ package engine.saga.save
       
       private function applyCastInfoVars(param1:IEntityDef, param2:ILogger, param3:Dictionary) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:String = null;
          var _loc6_:IVariable = null;
          for(_loc4_ in this.vars)
          {
             if(!(Boolean(param3) && !param3[_loc4_]))
             {
-               _loc5_ = this.vars[_loc4_];
+               _loc5_ = String(this.vars[_loc4_]);
                if(_loc5_)
                {
                   _loc6_ = param1.vars.fetch(_loc4_,null);
@@ -396,11 +396,11 @@ package engine.saga.save
       
       public function fromJson(param1:Object) : SagaSaveCastEntity
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:String = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:int = 0;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:int = 0;
          var _loc8_:Object = null;
          this.item = param1.item;
@@ -416,7 +416,7 @@ package engine.saga.save
          {
             for(_loc2_ in param1.vars)
             {
-               _loc3_ = param1.vars[_loc2_];
+               _loc3_ = String(param1.vars[_loc2_]);
                this.vars[_loc2_] = _loc3_;
             }
          }
@@ -451,11 +451,11 @@ package engine.saga.save
       
       public function toJson() : Object
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc3_:String = null;
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc5_:int = 0;
-         var _loc6_:* = null;
+         var _loc6_:String = null;
          var _loc7_:int = 0;
          var _loc8_:Object = null;
          var _loc1_:Object = {};
@@ -481,7 +481,7 @@ package engine.saga.save
             _loc1_.vars = {};
             for(_loc2_ in this.vars)
             {
-               _loc3_ = this.vars[_loc2_];
+               _loc3_ = String(this.vars[_loc2_]);
                _loc1_.vars[_loc2_] = _loc3_;
             }
          }

@@ -118,10 +118,10 @@ package game.gui.battle
          if(!this._listener.saveWrite(this._filename,this._json,false,false))
          {
             _loc4_ = _context.createDialog();
-            _loc5_ = _context.translate("yes");
-            _loc6_ = _context.translate("no");
-            _loc7_ = _context.translate("ea_save_overwrite_title");
-            _loc8_ = _context.translate("ea_save_overwrite_body");
+            _loc5_ = String(_context.translate("yes"));
+            _loc6_ = String(_context.translate("no"));
+            _loc7_ = String(_context.translate("ea_save_overwrite_title"));
+            _loc8_ = String(_context.translate("ea_save_overwrite_body"));
             _loc8_ = _loc8_.replace("{filename}",this._filename);
             _loc4_.openTwoBtnDialog(_loc7_,_loc8_,_loc5_,_loc6_,this.dialogCloseHandler);
             return;
@@ -131,7 +131,7 @@ package game.gui.battle
       
       private function dialogCloseHandler(param1:String) : void
       {
-         var _loc2_:String = _context.translate("yes");
+         var _loc2_:String = String(_context.translate("yes"));
          if(_loc2_ == param1)
          {
             this.handleWrite();
@@ -163,9 +163,9 @@ package game.gui.battle
          if(!this._listener.saveWrite(this._filename,this._json,true,false))
          {
             _loc1_ = _context.createDialog();
-            _loc2_ = _context.translate("ok");
-            _loc3_ = _context.translate("ea_save_error_title");
-            _loc4_ = _context.translate("ea_save_error_body");
+            _loc2_ = String(_context.translate("ok"));
+            _loc3_ = String(_context.translate("ea_save_error_title"));
+            _loc4_ = String(_context.translate("ea_save_error_body"));
             _loc1_.openDialog(_loc3_,_loc4_,_loc2_,this.dialogCloseHandler);
             return;
          }

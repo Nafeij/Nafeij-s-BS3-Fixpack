@@ -130,7 +130,7 @@ package engine.saga.ea
             return;
          }
          var _loc1_:Number = parseInt(this.configHash.substr(0,8),16);
-         var _loc2_:uint = isNaN(_loc1_) ? this.ordinal : _loc1_;
+         var _loc2_:uint = isNaN(_loc1_) ? uint(this.ordinal) : uint(_loc1_);
          var _loc3_:int = _loc2_ - int.MAX_VALUE;
          this.arrangement.setValue(EternalArenaOptionGroupTypes.RULES,RNG_SEED,_loc3_.toString());
       }

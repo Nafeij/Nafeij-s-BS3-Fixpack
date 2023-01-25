@@ -488,7 +488,7 @@ package engine.battle.board.model
       
       public function getDebugEntityList() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc1_:* = "";
          for(_loc2_ in this._entities)
          {
@@ -1051,7 +1051,7 @@ package engine.battle.board.model
          _loc16_.enabled = param12;
          _loc13_.addMember(_loc16_);
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_PARTY_CHANGED));
-         if(!this._scene._context.saga)
+         if(this._scene._context.saga)
          {
          }
          return _loc16_;
@@ -1185,7 +1185,7 @@ package engine.battle.board.model
       public function getEntityByDefId(param1:String, param2:TileRect, param3:Boolean) : IBattleEntity
       {
          var _loc4_:IBattleEntity = null;
-         var _loc8_:* = null;
+         var _loc8_:String = null;
          var _loc9_:IBattleEntity = null;
          var _loc10_:int = 0;
          if(!param2)
@@ -1225,6 +1225,25 @@ package engine.battle.board.model
          return _loc4_;
       }
       
+      public function getNthSpeakerEntity(param1:int) : IBattleEntity
+      {
+         var _loc8_:String = null;
+         var _loc9_:IBattleEntity = null;
+         for(_loc8_ in this._entities)
+         {
+            _loc9_ = this._entities[_loc8_];
+            if(_loc9_ && _loc9_.alive && _loc9_.isPlayer && _loc9_.def.entityClass.race != "horseborn" && _loc9_.def.entityClass.race != "dredge")
+            {
+               if(!param1)
+               {
+                  return _loc9_;
+               }
+               param1--;
+            }
+         }
+         return null;
+      }
+      
       public function get abilityManager() : IBattleAbilityManager
       {
          return this._abilityManager;
@@ -1244,8 +1263,8 @@ package engine.battle.board.model
          if(this._scene._context.saga)
          {
             _loc3_ = new BattleDeployer_Saga(this);
-            _loc4_ = _loc2_.isPlayer;
-            _loc5_ = _loc2_.isPlayer;
+            _loc4_ = Boolean(_loc2_.isPlayer);
+            _loc5_ = Boolean(_loc2_.isPlayer);
             _loc3_.autoDeployParty(_loc2_,_loc4_,_loc5_);
          }
          else
@@ -1448,7 +1467,7 @@ package engine.battle.board.model
       
       public function performBattleUnitEnable(param1:String, param2:Boolean) : void
       {
-         var _loc4_:* = null;
+         var _loc4_:String = null;
          var _loc3_:IBattleEntity = this.getEntity(param1);
          if(_loc3_)
          {

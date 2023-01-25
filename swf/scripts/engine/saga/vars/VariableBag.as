@@ -41,13 +41,13 @@ package engine.saga.vars
       public static function fromJsonToDictionary(param1:Object) : Dictionary
       {
          var _loc2_:Dictionary = null;
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          if(param1)
          {
             for(_loc3_ in param1)
             {
-               _loc4_ = param1[_loc3_];
+               _loc4_ = String(param1[_loc3_]);
                if(_loc4_)
                {
                   if(_loc4_ == "NaN")
@@ -68,7 +68,7 @@ package engine.saga.vars
       
       public static function toJsonFromDictionary(param1:Dictionary) : Object
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
          if(!param1)
          {
@@ -77,7 +77,7 @@ package engine.saga.vars
          var _loc2_:Object = {};
          for(_loc3_ in param1)
          {
-            _loc4_ = param1[_loc3_];
+            _loc4_ = String(param1[_loc3_]);
             _loc2_[_loc3_] = _loc4_;
          }
          return _loc2_;
@@ -102,7 +102,7 @@ package engine.saga.vars
       
       public function enumerateVarsNames(param1:Vector.<String>) : Vector.<String>
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          for(_loc2_ in this.vars)
          {
             if(!param1)
@@ -144,7 +144,7 @@ package engine.saga.vars
       
       public function fromDictionary(param1:Dictionary, param2:ILogger) : void
       {
-         var _loc3_:* = null;
+         var _loc3_:String = null;
          if(!param1)
          {
             return;

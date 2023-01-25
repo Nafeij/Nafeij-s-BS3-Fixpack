@@ -1076,7 +1076,7 @@ package game.gui.battle
       private function displayWarRenownClansmen() : void
       {
          context.playSound("ui_stats_promote");
-         var _loc1_:String = context.translate("mr_war_renown_clansmen_desc");
+         var _loc1_:String = String(context.translate("mr_war_renown_clansmen_desc"));
          var _loc2_:String = StringUtil.formatCommaInteger(this.outcome.clansmen_saved);
          _loc1_ = _loc1_.replace("$NUM_CLANSMEN",_loc2_);
          this._war_renown_desc.htmlText = _loc1_;
@@ -1305,16 +1305,16 @@ package game.gui.battle
          this._ea_score_total.setScore(param1.score);
          var _loc2_:int = 0;
          this._ea_score_objects.splice(0,this._ea_score_objects.length);
-         _loc2_ = param1.scoring.functions.functions.length - 1;
+         _loc2_ = int(param1.scoring.functions.functions.length - 1);
          while(_loc2_ >= 0)
          {
             _loc3_ = param1.scoring.functions.functions[_loc2_];
             if(_loc3_ != null)
             {
-               _loc4_ = param1.scoring.functions.functionParserToLhs[_loc3_];
+               _loc4_ = String(param1.scoring.functions.functionParserToLhs[_loc3_]);
                if(_loc4_ != null)
                {
-                  _loc5_ = param1.scoring.functions.functionStringKeys[_loc4_];
+                  _loc5_ = String(param1.scoring.functions.functionStringKeys[_loc4_]);
                   if(!(_loc5_ == null || _loc5_ == ""))
                   {
                      _loc6_ = new GuiEAScoreElement.mcClazz() as GuiEAScoreElement;
@@ -1334,7 +1334,7 @@ package game.gui.battle
       
       private function replaceSurvivalText(param1:TextField, param2:String, param3:String, param4:String) : void
       {
-         var _loc5_:String = _context.translate(param2);
+         var _loc5_:String = String(_context.translate(param2));
          _loc5_ = _loc5_.replace("{CURRENT}",param3);
          _loc5_ = _loc5_.replace("{TOTAL}",param4);
          param1.htmlText = _loc5_;

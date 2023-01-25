@@ -65,11 +65,11 @@ package com.hurlant.crypto.hash
                }
                else
                {
-                  _loc24_ = this.rrol(_loc3_[_loc21_ - 15],7) ^ this.rrol(_loc3_[_loc21_ - 15],18) ^ Number(_loc3_[_loc21_ - 15]) >>> 3;
-                  _loc25_ = this.rrol(_loc3_[_loc21_ - 2],17) ^ this.rrol(_loc3_[_loc21_ - 2],19) ^ Number(_loc3_[_loc21_ - 2]) >>> 10;
+                  _loc24_ = uint(this.rrol(_loc3_[_loc21_ - 15],7) ^ this.rrol(_loc3_[_loc21_ - 15],18) ^ _loc3_[_loc21_ - 15] >>> 3);
+                  _loc25_ = uint(this.rrol(_loc3_[_loc21_ - 2],17) ^ this.rrol(_loc3_[_loc21_ - 2],19) ^ _loc3_[_loc21_ - 2] >>> 10);
                   _loc3_[_loc21_] = _loc3_[_loc21_ - 16] + _loc24_ + _loc3_[_loc21_ - 7] + _loc25_;
                }
-               _loc22_ = (this.rrol(_loc4_,2) ^ this.rrol(_loc4_,13) ^ this.rrol(_loc4_,22)) + (_loc4_ & _loc5_ ^ _loc4_ & _loc6_ ^ _loc5_ & _loc6_);
+               _loc22_ = uint((this.rrol(_loc4_,2) ^ this.rrol(_loc4_,13) ^ this.rrol(_loc4_,22)) + (_loc4_ & _loc5_ ^ _loc4_ & _loc6_ ^ _loc5_ & _loc6_));
                _loc23_ = _loc11_ + (this.rrol(_loc8_,6) ^ this.rrol(_loc8_,11) ^ this.rrol(_loc8_,25)) + (_loc8_ & _loc9_ ^ _loc10_ & ~_loc8_) + k[_loc21_] + _loc3_[_loc21_];
                _loc11_ = _loc10_;
                _loc10_ = _loc9_;

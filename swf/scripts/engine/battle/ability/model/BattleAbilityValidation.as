@@ -81,7 +81,7 @@ package engine.battle.ability.model
       
       private static function validateMovement(param1:IBattleAbilityDef, param2:IBattleMove) : Boolean
       {
-         var _loc3_:int = param1.getMaxMove();
+         var _loc3_:int = int(param1.getMaxMove());
          if(_loc3_ >= 0)
          {
             if(Boolean(param2) && !param2.executed)
@@ -97,12 +97,12 @@ package engine.battle.ability.model
       
       public static function validateCosts(param1:IBattleAbilityDef, param2:IBattleEntity, param3:IBattleMove, param4:ILogger) : Boolean
       {
-         var _loc8_:Stat = null;
+         var _loc7_:Stat = null;
+         var _loc8_:int = 0;
          var _loc9_:int = 0;
-         var _loc10_:int = 0;
          var _loc5_:Boolean = true;
          var _loc6_:int = 0;
-         if(Boolean(param3) && !param3.committed)
+         if(param3 && !param3.committed)
          {
             _loc6_ = int(param2.stats.getExertionRequiredForMove(param3.numSteps - 1));
          }
@@ -121,34 +121,31 @@ package engine.battle.ability.model
          {
             return true;
          }
-         var _loc7_:int = 0;
-         while(_loc7_ < param1.costs.numStats)
+         for each(_loc7_ in param1.costs)
          {
-            _loc8_ = param1.costs.getStatByIndex(_loc7_);
-            _loc9_ = int(param2.stats.getValue(_loc8_.type));
-            if(_loc8_.type == StatType.WILLPOWER)
+            _loc8_ = int(param2.stats.getValue(_loc7_.type));
+            if(_loc7_.type == StatType.WILLPOWER)
             {
-               _loc10_ = int(param2.stats.getValue(StatType.EXERTION));
-               if(_loc10_ < _loc8_.value)
+               _loc9_ = int(param2.stats.getValue(StatType.EXERTION));
+               if(_loc9_ < _loc7_.value)
                {
                   if(!param4)
                   {
                      return false;
                   }
-                  param4.error("Not enough EXERTION (" + _loc10_ + "/" + _loc8_.value + ") for " + param1.id + " by " + param2.id);
+                  param4.error("Not enough EXERTION (" + _loc9_ + "/" + _loc7_.value + ") for " + param1.id + " by " + param2.id);
                }
-               _loc9_ -= _loc6_;
+               _loc8_ -= _loc6_;
             }
-            if(_loc8_.value > _loc9_)
+            if(_loc7_.value > _loc8_)
             {
                _loc5_ = false;
                if(!param4)
                {
                   return false;
                }
-               param4.error("Not enough " + _loc8_.type + " (" + _loc9_ + "/" + _loc8_.value + ") for " + param1.id + " by " + param2.id);
+               param4.error("Not enough " + _loc7_.type + " (" + _loc8_ + "/" + _loc7_.value + ") for " + param1.id + " by " + param2.id);
             }
-            _loc7_++;
          }
          return _loc5_;
       }
@@ -274,8 +271,8 @@ package engine.battle.ability.model
             return null;
          }
          var _loc3_:IBattleBoard = param1.board;
-         var _loc5_:int = Number(param1.x) - param2.x;
-         var _loc6_:int = Number(param1.y) - param2.y;
+         var _loc5_:int = param1.x - param2.x;
+         var _loc6_:int = param1.y - param2.y;
          var _loc7_:BattleFacing = BattleFacing.findFacing(_loc5_,_loc6_);
          if(_checkTileTail(_loc3_,param2,_loc7_))
          {
@@ -369,8 +366,8 @@ package engine.battle.ability.model
                return INVALID_TARGET_NOWHERE;
             }
          }
-         var _loc7_:int = param1.rangeMax(param2);
-         var _loc8_:int = param1.rangeMin(param2);
+         var _loc7_:int = int(param1.rangeMax(param2));
+         var _loc8_:int = int(param1.rangeMin(param2));
          if(_loc6_ != BattleAbilityRangeType.NONE && (_loc7_ > 0 || _loc8_ > 0))
          {
             _loc9_ = -1;

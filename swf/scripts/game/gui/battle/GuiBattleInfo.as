@@ -292,7 +292,7 @@ package game.gui.battle
             {
                if(_loc5_.maxLevel > 1)
                {
-                  _loc6_ = context.locale.translateGui("pg_abl_rank");
+                  _loc6_ = String(context.locale.translateGui("pg_abl_rank"));
                   _loc6_ = _loc6_.replace("$RANK",_loc4_.toString());
                   _loc3_ += _loc6_ + ": " + _loc5_.descriptionRank + "\n";
                }
@@ -327,7 +327,7 @@ package game.gui.battle
             }
             if(Boolean(param5) && param2)
             {
-               _loc8_ = context.locale.translate(LocaleCategory.TITLE,param5.def.id);
+               _loc8_ = String(context.locale.translate(LocaleCategory.TITLE,param5.def.id));
                _loc6_ += param1.defTitle.getName(param1.gender) + ": " + _loc8_;
             }
          }

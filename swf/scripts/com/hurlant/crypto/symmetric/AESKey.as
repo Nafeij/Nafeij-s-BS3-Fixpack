@@ -115,7 +115,7 @@ package com.hurlant.crypto.symmetric
             {
                _loc5_ = _loc4_;
                _loc4_ = uint(Sbox[_loc1_]);
-               _loc1_ = Number(Sbox[_loc2_]) ^ Number(Rcon[_loc6_ / _loc7_]);
+               _loc1_ = uint(Sbox[_loc2_] ^ Rcon[_loc6_ / _loc7_]);
                _loc2_ = uint(Sbox[_loc3_]);
                _loc3_ = uint(Sbox[_loc5_]);
             }
@@ -126,10 +126,10 @@ package com.hurlant.crypto.symmetric
                _loc3_ = uint(Sbox[_loc3_]);
                _loc4_ = uint(Sbox[_loc4_]);
             }
-            this.key[4 * _loc6_ + 0] = Number(this.key[4 * _loc6_ - 4 * _loc7_ + 0]) ^ _loc1_;
-            this.key[4 * _loc6_ + 1] = Number(this.key[4 * _loc6_ - 4 * _loc7_ + 1]) ^ _loc2_;
-            this.key[4 * _loc6_ + 2] = Number(this.key[4 * _loc6_ - 4 * _loc7_ + 2]) ^ _loc3_;
-            this.key[4 * _loc6_ + 3] = Number(this.key[4 * _loc6_ - 4 * _loc7_ + 3]) ^ _loc4_;
+            this.key[4 * _loc6_ + 0] = this.key[4 * _loc6_ - 4 * _loc7_ + 0] ^ _loc1_;
+            this.key[4 * _loc6_ + 1] = this.key[4 * _loc6_ - 4 * _loc7_ + 1] ^ _loc2_;
+            this.key[4 * _loc6_ + 2] = this.key[4 * _loc6_ - 4 * _loc7_ + 2] ^ _loc3_;
+            this.key[4 * _loc6_ + 3] = this.key[4 * _loc6_ - 4 * _loc7_ + 3] ^ _loc4_;
             _loc6_++;
          }
       }
@@ -270,22 +270,22 @@ package com.hurlant.crypto.symmetric
       protected function mixSubColumns() : void
       {
          this.tmp.length = 0;
-         this.tmp[0] = Number(Xtime2Sbox[this.state[0]]) ^ Number(Xtime3Sbox[this.state[5]]) ^ Number(Sbox[this.state[10]]) ^ Number(Sbox[this.state[15]]);
-         this.tmp[1] = Number(Sbox[this.state[0]]) ^ Number(Xtime2Sbox[this.state[5]]) ^ Number(Xtime3Sbox[this.state[10]]) ^ Number(Sbox[this.state[15]]);
-         this.tmp[2] = Number(Sbox[this.state[0]]) ^ Number(Sbox[this.state[5]]) ^ Number(Xtime2Sbox[this.state[10]]) ^ Number(Xtime3Sbox[this.state[15]]);
-         this.tmp[3] = Number(Xtime3Sbox[this.state[0]]) ^ Number(Sbox[this.state[5]]) ^ Number(Sbox[this.state[10]]) ^ Number(Xtime2Sbox[this.state[15]]);
-         this.tmp[4] = Number(Xtime2Sbox[this.state[4]]) ^ Number(Xtime3Sbox[this.state[9]]) ^ Number(Sbox[this.state[14]]) ^ Number(Sbox[this.state[3]]);
-         this.tmp[5] = Number(Sbox[this.state[4]]) ^ Number(Xtime2Sbox[this.state[9]]) ^ Number(Xtime3Sbox[this.state[14]]) ^ Number(Sbox[this.state[3]]);
-         this.tmp[6] = Number(Sbox[this.state[4]]) ^ Number(Sbox[this.state[9]]) ^ Number(Xtime2Sbox[this.state[14]]) ^ Number(Xtime3Sbox[this.state[3]]);
-         this.tmp[7] = Number(Xtime3Sbox[this.state[4]]) ^ Number(Sbox[this.state[9]]) ^ Number(Sbox[this.state[14]]) ^ Number(Xtime2Sbox[this.state[3]]);
-         this.tmp[8] = Number(Xtime2Sbox[this.state[8]]) ^ Number(Xtime3Sbox[this.state[13]]) ^ Number(Sbox[this.state[2]]) ^ Number(Sbox[this.state[7]]);
-         this.tmp[9] = Number(Sbox[this.state[8]]) ^ Number(Xtime2Sbox[this.state[13]]) ^ Number(Xtime3Sbox[this.state[2]]) ^ Number(Sbox[this.state[7]]);
-         this.tmp[10] = Number(Sbox[this.state[8]]) ^ Number(Sbox[this.state[13]]) ^ Number(Xtime2Sbox[this.state[2]]) ^ Number(Xtime3Sbox[this.state[7]]);
-         this.tmp[11] = Number(Xtime3Sbox[this.state[8]]) ^ Number(Sbox[this.state[13]]) ^ Number(Sbox[this.state[2]]) ^ Number(Xtime2Sbox[this.state[7]]);
-         this.tmp[12] = Number(Xtime2Sbox[this.state[12]]) ^ Number(Xtime3Sbox[this.state[1]]) ^ Number(Sbox[this.state[6]]) ^ Number(Sbox[this.state[11]]);
-         this.tmp[13] = Number(Sbox[this.state[12]]) ^ Number(Xtime2Sbox[this.state[1]]) ^ Number(Xtime3Sbox[this.state[6]]) ^ Number(Sbox[this.state[11]]);
-         this.tmp[14] = Number(Sbox[this.state[12]]) ^ Number(Sbox[this.state[1]]) ^ Number(Xtime2Sbox[this.state[6]]) ^ Number(Xtime3Sbox[this.state[11]]);
-         this.tmp[15] = Number(Xtime3Sbox[this.state[12]]) ^ Number(Sbox[this.state[1]]) ^ Number(Sbox[this.state[6]]) ^ Number(Xtime2Sbox[this.state[11]]);
+         this.tmp[0] = Xtime2Sbox[this.state[0]] ^ Xtime3Sbox[this.state[5]] ^ Sbox[this.state[10]] ^ Sbox[this.state[15]];
+         this.tmp[1] = Sbox[this.state[0]] ^ Xtime2Sbox[this.state[5]] ^ Xtime3Sbox[this.state[10]] ^ Sbox[this.state[15]];
+         this.tmp[2] = Sbox[this.state[0]] ^ Sbox[this.state[5]] ^ Xtime2Sbox[this.state[10]] ^ Xtime3Sbox[this.state[15]];
+         this.tmp[3] = Xtime3Sbox[this.state[0]] ^ Sbox[this.state[5]] ^ Sbox[this.state[10]] ^ Xtime2Sbox[this.state[15]];
+         this.tmp[4] = Xtime2Sbox[this.state[4]] ^ Xtime3Sbox[this.state[9]] ^ Sbox[this.state[14]] ^ Sbox[this.state[3]];
+         this.tmp[5] = Sbox[this.state[4]] ^ Xtime2Sbox[this.state[9]] ^ Xtime3Sbox[this.state[14]] ^ Sbox[this.state[3]];
+         this.tmp[6] = Sbox[this.state[4]] ^ Sbox[this.state[9]] ^ Xtime2Sbox[this.state[14]] ^ Xtime3Sbox[this.state[3]];
+         this.tmp[7] = Xtime3Sbox[this.state[4]] ^ Sbox[this.state[9]] ^ Sbox[this.state[14]] ^ Xtime2Sbox[this.state[3]];
+         this.tmp[8] = Xtime2Sbox[this.state[8]] ^ Xtime3Sbox[this.state[13]] ^ Sbox[this.state[2]] ^ Sbox[this.state[7]];
+         this.tmp[9] = Sbox[this.state[8]] ^ Xtime2Sbox[this.state[13]] ^ Xtime3Sbox[this.state[2]] ^ Sbox[this.state[7]];
+         this.tmp[10] = Sbox[this.state[8]] ^ Sbox[this.state[13]] ^ Xtime2Sbox[this.state[2]] ^ Xtime3Sbox[this.state[7]];
+         this.tmp[11] = Xtime3Sbox[this.state[8]] ^ Sbox[this.state[13]] ^ Sbox[this.state[2]] ^ Xtime2Sbox[this.state[7]];
+         this.tmp[12] = Xtime2Sbox[this.state[12]] ^ Xtime3Sbox[this.state[1]] ^ Sbox[this.state[6]] ^ Sbox[this.state[11]];
+         this.tmp[13] = Sbox[this.state[12]] ^ Xtime2Sbox[this.state[1]] ^ Xtime3Sbox[this.state[6]] ^ Sbox[this.state[11]];
+         this.tmp[14] = Sbox[this.state[12]] ^ Sbox[this.state[1]] ^ Xtime2Sbox[this.state[6]] ^ Xtime3Sbox[this.state[11]];
+         this.tmp[15] = Xtime3Sbox[this.state[12]] ^ Sbox[this.state[1]] ^ Sbox[this.state[6]] ^ Xtime2Sbox[this.state[11]];
          this.state.position = 0;
          this.state.writeBytes(this.tmp,0,Nb * 4);
       }
@@ -294,22 +294,22 @@ package com.hurlant.crypto.symmetric
       {
          var _loc1_:uint = 0;
          this.tmp.length = 0;
-         this.tmp[0] = Number(XtimeE[this.state[0]]) ^ Number(XtimeB[this.state[1]]) ^ Number(XtimeD[this.state[2]]) ^ Number(Xtime9[this.state[3]]);
-         this.tmp[5] = Number(Xtime9[this.state[0]]) ^ Number(XtimeE[this.state[1]]) ^ Number(XtimeB[this.state[2]]) ^ Number(XtimeD[this.state[3]]);
-         this.tmp[10] = Number(XtimeD[this.state[0]]) ^ Number(Xtime9[this.state[1]]) ^ Number(XtimeE[this.state[2]]) ^ Number(XtimeB[this.state[3]]);
-         this.tmp[15] = Number(XtimeB[this.state[0]]) ^ Number(XtimeD[this.state[1]]) ^ Number(Xtime9[this.state[2]]) ^ Number(XtimeE[this.state[3]]);
-         this.tmp[4] = Number(XtimeE[this.state[4]]) ^ Number(XtimeB[this.state[5]]) ^ Number(XtimeD[this.state[6]]) ^ Number(Xtime9[this.state[7]]);
-         this.tmp[9] = Number(Xtime9[this.state[4]]) ^ Number(XtimeE[this.state[5]]) ^ Number(XtimeB[this.state[6]]) ^ Number(XtimeD[this.state[7]]);
-         this.tmp[14] = Number(XtimeD[this.state[4]]) ^ Number(Xtime9[this.state[5]]) ^ Number(XtimeE[this.state[6]]) ^ Number(XtimeB[this.state[7]]);
-         this.tmp[3] = Number(XtimeB[this.state[4]]) ^ Number(XtimeD[this.state[5]]) ^ Number(Xtime9[this.state[6]]) ^ Number(XtimeE[this.state[7]]);
-         this.tmp[8] = Number(XtimeE[this.state[8]]) ^ Number(XtimeB[this.state[9]]) ^ Number(XtimeD[this.state[10]]) ^ Number(Xtime9[this.state[11]]);
-         this.tmp[13] = Number(Xtime9[this.state[8]]) ^ Number(XtimeE[this.state[9]]) ^ Number(XtimeB[this.state[10]]) ^ Number(XtimeD[this.state[11]]);
-         this.tmp[2] = Number(XtimeD[this.state[8]]) ^ Number(Xtime9[this.state[9]]) ^ Number(XtimeE[this.state[10]]) ^ Number(XtimeB[this.state[11]]);
-         this.tmp[7] = Number(XtimeB[this.state[8]]) ^ Number(XtimeD[this.state[9]]) ^ Number(Xtime9[this.state[10]]) ^ Number(XtimeE[this.state[11]]);
-         this.tmp[12] = Number(XtimeE[this.state[12]]) ^ Number(XtimeB[this.state[13]]) ^ Number(XtimeD[this.state[14]]) ^ Number(Xtime9[this.state[15]]);
-         this.tmp[1] = Number(Xtime9[this.state[12]]) ^ Number(XtimeE[this.state[13]]) ^ Number(XtimeB[this.state[14]]) ^ Number(XtimeD[this.state[15]]);
-         this.tmp[6] = Number(XtimeD[this.state[12]]) ^ Number(Xtime9[this.state[13]]) ^ Number(XtimeE[this.state[14]]) ^ Number(XtimeB[this.state[15]]);
-         this.tmp[11] = Number(XtimeB[this.state[12]]) ^ Number(XtimeD[this.state[13]]) ^ Number(Xtime9[this.state[14]]) ^ Number(XtimeE[this.state[15]]);
+         this.tmp[0] = XtimeE[this.state[0]] ^ XtimeB[this.state[1]] ^ XtimeD[this.state[2]] ^ Xtime9[this.state[3]];
+         this.tmp[5] = Xtime9[this.state[0]] ^ XtimeE[this.state[1]] ^ XtimeB[this.state[2]] ^ XtimeD[this.state[3]];
+         this.tmp[10] = XtimeD[this.state[0]] ^ Xtime9[this.state[1]] ^ XtimeE[this.state[2]] ^ XtimeB[this.state[3]];
+         this.tmp[15] = XtimeB[this.state[0]] ^ XtimeD[this.state[1]] ^ Xtime9[this.state[2]] ^ XtimeE[this.state[3]];
+         this.tmp[4] = XtimeE[this.state[4]] ^ XtimeB[this.state[5]] ^ XtimeD[this.state[6]] ^ Xtime9[this.state[7]];
+         this.tmp[9] = Xtime9[this.state[4]] ^ XtimeE[this.state[5]] ^ XtimeB[this.state[6]] ^ XtimeD[this.state[7]];
+         this.tmp[14] = XtimeD[this.state[4]] ^ Xtime9[this.state[5]] ^ XtimeE[this.state[6]] ^ XtimeB[this.state[7]];
+         this.tmp[3] = XtimeB[this.state[4]] ^ XtimeD[this.state[5]] ^ Xtime9[this.state[6]] ^ XtimeE[this.state[7]];
+         this.tmp[8] = XtimeE[this.state[8]] ^ XtimeB[this.state[9]] ^ XtimeD[this.state[10]] ^ Xtime9[this.state[11]];
+         this.tmp[13] = Xtime9[this.state[8]] ^ XtimeE[this.state[9]] ^ XtimeB[this.state[10]] ^ XtimeD[this.state[11]];
+         this.tmp[2] = XtimeD[this.state[8]] ^ Xtime9[this.state[9]] ^ XtimeE[this.state[10]] ^ XtimeB[this.state[11]];
+         this.tmp[7] = XtimeB[this.state[8]] ^ XtimeD[this.state[9]] ^ Xtime9[this.state[10]] ^ XtimeE[this.state[11]];
+         this.tmp[12] = XtimeE[this.state[12]] ^ XtimeB[this.state[13]] ^ XtimeD[this.state[14]] ^ Xtime9[this.state[15]];
+         this.tmp[1] = Xtime9[this.state[12]] ^ XtimeE[this.state[13]] ^ XtimeB[this.state[14]] ^ XtimeD[this.state[15]];
+         this.tmp[6] = XtimeD[this.state[12]] ^ Xtime9[this.state[13]] ^ XtimeE[this.state[14]] ^ XtimeB[this.state[15]];
+         this.tmp[11] = XtimeB[this.state[12]] ^ XtimeD[this.state[13]] ^ Xtime9[this.state[14]] ^ XtimeE[this.state[15]];
          _loc1_ = 0;
          while(_loc1_ < 4 * Nb)
          {

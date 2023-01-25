@@ -77,7 +77,7 @@ package engine.saga.ea
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_.length)
          {
-            _loc5_ = _loc3_[_loc4_];
+            _loc5_ = String(_loc3_[_loc4_]);
             if(_loc5_)
             {
                if(_loc5_.indexOf("#") == 0)
@@ -103,13 +103,13 @@ package engine.saga.ea
                      _loc7_ = 2;
                      while(_loc7_ < _loc6_.length)
                      {
-                        _loc9_ = _loc6_[_loc7_];
+                        _loc9_ = String(_loc6_[_loc7_]);
                         _loc10_ = _loc9_.lastIndexOf("^") == _loc9_.length - 1;
                         if(_loc10_)
                         {
                            _loc9_ = _loc9_.substr(0,_loc9_.length - 1);
                         }
-                        _loc11_ = _loc6_[1];
+                        _loc11_ = String(_loc6_[1]);
                         if(!StringUtil.startsWith(_loc11_,this.pathprefix))
                         {
                            _loc11_ = this.pathprefix + _loc11_;

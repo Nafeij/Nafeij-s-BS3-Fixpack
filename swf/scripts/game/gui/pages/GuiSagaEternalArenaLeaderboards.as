@@ -276,9 +276,9 @@ package game.gui.pages
          {
             this.networkErrorDialog.cleanup();
          }
-         var _loc2_:String = _context.translate("ok");
-         var _loc3_:String = _context.translateCategory("platform_network_error",LocaleCategory.PLATFORM);
-         var _loc4_:String = _context.translateCategory("platform_leaderboard_inaccessible",LocaleCategory.PLATFORM);
+         var _loc2_:String = String(_context.translate("ok"));
+         var _loc3_:String = String(_context.translateCategory("platform_network_error",LocaleCategory.PLATFORM));
+         var _loc4_:String = String(_context.translateCategory("platform_leaderboard_inaccessible",LocaleCategory.PLATFORM));
          this.networkErrorDialog = _context.createDialog();
          this.networkErrorDialog.openDialog(_loc3_,_loc4_,_loc2_);
          SagaEternalArena.dispatcher.removeEventListener(SagaLeaderboardsEvent.FETCH_ERROR,this.eaLeaderboardErrorHandler);

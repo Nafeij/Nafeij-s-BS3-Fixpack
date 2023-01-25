@@ -89,8 +89,8 @@ package engine.saga
             logger.info("Usage: <key> <override>");
             return;
          }
-         var _loc3_:String = _loc2_[1];
-         var _loc4_:String = _loc2_[2];
+         var _loc3_:String = String(_loc2_[1]);
+         var _loc4_:String = String(_loc2_[2]);
          this.ea = this.saga.eternalArena;
          this.ea.def.leaderboards.overrideLeaderboardEnvironment(_loc3_,_loc4_);
       }

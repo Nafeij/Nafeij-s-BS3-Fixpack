@@ -63,7 +63,7 @@ package engine.core.logging
          {
             param1 += StringUtil.repeat(" ",_loc2_);
          }
-         var _loc3_:* = _catStrings[param1];
+         var _loc3_:* = String(_catStrings[param1]);
          if(!_loc3_)
          {
             _loc3_ = "(" + param1 + ") ";
@@ -463,8 +463,8 @@ class MessageBuffer
       }
       this.dirty = false;
       this.elapsed -= this.buffer_ms;
-      this.buffer_ms = Math.min(MAX_BUFFER_MS,Number(this.buffer_ms) * 2);
-      var _loc2_:String = this.lastMsg;
+      this.buffer_ms = Math.min(MAX_BUFFER_MS,this.buffer_ms * 2);
+      var _loc2_:String = String(this.lastMsg);
       if(this.lastCount == this.totalCount)
       {
          _loc2_ += " (x" + this.lastCount + ")";

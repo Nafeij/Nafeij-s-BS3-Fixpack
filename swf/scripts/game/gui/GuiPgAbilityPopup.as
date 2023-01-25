@@ -494,7 +494,7 @@ package game.gui
          this._textAblDesc.width = this._textAblDescSize.x;
          this._textAblDesc.height = this._textAblDescSize.y;
          this._textAblRanks.y = this._textAblRanksY;
-         var _loc1_:String = context.translateCategory(this._ability.id + "_pg_desc",LocaleCategory.ABILITY);
+         var _loc1_:String = String(context.translateCategory(this._ability.id + "_pg_desc",LocaleCategory.ABILITY));
          _loc1_ = this._ability.makeSubstitutions(_loc1_,logger);
          this._textAblDesc.htmlText = _loc1_;
          if(this._ability.tag == BattleAbilityTag.PASSIVE)
@@ -510,7 +510,7 @@ package game.gui
          else
          {
             this._textAblNameActive.htmlText = !!this._ability.name ? this._ability.name : "";
-            _loc2_ = context.translateCategory(this._ability.id + "_pg_ranks",LocaleCategory.ABILITY);
+            _loc2_ = String(context.translateCategory(this._ability.id + "_pg_ranks",LocaleCategory.ABILITY));
             _loc2_ = this._ability.makeSubstitutions(_loc2_,logger);
             this._textAblRanks.htmlText = _loc2_;
             this._textAblRanks.height = this._textAblRanks.textHeight + 5;
@@ -520,9 +520,9 @@ package game.gui
             this._$pg_abl_label_active.visible = true;
             this._textAblRanks.visible = true;
             this._textAblNameActive.visible = true;
-            _loc3_ = context.translate("pg_abl_rank");
+            _loc3_ = String(context.translate("pg_abl_rank"));
             _loc4_ = !!this.entity.actives ? this.entity.actives.getAbilityDefLevelById(this._ability.id) : null;
-            _loc5_ = !!_loc4_ ? Math.min(_loc4_.level,this._ability.maxLevel) : 0;
+            _loc5_ = !!_loc4_ ? int(Math.min(_loc4_.level,this._ability.maxLevel)) : 0;
             _loc3_ = _loc3_.replace("$RANK",_loc5_);
             this._textAblRank.text = _loc3_;
             this._textAblRank.visible = true;
@@ -658,7 +658,7 @@ package game.gui
       private function onConfirmAbilitySelect(param1:ButtonWithIndex) : void
       {
          var _loc2_:int = 7;
-         this.entity.addActiveAbilityDefLevel(new AbilityDefLevel(this.abilitiesToSelect[this._abilitySelectControl.index],1 + (Number(this.entity.stats.rank) - _loc2_) / 2,_loc2_),_context.logger);
+         this.entity.addActiveAbilityDefLevel(new AbilityDefLevel(this.abilitiesToSelect[this._abilitySelectControl.index],1 + (this.entity.stats.rank - _loc2_) / 2,_loc2_),_context.logger);
          this.entity.selectAdditionalAbility = false;
          dispatchEvent(new Event(this.EVENT_ABILITY_SELECTED));
          this.showAbilitySelect(false);
@@ -731,7 +731,7 @@ package game.gui
          {
             return;
          }
-         var _loc3_:String = context.translateCategory("tut_ability_ability_select",LocaleCategory.TUTORIAL);
+         var _loc3_:String = String(context.translateCategory("tut_ability_ability_select",LocaleCategory.TUTORIAL));
          this.tutorial_id = context.createTutorialPopup(param1,_loc3_,TutorialTooltipAlign.BOTTOM,TutorialTooltipAnchor.BOTTOM,true,false,null);
       }
       

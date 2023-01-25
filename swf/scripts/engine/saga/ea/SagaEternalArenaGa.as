@@ -132,8 +132,8 @@ package engine.saga.ea
             this.logger.i("ETAR","reportHeroRespec skipping reporting due to null entity");
             return;
          }
-         var _loc2_:String = param1.name;
-         var _loc3_:String = param1.stats.rank.toString();
+         var _loc2_:String = String(param1.name);
+         var _loc3_:String = String(param1.stats.rank.toString());
          Ga.normal(CAT_RRA,_loc3_,_loc2_,1);
          Ga.normal(CAT_RCH,_loc2_,_loc3_,1);
       }

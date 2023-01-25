@@ -810,16 +810,16 @@ package game.gui.pages
       private function respecBannerHandler(param1:Event) : void
       {
          var _loc2_:IGuiDialog = _context.createDialog();
-         var _loc3_:String = _context.translate("ea_reset");
-         var _loc4_:String = _context.translate("cancel");
-         var _loc5_:String = _context.translate("ea_respec_confirm_title");
-         var _loc6_:String = _context.translate("ea_respec_confirm_body");
+         var _loc3_:String = String(_context.translate("ea_reset"));
+         var _loc4_:String = String(_context.translate("cancel"));
+         var _loc5_:String = String(_context.translate("ea_respec_confirm_title"));
+         var _loc6_:String = String(_context.translate("ea_respec_confirm_body"));
          _loc2_.openTwoBtnDialog(_loc5_,_loc6_,_loc3_,_loc4_,this.respecConfirmHandler);
       }
       
       private function respecConfirmHandler(param1:String) : void
       {
-         var _loc2_:String = _context.translate("ea_reset");
+         var _loc2_:String = String(_context.translate("ea_reset"));
          if(_loc2_ == param1)
          {
             if(_context.saga.isEternalArena && Boolean(_context.saga.eternalArena))
@@ -1094,21 +1094,21 @@ package game.gui.pages
          {
             return;
          }
-         var _loc4_:String = _context.translate("survival_dlg_funeral_title");
+         var _loc4_:String = String(_context.translate("survival_dlg_funeral_title"));
          if(this._selectedCharacter.defItem)
          {
-            _loc5_ = _context.translate("survival_dlg_funeral_item_body");
+            _loc5_ = String(_context.translate("survival_dlg_funeral_item_body"));
             _loc5_ = _loc5_.replace("{ITEM}",this._selectedCharacter.defItem.def.name);
          }
          else
          {
-            _loc5_ = _context.translate("survival_dlg_funeral_noitem_body");
+            _loc5_ = String(_context.translate("survival_dlg_funeral_noitem_body"));
          }
          var _loc6_:int = this.selectedCharacter.survivalFuneralRewardRenown;
          var _loc7_:int = this.selectedCharacter.survivalFuneralRewardItemRenown;
          _loc5_ = _loc5_.replace("{RENOWN}",(_loc6_ + _loc7_).toString());
-         var _loc8_:String = _context.translate("confirm");
-         var _loc9_:String = _context.translate("cancel");
+         var _loc8_:String = String(_context.translate("confirm"));
+         var _loc9_:String = String(_context.translate("cancel"));
          _loc3_ = _context.createDialog();
          _loc3_.openTwoBtnDialog(_loc4_,_loc5_,_loc8_,_loc9_,this.survivalFuneralDialogClosedHandler);
       }
@@ -1122,7 +1122,7 @@ package game.gui.pages
          {
             return;
          }
-         var _loc2_:String = _context.translate("confirm");
+         var _loc2_:String = String(_context.translate("confirm"));
          var _loc3_:Saga = _context.saga;
          if(param1 == _loc2_)
          {
@@ -1150,12 +1150,12 @@ package game.gui.pages
          {
             return;
          }
-         var _loc3_:String = _context.translate("survival_dlg_recruit_title");
-         var _loc4_:String = _context.translate("survival_dlg_recruit_body");
+         var _loc3_:String = String(_context.translate("survival_dlg_recruit_title"));
+         var _loc4_:String = String(_context.translate("survival_dlg_recruit_body"));
          var _loc5_:int = this._selectedCharacter.survivalRecruitCostRenown;
          _loc4_ = _loc4_.replace("{RENOWN}",_loc5_.toString());
-         var _loc6_:String = _context.translate("confirm");
-         var _loc7_:String = _context.translate("cancel");
+         var _loc6_:String = String(_context.translate("confirm"));
+         var _loc7_:String = String(_context.translate("cancel"));
          _loc2_ = _context.createDialog();
          _loc2_.openTwoBtnDialog(_loc3_,_loc4_,_loc6_,_loc7_,this.survivalRecruitDialogClosedHandler);
       }
@@ -1173,7 +1173,7 @@ package game.gui.pages
          {
             return;
          }
-         var _loc2_:String = _context.translate("confirm");
+         var _loc2_:String = String(_context.translate("confirm"));
          var _loc3_:Saga = _context.saga;
          if(param1 == _loc2_)
          {
@@ -1182,9 +1182,9 @@ package game.gui.pages
             _loc6_ = this._selectedCharacter.survivalRecruitCostRenown;
             if(_loc5_ < _loc6_)
             {
-               _loc8_ = _context.translate("survival_dlg_recruit_lowrenown_title");
-               _loc9_ = _context.translate("survival_dlg_recruit_lowrenown_body");
-               _loc10_ = _context.translate("ok");
+               _loc8_ = String(_context.translate("survival_dlg_recruit_lowrenown_title"));
+               _loc9_ = String(_context.translate("survival_dlg_recruit_lowrenown_body"));
+               _loc10_ = String(_context.translate("ok"));
                _loc7_ = _context.createDialog();
                _loc7_.openDialog(_loc8_,_loc9_,_loc10_);
                return;

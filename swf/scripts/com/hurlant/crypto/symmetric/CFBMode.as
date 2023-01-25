@@ -21,7 +21,7 @@ package com.hurlant.crypto.symmetric
          while(_loc4_ < param1.length)
          {
             key.encrypt(_loc3_);
-            _loc5_ = _loc4_ + blockSize < _loc2_ ? blockSize : _loc2_ - _loc4_;
+            _loc5_ = _loc4_ + blockSize < _loc2_ ? blockSize : uint(_loc2_ - _loc4_);
             _loc6_ = 0;
             while(_loc6_ < _loc5_)
             {
@@ -45,7 +45,7 @@ package com.hurlant.crypto.symmetric
          while(_loc5_ < param1.length)
          {
             key.encrypt(_loc3_);
-            _loc6_ = _loc5_ + blockSize < _loc2_ ? blockSize : _loc2_ - _loc5_;
+            _loc6_ = _loc5_ + blockSize < _loc2_ ? blockSize : uint(_loc2_ - _loc5_);
             _loc4_.position = 0;
             _loc4_.writeBytes(param1,_loc5_,_loc6_);
             _loc7_ = 0;

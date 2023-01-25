@@ -45,7 +45,7 @@ package game.gui.battle
          var _loc4_:int = 0;
          this._textKey = param1;
          this._scoreId = param2;
-         var _loc3_:String = context.locale.translateGui(param1);
+         var _loc3_:String = String(context.locale.translateGui(param1));
          switch(param1)
          {
             case "ea_score_bonus_rule":

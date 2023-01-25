@@ -175,7 +175,7 @@ package engine.saga
       
       public function getDebugString() : String
       {
-         var _loc2_:* = null;
+         var _loc2_:String = null;
          var _loc1_:String = "";
          for(_loc2_ in this.saga.masterSave)
          {

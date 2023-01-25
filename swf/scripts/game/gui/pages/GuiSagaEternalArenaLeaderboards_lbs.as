@@ -238,7 +238,7 @@ package game.gui.pages
          }
          this._currentLeaderboardDef = _loc3_.def.leaderboards.getLeaderboardByIndex(this._chits_group.activeChitIndex);
          var _loc4_:String = this.leaderboardNameId;
-         _loc5_ = _context.translateCategory(_loc4_,LocaleCategory.LEADERBOARD);
+         _loc5_ = String(_context.translateCategory(_loc4_,LocaleCategory.LEADERBOARD));
          this._text_board_name.htmlText = _loc5_;
          _context.currentLocale.fixTextFieldFormat(this._text_board_name);
          var _loc6_:* = "";
@@ -261,7 +261,7 @@ package game.gui.pages
          {
             this._text_challenge_title.visible = false;
          }
-         var _loc11_:int = !!_loc2_ ? Math.min(_loc2_.entries.length,this.rows.length) : 0;
+         var _loc11_:int = !!_loc2_ ? int(Math.min(_loc2_.entries.length,this.rows.length)) : 0;
          if(_loc7_ && (!_loc3_.challenge || !_loc3_.challenge.isActive))
          {
             _loc11_ = 0;
@@ -273,7 +273,7 @@ package game.gui.pages
             _loc16_ = _loc15_.value;
             _loc17_ = _loc15_.display_name;
             _loc18_ = _loc15_.account_id;
-            _loc19_ = this.color_name;
+            _loc19_ = uint(this.color_name);
             _loc20_ = _loc12_ + 1;
             if(_loc20_ == _loc11_)
             {
@@ -283,16 +283,16 @@ package game.gui.pages
                   _loc16_ = _loc2_.user_value;
                   _loc20_ = _loc2_.user_rank;
                   _loc18_ = _loc2_.user_account_id;
-                  _loc19_ = this.color_name_self;
+                  _loc19_ = uint(this.color_name_self);
                }
             }
             if(_loc2_.entryBelongsToUser(_loc15_))
             {
-               _loc19_ = this.color_name_self;
+               _loc19_ = uint(this.color_name_self);
             }
             else if(_loc12_ == 0)
             {
-               _loc19_ = this.color_name_leader;
+               _loc19_ = uint(this.color_name_leader);
             }
             this.rows[_loc12_].showEntry(_loc20_,_loc19_,_loc17_,_loc16_,_loc18_);
             _loc12_++;

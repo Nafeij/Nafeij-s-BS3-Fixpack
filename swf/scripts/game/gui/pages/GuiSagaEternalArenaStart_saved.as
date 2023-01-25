@@ -140,7 +140,7 @@ package game.gui.pages
          this._index = Math.max(0,Math.min(param1,this._arrangements.length - 1));
          this._savedPresentVisible(true);
          this._arrangement = this._arrangements[this._index];
-         var _loc2_:String = _context.translate("ea_saved_counter");
+         var _loc2_:String = String(_context.translate("ea_saved_counter"));
          _loc2_ = _loc2_.replace("{index}",this._index + 1);
          _loc2_ = _loc2_.replace("{count}",this._arrangements.length);
          this._text_saved_counter.htmlText = _loc2_;
@@ -183,17 +183,17 @@ package game.gui.pages
             return;
          }
          var _loc2_:IGuiDialog = _context.createDialog();
-         var _loc3_:String = _context.translate("yes");
-         var _loc4_:String = _context.translate("no");
-         var _loc5_:String = _context.translate("ea_delete_title");
-         var _loc6_:String = _context.translate("ea_delete_body");
+         var _loc3_:String = String(_context.translate("yes"));
+         var _loc4_:String = String(_context.translate("no"));
+         var _loc5_:String = String(_context.translate("ea_delete_title"));
+         var _loc6_:String = String(_context.translate("ea_delete_body"));
          _loc6_ = _loc6_.replace("{filename}",this._arrangement.filename);
          _loc2_.openTwoBtnDialog(_loc5_,_loc6_,_loc3_,_loc4_,this.dialogCloseHandler);
       }
       
       private function dialogCloseHandler(param1:String) : void
       {
-         var _loc2_:String = _context.translate("yes");
+         var _loc2_:String = String(_context.translate("yes"));
          if(_loc2_ == param1)
          {
             this.listener.guiEternalArenaDeleteArrangement(this._arrangement);

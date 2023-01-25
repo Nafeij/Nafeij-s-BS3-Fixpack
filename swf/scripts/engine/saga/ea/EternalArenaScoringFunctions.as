@@ -52,8 +52,8 @@ package engine.saga.ea
          var _loc9_:Parser = null;
          for each(_loc3_ in param1)
          {
-            _loc4_ = _loc3_.functionStr;
-            _loc5_ = _loc3_.stringKey;
+            _loc4_ = String(_loc3_.functionStr);
+            _loc5_ = String(_loc3_.stringKey);
             _loc6_ = _loc4_.indexOf("=");
             if(_loc6_ < 1)
             {
@@ -77,7 +77,7 @@ package engine.saga.ea
          var _loc5_:Number = NaN;
          for each(_loc3_ in this.functions)
          {
-            _loc4_ = this.functionParserToLhs[_loc3_];
+            _loc4_ = String(this.functionParserToLhs[_loc3_]);
             _loc5_ = _loc3_.eval(param1);
             param1.caches[_loc4_] = _loc5_;
             if(param2)
