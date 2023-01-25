@@ -1,4 +1,22 @@
- 1.0
+1.1
+
+    [FIXED] If one of your heroes with an item gets killed, and is possessed by Eyeless, defeating your hero grants you a duplicate of that item. The game also tags possesed entities with a unique `"POSSESSED"` tag, which can be checked in `engine\battle\entitiy\model\BattleEntity._handleDeath_pre` to prevent them from dropping their items.
+
+    [FIXED] The passive on all types of Dredge Hurlers, Distraught, isn't triggering properly. Apparently simply changing "responsePhase" to "POST_COMPLETE" in its corresponding entry in `_ability.index.json` is enought to fix this.
+
+    [FIXED] Juno dialogue branch in her history lesson was dropped in a previous version of the mod. This has been added back in.
+
+    [FIXED] Some characters may get obscured in conversations due to poor positioning. Manually repositioned several convos for this and stylistic purposes.
+
+    [FIXED] There were times at the start of battles where two lines of dialogue (the ones randomly assigned to characters) would both be spoken by the same person. This is now much less likely to happen.
+
+    [FIXED] Miscellaneous typos.
+
+    [TWEAKED] Swapped out Valgard with Folka (if she is alive) in the conversation before recovering Juno's body.
+    
+    [ADDED] Extra chat with Eirik is he's present in Arberrang, which was cut from the base game.
+
+1.0
  
     [FIXED] Ekkill's alive state is not properly imported from Saga 2, resulting in him being missing from certain conversations
  
