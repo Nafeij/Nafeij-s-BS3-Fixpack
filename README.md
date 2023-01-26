@@ -9,7 +9,7 @@ Many thanks to:
  - Gestaltzerfall, who updated TBSDecompiler - http://www.mediafire.com/file/wun36alp6ojlkjk/TBS_Decompiler3.2.3.air/file
  - Psychic-Paranoia
 
-Please report any bugs in [Issues](issues).
+Please report any bugs in [Issues](../../issues).
 
 # Latest release
 
@@ -30,7 +30,7 @@ Please report any bugs in [Issues](issues).
 
 ## Steam
 
-1. Download the archive from [Releases](releases).
+1. Download the archive from [Releases](../../releases).
 2. Uncompress the zip archive and place the `/tbs3` folder in your `.../steamapps/common` folder. It will ask you to overwrite some files.
 
 ## GOG
