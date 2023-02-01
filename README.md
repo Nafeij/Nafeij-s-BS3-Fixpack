@@ -2,7 +2,7 @@
 
 > for Banner Saga 3, Steam version 2.61.04 / GOG version 2.60.22
 
-Nafeij's BS3 Fixpack is a QoL mod for Banner Saga 3.
+Nafeij's BS3 Fixpack is a legacy-support mod for Banner Saga 3.
 The mod corrects bugs, inconsistencies and typos in the video game Banner Saga 3 by Stoic Studios. It also restores some never-before-seen cut-content and features various QoL improvements.
 
 Many thanks to:
