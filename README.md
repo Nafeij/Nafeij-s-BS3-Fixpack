@@ -31,7 +31,7 @@ Please report any bugs in [Issues](../../issues).
 ## Steam
 
 1. Download the archive from [Releases](../../releases).
-2. Uncompress the zip archive and place the `/tbs3` folder in your `.../steamapps/common` folder. It will ask you to overwrite some files.
+2. Uncompress the zip archive and place the `/tbs3` folder in your game folder (e.g. `.../steamapps/common`). It will ask you to overwrite some files.
 
 ## GOG
 
