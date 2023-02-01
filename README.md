@@ -48,3 +48,8 @@ Simply place the extracted root folder (**NOT** the `/tbs3` folder) in the confi
 ## To Uninstall
 
 `Properties -> Verify the integrity of game files` in Steam or `Manage installation -> Verify / Repair...` in GOG.
+
+# See also
+
+- [Spare Some Love To Banner Saga 1](../../../YaK-s-SSLTBS1-Fixpack)
+- [Drake's & YaK's Fixpack for BS2](../../../Drake-s-and-YaK-s-Unofficial-Fixpack-for-BS2)
