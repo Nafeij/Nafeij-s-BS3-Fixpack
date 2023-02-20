@@ -14,7 +14,8 @@ Please report any bugs in [Issues](../../issues).
 # Latest release
 
 > ## 1.1
-> 26 Jan 2023
+> 20 Feb 2023
+> - Fixed bug where the skulker eggs thrown by barb hurlers would not spawn skulkers. The `_abl_hatch` ability was targeting the wrong entity (`ENEMY` instead of `OTHER`).
 > - If one of your heroes with an item gets killed, and is possessed by Eyeless, defeating your hero grants you a duplicate of that item. The game also tags possesed entities with a unique `"POSSESSED"` tag, which can be checked in `engine\battle\entitiy\model\BattleEntity._handleDeath_pre` to prevent them from dropping their items.
 > - The passive on all types of Dredge Hurlers, Distraught, isn't triggering properly. Apparently simply changing "responsePhase" to "POST_COMPLETE" in its corresponding entry in `_ability.index.json` is enought to fix this.
 > - Juno dialogue branch in her history lesson was dropped in a previous version of the mod. This has been added back in.
@@ -23,6 +24,8 @@ Please report any bugs in [Issues](../../issues).
 > - Miscellaneous typos.
 > - Swapped out Valgard with Folka (if she is alive) in the conversation before recovering Juno's body.
 > - Extra chat with Eirik is he's present in Arberrang, which was cut from the base game.
+
+[Read More](/CHANGELOG.md)
 
 ---
 

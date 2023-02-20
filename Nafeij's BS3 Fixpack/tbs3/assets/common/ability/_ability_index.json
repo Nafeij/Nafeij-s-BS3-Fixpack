@@ -19396,7 +19396,7 @@
       "rangeType": "NONE",
       "tag": "SPECIAL_NOCOST",
       "targetCount": 1,
-      "targetRule": "ENEMY"
+      "targetRule": "OTHER"
     },
     {
       "abilityPopupAnimId": "attack_ranged",
