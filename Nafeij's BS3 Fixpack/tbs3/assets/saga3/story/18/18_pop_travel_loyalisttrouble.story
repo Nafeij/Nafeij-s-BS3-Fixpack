@@ -2,6 +2,84 @@
 	"data": {
 		"initial": "_Splittingyou",
 		"stitches": {
+			"__18_stabbyst": {
+				"content": [
+					{
+						"divert": "damnloyalists"
+					},
+					{
+						"runOn": "true"
+					},
+					{
+						"flagName": "18_stabbystabbed=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"__egil_state0": {
+				"content": [
+					{
+						"divert": "damnloyalists"
+					},
+					{
+						"runOn": "true"
+					},
+					{
+						"flagName": "egil_state=0"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_DogsLeavethe": {
+				"content": [
+					"[petrus] \"Dogs! Leave them to me,\" Petrus says, mustering his guards. \"Rugga's stink is all over this. Go make him end this now, or it'll keep happening. Do whatever it takes!\"",
+					{
+						"linkPath": "_Ruggasnotthe",
+						"option": "I'll get to Rugga after I deal with this, myself."
+					},
+					{
+						"linkPath": "_PetrusnodsOh",
+						"option": "Don't go easy on them, Petrus."
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_PetrusnodsOh": {
+				"content": [
+					"[petrus] Petrus nods. \"Oh, I won't, believe me. I've been waiting for this.\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_PetrusnodsYo": {
+				"content": [
+					"[petrus] Petrus nods. \"You're not wrong about that, but let's make it quick!\"",
+					{
+						"pageNum": 0
+					}
+				]
+			},
+			"_Ruggasnotthe": {
+				"content": [
+					"[$hero] \"Rugga's not the only one who can deliver messages.\"",
+					{
+						"divert": "_PetrusnodsYo"
+					},
+					{
+						"flagName": "18_deal_with_loyalists=1"
+					},
+					{
+						"pageNum": 0
+					}
+				]
+			},
 			"_Splittingyou": {
 				"content": [
 					"[$hero] Splitting your time between helping people and fighting dredge is taking its toll, but something else feels wrong. A different kind of wrong.",
@@ -37,11 +115,11 @@
 					}
 				]
 			},
-			"petruswarning": {
+			"damnloyalists": {
 				"content": [
-					"[petrus] Petrus slows you with a hand on your shoulder. \"Remember those powerful men in Arberrang we talked about? I think they've decided to make their move.\"",
+					"[cameo_eska] \"This is the one everyone's so afraid of?\" sneers a man with a face tattoo. You remember seeing him amongst Rugga's loyalists. A few dozen grizzled fighters have blades drawn, and you notice they wear the crests of many different houses.",
 					{
-						"divert": "damnloyalists"
+						"divert": "_DogsLeavethe"
 					},
 					{
 						"pageNum": 0
@@ -59,16 +137,11 @@
 					}
 				]
 			},
-			"__egil_state0": {
+			"petruswarning": {
 				"content": [
+					"[petrus] Petrus slows you with a hand on your shoulder. \"Remember those powerful men in Arberrang we talked about? I think they've decided to make their move.\"",
 					{
 						"divert": "damnloyalists"
-					},
-					{
-						"runOn": "true"
-					},
-					{
-						"flagName": "egil_state=0"
 					},
 					{
 						"pageNum": 0
@@ -81,78 +154,6 @@
 					{
 						"divert": "__18_stabbyst"
 					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"__18_stabbyst": {
-				"content": [
-					{
-						"divert": "damnloyalists"
-					},
-					{
-						"runOn": "true"
-					},
-					{
-						"flagName": "18_stabbystabbed=1"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"damnloyalists": {
-				"content": [
-					"[cameo_eska] \"This is the one everyone's so afraid of?\" sneers a man with a face tattoo. You remember seeing him amongst Rugga's loyalists. A few dozen grizzled fighters have blades drawn, and you notice they wear the crests of many different houses.",
-					{
-						"divert": "_DogsLeavethe"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"_DogsLeavethe": {
-				"content": [
-					"[petrus] \"Dogs! Leave them to me,\" Petrus says, mustering his guards. \"Rugga's stink is all over this. Go make him end this now, or it'll keep happening. Do whatever it takes!\"",
-					{
-						"linkPath": "_Ruggasnotthe",
-						"option": "I'll get to Rugga after I deal with this, myself.",
-						"flagName": "18_deal_with_loyalists=1"
-					},
-					{
-						"linkPath": "_PetrusnodsOh",
-						"option": "Don't go easy on them, Petrus.",
-						"flagName": "18_deal_with_loyalists=0"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"_Ruggasnotthe": {
-				"content": [
-					"[$hero] \"Rugga's not the only one who can deliver messages.\"",
-					{
-						"divert": "_PetrusnodsYo"
-					},
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"_PetrusnodsYo": {
-				"content": [
-					"[petrus] Petrus nods. \"You're not wrong about that, but let's make it quick!\"",
-					{
-						"pageNum": 0
-					}
-				]
-			},
-			"_PetrusnodsOh": {
-				"content": [
-					"[petrus] Petrus nods. \"Oh, I won't, believe me. I've been waiting for this.\"",
 					{
 						"pageNum": 0
 					}
