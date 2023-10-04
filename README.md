@@ -7,7 +7,7 @@ The mod corrects bugs, inconsistencies and typos in the video game Banner Saga 3
 
 Many thanks to:
  - Gestaltzerfall, who updated TBSDecompiler - http://www.mediafire.com/file/wun36alp6ojlkjk/TBS_Decompiler3.2.3.air/file
- - Psychic-Paranoia
+ - Psychic-Paranoia, who helped find most of these bugs.
 
 Please report any bugs in [Issues](../../issues).
 
