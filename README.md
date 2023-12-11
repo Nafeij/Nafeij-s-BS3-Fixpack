@@ -11,7 +11,11 @@ Many thanks to:
 
 Please report any bugs in [Issues](../../issues).
 
-# Latest release
+# Latest releases
+
+> ## 1.2
+> 11 Dec 2023
+> - Fixed various interactions and typos related to Rugga.
 
 > ## 1.1
 > 20 Feb 2023
