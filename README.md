@@ -13,6 +13,10 @@ Please report any bugs in [Issues](../../issues).
 
 # Latest releases
 
+> ## 1.3
+> 22 August 2024
+> - Patched the game for 2.60.22 (GOG).
+
 > ## 1.2
 > 11 Dec 2023
 > - Fixed various interactions and typos related to Rugga.
@@ -42,14 +46,14 @@ Please report any bugs in [Issues](../../issues).
 
 ## GOG
 
-1. Follow the Steam installation steps above.
+1. Follow the Steam installation steps above, but place only the **contents** of the `/tbs3` folder in your game folder (e.g. `.../steamapps/common`).
 2. Additionally, download the archive `..._GOG.zip`, and patch this over the same files above.
 
 ## Mod-Enabler Integration
 
 The root folders are structured to be compatible with mod-enablers like [OvGME](jweisner/ovgme) and [JSGME](https://www.subsim.com/radioroom/showthread.php?t=204594).
 
-Simply place the extracted root folder (**NOT** the `/tbs3` folder) in the configuration mods folder (`/MODS` in JSGME) and load the mods into your game's root directory (e.g. `.../steamapps/common`).
+Simply place the extracted root folder (**NOT** the `/tbs3` folder) in the configuration mods folder (`/MODS` in JSGME) and load the mods into your game's root directory.
 
 
 ## To Uninstall
