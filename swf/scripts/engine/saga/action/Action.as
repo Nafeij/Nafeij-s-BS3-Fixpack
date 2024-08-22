@@ -429,29 +429,37 @@ package engine.saga.action
          return _loc3_.getEntityByIdOrByDefId(param1,null,param2);
       }
       
-      public function findSpeakerEntityFromList(param1:String, param2:Boolean, param3:int) : IBattleEntity
+      public function findTalkableEntityFromList(param1:String, param2:Boolean, param3:int, param4:String = null) : IBattleEntity
       {
-         var _loc7_:String = null;
-         var _loc8_:IBattleEntity = null;
-         var _loc4_:Array = param1.split(",");
-         var _loc6_:BattleBoard = this.saga.getBattleBoard();
-         if(!_loc6_)
+         var _loc8_:String = null;
+         var _loc9_:IBattleEntity = null;
+         var _loc5_:Array = param1.split(",");
+         var _loc6_:Array = !!param4 ? param4.split(",") : null;
+         var _loc7_:BattleBoard = this.saga.getBattleBoard();
+         if(!_loc7_)
          {
             return null;
          }
-         for each(_loc7_ in _loc4_)
+         for each(_loc8_ in _loc5_)
          {
-            if(_loc7_ == "*player")
+            _loc7_ = this.saga.getBattleBoard();
+            if(_loc7_ && (_loc8_ == "*player" || _loc8_ == "*npc"))
             {
-               break;
+               _loc9_ = _loc7_.getEntityByIndex(_loc8_,param3,param2);
             }
-            _loc8_ = this.findBattleEntity(_loc7_,param2);
-            if(_loc8_)
+            else
             {
-               return _loc8_;
+               _loc9_ = this.findBattleEntity(_loc8_,param2);
+            }
+            if(!(_loc9_ && _loc9_.def && _loc9_.def.entityClass && _loc6_ && _loc6_.indexOf(_loc9_.def.entityClass.race) == -1))
+            {
+               if(_loc9_)
+               {
+                  return _loc9_;
+               }
             }
          }
-         return _loc6_.getNthSpeakerEntity(param3);
+         return null;
       }
       
       public function extractEntities(param1:String, param2:Boolean, param3:Vector.<String> = null) : Vector.<IEntity>

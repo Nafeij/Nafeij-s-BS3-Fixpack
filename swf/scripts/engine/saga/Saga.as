@@ -887,7 +887,7 @@ package engine.saga
       
       private function checkCensorVars() : void
       {
-         var _loc1_:String = String(!!this.resman ? this.resman.censorId : null);
+         var _loc1_:String = !!this.resman ? this.resman.censorId : null;
          if(!_loc1_)
          {
             this.logger.i("CENS","Saga null censor id, no variable possible");
@@ -1096,11 +1096,9 @@ package engine.saga
                      if(_loc3_ > _loc4_)
                      {
                         _loc15_.vars.incrementVar("tot_renown_gained",_loc3_ - _loc4_);
+                        break;
                      }
-                     else
-                     {
-                        _loc15_.vars.incrementVar("tot_renown_spent",_loc4_ - _loc3_);
-                     }
+                     _loc15_.vars.incrementVar("tot_renown_spent",_loc4_ - _loc3_);
                      break;
                   }
                }
@@ -3381,7 +3379,7 @@ package engine.saga
          var _loc2_:int = 0;
          if(param1.ended)
          {
-            _loc2_ = this.actions.indexOf(param1);
+            _loc2_ = int(this.actions.indexOf(param1));
             if(_loc2_ >= 0)
             {
                this.actions.splice(_loc2_,1);
@@ -3437,7 +3435,7 @@ package engine.saga
          {
             this.logger.debug("   %%% SAGA UNPAUSE " + this._pauses.length + " [" + param1 + "]");
          }
-         var _loc2_:int = this._pauses.indexOf(param1);
+         var _loc2_:int = int(this._pauses.indexOf(param1));
          if(_loc2_ < 0)
          {
             this.logger.error("Attempt to unpause with invalid reason [" + param1 + "]");
@@ -3637,7 +3635,7 @@ package engine.saga
          {
             return;
          }
-         var _loc2_:int = this.happeningDefProviders.indexOf(param1);
+         var _loc2_:int = int(this.happeningDefProviders.indexOf(param1));
          if(_loc2_ >= 0)
          {
             this.happeningDefProviders.splice(_loc2_,1);
@@ -4263,7 +4261,7 @@ package engine.saga
             if(!(_loc3_.ended || _loc3_ == param1 || _loc3_.def.allow_saves))
             {
                _loc4_ = !!_loc3_.def ? _loc3_.def.id : "UNKNOWN";
-               _loc5_ = String(Boolean(_loc3_.def) && Boolean(_loc3_.def.bag) ? _loc3_.def.bag.providerName : "UNKNOWN");
+               _loc5_ = Boolean(_loc3_.def) && Boolean(_loc3_.def.bag) ? _loc3_.def.bag.providerName : "UNKNOWN";
                _loc6_ = Boolean(_loc3_.action) && Boolean(_loc3_.action.def) ? _loc3_.action.def.labelString : "UNKNOWN";
                this.cannotSaveReason = "happening: [" + _loc4_ + "] action [ " + _loc6_ + "] in [" + _loc5_ + "] bag";
                return false;
@@ -4377,8 +4375,6 @@ package engine.saga
          var _loc4_:String = null;
          var _loc7_:String = null;
          var _loc8_:Caravan = null;
-         var _loc9_:Travel_FallData = null;
-         var _loc10_:Travel_WipeData = null;
          if(SagaDef.PREVIEW_BUILD)
          {
             if(!param1.globalVars[VAR_PREVIEWBUILD])
@@ -4474,8 +4470,7 @@ package engine.saga
          this.skipNextSave = true;
          this.queuedRng = param1.rng;
          this._globalSuppressTriggerVariableResponse = false;
-         var _loc5_:String = "_save_fixup";
-         var _loc6_:HappeningDef = this.def.happenings.getHappeningDef(_loc5_);
+         var _loc6_:HappeningDef = this.def.happenings.getHappeningDef("_save_fixup");
          if(_loc6_)
          {
             this.executeHappeningDef(_loc6_,param1);
@@ -4486,7 +4481,7 @@ package engine.saga
          }
          else if(Boolean(param1.travelLocator) && (param1.travelLocator.travel_id || param1.travelLocator.travel_position >= 0))
          {
-            this.performTravelStart(param1.sceneUrl,param1.travelLocator,_loc9_,_loc10_,null,false);
+            this.performTravelStart(param1.sceneUrl,param1.travelLocator,null,null,null,false);
          }
          else if(param1.sceneUrl)
          {
@@ -5220,7 +5215,7 @@ package engine.saga
             throw new IllegalOperationError("Saga.getBattleScenarioDef: saga has no battle scenarios");
          }
          var _loc2_:String = param1;
-         var _loc3_:int = param1.indexOf("$");
+         var _loc3_:int = int(param1.indexOf("$"));
          if(_loc3_ >= 0)
          {
             _loc5_ = param1.substring(_loc3_ + 1);
@@ -5303,7 +5298,6 @@ package engine.saga
          {
             throw new IllegalOperationError("Invalid snap id [" + param1 + "]");
          }
-         var _loc4_:IPartyDef = null;
          var _loc5_:ActionDef = new ActionDef(null);
          _loc5_.type = ActionType.BATTLE;
          _loc5_.instant = false;
@@ -5356,8 +5350,8 @@ package engine.saga
             return param1;
          }
          var _loc5_:int = 1;
-         _loc3_ = param1.indexOf("$");
-         _loc4_ = param1.indexOf("${");
+         _loc3_ = int(param1.indexOf("$"));
+         _loc4_ = int(param1.indexOf("${"));
          while(_loc3_ >= 0 || _loc4_ >= 0)
          {
             if(_loc3_ >= 0 && (_loc4_ < 0 || _loc3_ < _loc4_))
@@ -5379,7 +5373,7 @@ package engine.saga
             {
                _loc7_ = _loc4_;
                _loc5_ = 2;
-               _loc6_ = param1.indexOf("}",_loc7_);
+               _loc6_ = int(param1.indexOf("}",_loc7_));
             }
             if(_loc6_ > _loc7_)
             {
@@ -5429,8 +5423,8 @@ package engine.saga
             {
                _loc7_ += _loc5_;
             }
-            _loc3_ = param1.indexOf("$",_loc7_);
-            _loc4_ = param1.indexOf("${",_loc7_);
+            _loc3_ = int(param1.indexOf("$",_loc7_));
+            _loc4_ = int(param1.indexOf("${",_loc7_));
          }
          return param1;
       }

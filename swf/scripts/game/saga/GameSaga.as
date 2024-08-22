@@ -1687,9 +1687,7 @@ package game.saga
       
       override public function launchSagaByUrl(param1:String, param2:String, param3:int, param4:String) : void
       {
-         var _loc5_:SagaSave = null;
-         var _loc6_:String = null;
-         this.config.loadSaga(param1,param2,null,param3,0,_loc5_,_loc6_,param4);
+         this.config.loadSaga(param1,param2,null,param3,0,null,null,param4);
       }
       
       override protected function eternalArenaHandleStart() : void
@@ -1994,15 +1992,13 @@ class SavedSceneState
    
    public function restore(param1:GameSaga) : String
    {
-      var _loc2_:Travel_FallData = null;
-      var _loc3_:Travel_WipeData = null;
       if(!this.url)
       {
          return null;
       }
       if(this.travel_locator)
       {
-         param1.performTravelStart(this.url,this.travel_locator,_loc2_,_loc3_,null,false);
+         param1.performTravelStart(this.url,this.travel_locator,null,null,null,false);
       }
       else
       {

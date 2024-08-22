@@ -70,131 +70,131 @@ package engine.battle.board.model
    import flash.events.EventDispatcher;
    import flash.geom.Point;
    import flash.utils.Dictionary;
-   
+
    public class BattleBoard extends EventDispatcher implements IBattleBoard
    {
-       
-      
+
+
       private var _lastEntityNumericId:uint;
-      
+
       public var _def:BattleBoardDef;
-      
+
       internal var _entities:Dictionary;
-      
+
       internal var _tiles:BattleBoardTiles;
-      
+
       private var _sim:BattleSim;
-      
+
       private var _logger:ILogger;
-      
+
       public var abilityFactory:BattleAbilityDefFactory;
-      
+
       public var _resman:ResourceManager;
-      
+
       public var assets:BattleAssetsDef;
-      
+
       public var phantasms:BattleBoardPhantasms;
-      
+
       public var _triggers:BattleBoardTriggers;
-      
+
       public var _abilityManager:BattleAbilityManager;
-      
+
       private var _enabled:Boolean;
-      
+
       private var soundDriver:ISoundDriver;
-      
+
       public var _selectedTile:Tile;
-      
+
       private var partiesById:Dictionary;
-      
+
       public var parties:Vector.<IBattleParty>;
-      
+
       public var _scene:Scene;
-      
+
       public var suppressPartyVitality:Boolean;
-      
+
       public var difficultyDisabled:Boolean;
-      
+
       public var moraleDisabled:Boolean;
-      
+
       public var rVfxLibrary:IsoVfxLibraryResource;
-      
+
       public var vfxLibrary:VfxLibrary;
-      
+
       public var soundControllerManager:SoundControllerManager;
-      
+
       private var _fake:Boolean;
-      
+
       private var _boardSetup:Boolean;
-      
+
       private var _boardDeploymentStarted:Boolean;
-      
+
       private var _deathOffset:Number = 0;
-      
+
       public var movers:Dictionary;
-      
+
       public var error:Boolean;
-      
+
       private var _hoverEntity:IBattleEntity;
-      
+
       private var vitalities:Dictionary;
-      
+
       public var tutorial:IBattleTutorial;
-      
+
       public var matchResolutionEnabled:Boolean = true;
-      
+
       public var _scenario:BattleScenario;
-      
+
       public var _tileConfiguration:int;
-      
+
       public var resourceGroup:ResourceGroup;
-      
+
       public var _spatial:BattleBoard_Spatial;
-      
+
       public var _deploy:BattleBoard_Deploy;
-      
+
       public var _spawn:BattleBoard_Spawn;
-      
+
       public var _redeploy:BattleBoard_Redeploy;
-      
+
       public var _waves:BattleWaves;
-      
+
       public var saga:Saga;
-      
+
       public var _attractors:BattleAttractors;
-      
+
       public var _entityAssetBundleManager:IEntityAssetBundleManager;
-      
+
       private var _artifactMaxUseCount:int;
-      
+
       private var _isPostLoaded:Boolean;
-      
+
       public var _hoverTile:Tile;
-      
+
       public var _cleanedup:Boolean;
-      
+
       private var _fsm:BattleFsm;
-      
+
       private var _forceCameraCenterEntity:IBattleEntity;
-      
+
       private var _lastNullTriggerDefId:int;
-      
+
       private var _player_prefix:String = "*player";
-      
+
       private var _npc_prefix:String = "*npc";
-      
+
       private var updating:Boolean;
-      
+
       private var _boardFinishedSetup:Boolean;
-      
+
       private var _showInfoEntity:IBattleEntity;
-      
+
       private var _showInfoBanners:Boolean;
-      
+
       public var snapSrc:BattleSnapshot;
-      
+
       private var _isUsingEntity:Boolean;
-      
+
       public function BattleBoard(param1:BattleBoardDef, param2:BattleScenarioDef, param3:Scene, param4:ILogger, param5:ResourceManager, param6:BattleAbilityDefFactory, param7:BattleAssetsDef, param8:ISoundDriver, param9:String, param10:ISymbols)
       {
          this._entities = new Dictionary();
@@ -241,7 +241,7 @@ package engine.battle.board.model
             this._waves = new BattleWaves(this,param1.waves);
          }
       }
-      
+
       private static function _applyBoardPassives(param1:BattleEntity, param2:Vector.<IBattleAbilityDef>, param3:BattleAbilityManager) : void
       {
          var _loc4_:IBattleAbilityDef = null;
@@ -256,12 +256,12 @@ package engine.battle.board.model
             _loc5_.execute(null);
          }
       }
-      
+
       public function get isPostLoaded() : Boolean
       {
          return this._isPostLoaded;
       }
-      
+
       public function postLoad() : void
       {
          var _loc2_:String = null;
@@ -279,7 +279,7 @@ package engine.battle.board.model
             _loc3_.postLoad();
          }
       }
-      
+
       public function loadVfxLibrary() : void
       {
          if(this._def.vfxlibUrl)
@@ -291,7 +291,7 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function loadSoundLibrary() : void
       {
          var _loc1_:ISoundDriver = null;
@@ -303,7 +303,7 @@ package engine.battle.board.model
             this.soundControllerManager = new SoundControllerManager("battleboard",_loc2_,this._resman,_loc1_,this.soundLoadedHandler,this.logger);
          }
       }
-      
+
       private function soundLoadedHandler() : void
       {
          if(this.logger.isDebugEnabled)
@@ -311,7 +311,7 @@ package engine.battle.board.model
             this.logger.debug("sound library loaded");
          }
       }
-      
+
       private function vfxLoadedHandler(param1:ResourceLoadedEvent) : void
       {
          if(this.rVfxLibrary)
@@ -320,12 +320,12 @@ package engine.battle.board.model
          }
          this.vfxLibrary = this.rVfxLibrary.library;
       }
-      
+
       public function get waves() : BattleWaves
       {
          return this._waves;
       }
-      
+
       private function abilityCompleteHandler(param1:BattleAbilityEvent) : void
       {
          var _loc3_:Effect = null;
@@ -351,17 +351,17 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       private function incompletesEmptyHandler(param1:BattleAbilityEvent) : void
       {
          this.expireDeadEntitiesEffects();
       }
-      
+
       public function get selectedTile() : Tile
       {
          return this._selectedTile;
       }
-      
+
       public function set selectedTile(param1:Tile) : void
       {
          if(this._selectedTile == param1)
@@ -371,12 +371,12 @@ package engine.battle.board.model
          this._selectedTile = param1;
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.SELECT_TILE));
       }
-      
+
       public function get hoverTile() : Tile
       {
          return this._hoverTile;
       }
-      
+
       public function set hoverTile(param1:Tile) : void
       {
          if(this._hoverTile == param1)
@@ -387,7 +387,7 @@ package engine.battle.board.model
          this._triggers.selectTriggersOnTile(this._hoverTile);
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.HOVER_TILE));
       }
-      
+
       public function set hoverEntity(param1:IBattleEntity) : void
       {
          if(this._hoverEntity == param1)
@@ -404,27 +404,27 @@ package engine.battle.board.model
             this._hoverEntity.hovering = true;
          }
       }
-      
+
       public function get hoverEntity() : IBattleEntity
       {
          return this._hoverEntity;
       }
-      
+
       public function get deathOffset() : Number
       {
          return this._deathOffset;
       }
-      
+
       public function set deathOffset(param1:Number) : void
       {
          this._deathOffset = param1;
       }
-      
+
       public function get cleanedup() : Boolean
       {
          return this._cleanedup;
       }
-      
+
       public function cleanup() : void
       {
          var _loc1_:BattleParty = null;
@@ -480,12 +480,12 @@ package engine.battle.board.model
          this.parties = null;
          this._spatial = null;
       }
-      
+
       override public function toString() : String
       {
          return this.def.id;
       }
-      
+
       public function getDebugEntityList() : String
       {
          var _loc2_:String = null;
@@ -497,17 +497,17 @@ package engine.battle.board.model
          }
          return _loc1_;
       }
-      
+
       public function toDebugString() : String
       {
          return "[" + this._scene._def.name + ":" + this.def.id + "]";
       }
-      
+
       public function get fsm() : IBattleFsm
       {
          return this._fsm;
       }
-      
+
       public function set fsm(param1:IBattleFsm) : void
       {
          if(this._fsm == param1)
@@ -531,7 +531,7 @@ package engine.battle.board.model
          }
          this.turnHandler(null);
       }
-      
+
       private function turnHandler(param1:BattleFsmEvent) : void
       {
          var _loc2_:IBattleTurn = !!this._fsm ? this._fsm.turn : null;
@@ -541,12 +541,12 @@ package engine.battle.board.model
             this._triggers.updateTurnEntity(_loc3_);
          }
       }
-      
+
       public function get sim() : BattleSim
       {
          return this._sim;
       }
-      
+
       public function set sim(param1:BattleSim) : void
       {
          if(this._sim)
@@ -567,7 +567,7 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       private function isPlayerTeamWinning() : Boolean
       {
          var _loc3_:IBattleParty = null;
@@ -586,7 +586,7 @@ package engine.battle.board.model
          }
          return _loc1_ > _loc2_;
       }
-      
+
       private function battleWaveIncreasedCurrentHandler(param1:BattleFsmEvent) : void
       {
          if(!this._scene)
@@ -596,7 +596,7 @@ package engine.battle.board.model
          this._scene.handleBattleWaveIncrease(this.isPlayerTeamWinning());
          this.recomputePartyVitality();
       }
-      
+
       private function battlePillageCurrentHandler(param1:BattleFsmEvent) : void
       {
          if(!this._scene)
@@ -605,7 +605,7 @@ package engine.battle.board.model
          }
          this._scene.handleBattlePillage(this.isPlayerTeamWinning());
       }
-      
+
       private function battleFsmCurrentHandler(param1:FsmEvent) : void
       {
          if(!this._scene)
@@ -614,7 +614,7 @@ package engine.battle.board.model
          }
          this._scene.handleBattleState();
       }
-      
+
       private function addEntity(param1:BattleEntity) : void
       {
          if(this._fake)
@@ -644,19 +644,19 @@ package engine.battle.board.model
          }
          param1.mobility.addEventListener(BattleEntityMobilityEvent.MOVING,this.entityMovingHandler);
       }
-      
+
       public function notifyWalkableChanged() : void
       {
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.WALKABLE));
          this.notifyTileConfigurationChanged();
       }
-      
+
       private function notifyTileConfigurationChanged() : void
       {
          ++this._tileConfiguration;
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_TILE_CONFIGURATION));
       }
-      
+
       private function entityMovingHandler(param1:BattleEntityMobilityEvent) : void
       {
          var _loc4_:Boolean = false;
@@ -681,7 +681,7 @@ package engine.battle.board.model
             dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_MOVING,_loc3_));
          }
       }
-      
+
       private function entityForceCameraCenterHandler(param1:BattleEntityEvent) : void
       {
          var _loc2_:IBattleEntity = param1.entity;
@@ -694,12 +694,12 @@ package engine.battle.board.model
             this.forceCameraCenterEntity = _loc2_;
          }
       }
-      
+
       public function get forceCameraCenterEntity() : IBattleEntity
       {
          return this._forceCameraCenterEntity;
       }
-      
+
       public function set forceCameraCenterEntity(param1:IBattleEntity) : void
       {
          var _loc2_:IBattleEntity = null;
@@ -716,22 +716,22 @@ package engine.battle.board.model
          this._forceCameraCenterEntity = param1;
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_FORCE_CAMERA_CENTER,this._forceCameraCenterEntity));
       }
-      
+
       private function entityTurnSTartedHandler(param1:BattleEntityEvent) : void
       {
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_TURN_STARTED,param1.entity,null));
       }
-      
+
       private function entityDamagedHandler(param1:BattleEntityEvent) : void
       {
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_DAMAGED,param1.entity,null,param1.statType,param1.amount));
       }
-      
+
       private function entityFacingHandler(param1:BattleEntityEvent) : void
       {
          this.notifyTileConfigurationChanged();
       }
-      
+
       private function entityAliveHandler(param1:BattleEntityEvent) : void
       {
          this.notifyTileConfigurationChanged();
@@ -745,24 +745,24 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function handleBonusRenown(param1:BattleEntity) : void
       {
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_BONUS_RENOWN,param1));
       }
-      
+
       private function entityEnabledHandler(param1:BattleEntityEvent) : void
       {
          this.notifyTileConfigurationChanged();
          var _loc2_:IBattleEntity = param1.entity;
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_ENABLED,_loc2_));
       }
-      
+
       private function entityKillingEffectHandler(param1:BattleEntityEvent) : void
       {
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_KILLING_EFFECT,param1.entity));
       }
-      
+
       public function removeEntity(param1:IBattleEntity) : void
       {
          if(this._fake)
@@ -790,7 +790,7 @@ package engine.battle.board.model
             Saga.instance.triggerBattleUnitRemoved(param1);
          }
       }
-      
+
       private function removeEntityListeners(param1:IBattleEntity) : void
       {
          param1.removeEventListener(BattleEntityEvent.FORCE_CAMERA_CENTER,this.entityForceCameraCenterHandler);
@@ -805,7 +805,7 @@ package engine.battle.board.model
             param1.mobility.removeEventListener(BattleEntityMobilityEvent.MOVING,this.entityMovingHandler);
          }
       }
-      
+
       public function createEntity(param1:IEntityDef, param2:String, param3:BattleFacing, param4:Number, param5:Number, param6:IBattleParty) : IBattleEntity
       {
          if(this._fake)
@@ -830,7 +830,7 @@ package engine.battle.board.model
          }
          return _loc7_;
       }
-      
+
       public function testRectTiles(param1:TileRect, param2:Boolean) : Boolean
       {
          if(param1.visitEnclosedTileLocations(this._visitTestRectTile,param2))
@@ -839,7 +839,7 @@ package engine.battle.board.model
          }
          return true;
       }
-      
+
       private function _visitTestRectTile(param1:int, param2:int, param3:Boolean) : Boolean
       {
          var _loc4_:Tile = this._tiles.getTile(param1,param2);
@@ -853,47 +853,47 @@ package engine.battle.board.model
          }
          return false;
       }
-      
+
       public function findAllRectIntersectionEntities(param1:TileRect, param2:IBattleEntity, param3:Vector.<IBattleEntity>) : Boolean
       {
          return this._spatial.findAllRectIntersectionEntities(param1,param2,param3);
       }
-      
+
       public function findAllAdjacentEntities(param1:IBattleEntity, param2:TileRect, param3:Vector.<IBattleEntity>, param4:Boolean) : Vector.<IBattleEntity>
       {
          return this._spatial.findAllAdjacentEntities(param1,param2,param3,param4);
       }
-      
+
       public function findEntityOnTile(param1:Number, param2:Number, param3:Boolean, param4:*) : IBattleEntity
       {
          return this._spatial._findEntityOnTile(param1,param2,param3,param4,false);
       }
-      
+
       public function findEntityOnTileDiameter(param1:Number, param2:Number, param3:Boolean, param4:*) : IBattleEntity
       {
          return this._spatial._findEntityOnTile(param1,param2,param3,param4,true);
       }
-      
+
       public function _findEntityOnTile(param1:Number, param2:Number, param3:Boolean, param4:*, param5:Boolean) : IBattleEntity
       {
          return this._spatial._findEntityOnTile(param1,param2,param3,param4,param5);
       }
-      
+
       public function spawn(param1:String, param2:String) : void
       {
          this._spawn.spawn(param1,param2);
       }
-      
+
       public function spawnWave(param1:BattleWave) : void
       {
          this._spawn.spawnWave(param1);
       }
-      
+
       public function spawnPlayers(param1:String, param2:String) : void
       {
          this._spawn.spawnPlayers(param1,param2);
       }
-      
+
       public function cleanupEnemiesFromWave(param1:int) : void
       {
          var _loc2_:IBattleParty = null;
@@ -915,12 +915,12 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function get enabled() : Boolean
       {
          return this._enabled;
       }
-      
+
       public function set enabled(param1:Boolean) : void
       {
          var value:Boolean = param1;
@@ -972,12 +972,12 @@ package engine.battle.board.model
             dispatchEvent(new BattleBoardEvent(BattleBoardEvent.ENABLED));
          }
       }
-      
+
       public function createLocalParty(param1:String, param2:String, param3:String, param4:String, param5:int) : void
       {
          this.createParty(param1,param2,param3,param4,BattlePartyType.LOCAL,param5,true);
       }
-      
+
       private function createParty(param1:String, param2:String, param3:String, param4:String, param5:BattlePartyType, param6:int, param7:Boolean) : BattleParty
       {
          var _loc8_:BattleParty = this.partiesById[param2];
@@ -1001,12 +1001,11 @@ package engine.battle.board.model
          }
          return _loc8_;
       }
-      
+
       public function addPlayerPartyMemberBattleEntity(param1:IBattleEntity, param2:int) : IBattleEntity
       {
-         var _loc4_:Boolean = false;
          var _loc3_:IBattleParty = this.getPartyById("0");
-         var _loc5_:BattleParty = this.createParty(null,_loc3_.id,_loc3_.team,_loc3_.deployment,_loc3_.type,param2,_loc4_);
+         var _loc5_:BattleParty = this.createParty(null,_loc3_.id,_loc3_.team,_loc3_.deployment,_loc3_.type,param2,false);
          param1.board = this as IBattleBoard;
          param1.deploymentReady = false;
          this.addEntity(param1 as BattleEntity);
@@ -1020,14 +1019,13 @@ package engine.battle.board.model
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_PARTY_CHANGED));
          return param1;
       }
-      
+
       public function addPlayerPartyMember(param1:IEntityDef, param2:int, param3:BattleFacing, param4:TileLocation, param5:Boolean) : IBattleEntity
       {
-         var _loc7_:Boolean = false;
          var _loc6_:IBattleParty = this.getPartyById("0");
-         return this.addPartyMember(null,null,_loc6_.id,_loc6_.team,_loc6_.deployment,param1,_loc6_.type,param2,_loc7_,param3,param4,param5);
+         return this.addPartyMember(null,null,_loc6_.id,_loc6_.team,_loc6_.deployment,param1,_loc6_.type,param2,false,param3,param4,param5);
       }
-      
+
       public function addPartyMember(param1:String, param2:String, param3:String, param4:String, param5:String, param6:IEntityDef, param7:BattlePartyType, param8:int, param9:Boolean, param10:BattleFacing, param11:TileLocation, param12:Boolean) : IBattleEntity
       {
          if(!param6)
@@ -1056,12 +1054,12 @@ package engine.battle.board.model
          }
          return _loc16_;
       }
-      
+
       internal function makeEntityId(param1:BattleParty, param2:IEntityDef) : String
       {
          return param1.id + "+" + param1.numMembers + "+" + param2.id;
       }
-      
+
       public function addRemoteParty(param1:String, param2:String, param3:String, param4:String, param5:IEntityListDef, param6:int, param7:Boolean) : void
       {
          var _loc9_:IEntityDef = null;
@@ -1083,17 +1081,17 @@ package engine.battle.board.model
             _loc8_++;
          }
       }
-      
+
       public function changeLocale(param1:Locale) : void
       {
          this._spawn.changeLocale(param1);
       }
-      
+
       private function getTriggerDefById(param1:String) : BattleBoardTriggerDef
       {
          return this.def.getTriggerDefById(param1);
       }
-      
+
       protected function addBoardTriggers() : void
       {
          if(!this._def.triggerDefs_global && !this._def.triggerDefs)
@@ -1105,7 +1103,7 @@ package engine.battle.board.model
             this._def.triggerSpawners.visitTriggerSpawnerDefs(this._addBoardTrigger);
          }
       }
-      
+
       private function _addBoardTrigger(param1:BattleBoardTriggerSpawnerDef) : void
       {
          var _loc2_:BattleBoardTriggerDef = null;
@@ -1123,50 +1121,49 @@ package engine.battle.board.model
             _loc2_ = new BattleBoardTriggerDef();
             _loc2_.id = "NullTriggerDef_" + ++this._lastNullTriggerDefId;
          }
-         var _loc3_:Boolean = true;
-         this.tiles.addTrigger(param1.trigger_id,_loc2_,param1.rect,_loc3_,null,param1.disabled);
+         this.tiles.addTrigger(param1.trigger_id,_loc2_,param1.rect,true,null,param1.disabled);
       }
-      
+
       public function get numParties() : int
       {
          return this.parties.length;
       }
-      
+
       public function getParty(param1:int) : IBattleParty
       {
          return this.parties[param1];
       }
-      
+
       public function getPartyById(param1:String) : IBattleParty
       {
          return this.partiesById[param1];
       }
-      
+
       public function getPartyIndex(param1:IBattleParty) : int
       {
          return this.parties.indexOf(param1);
       }
-      
+
       public function get entities() : Dictionary
       {
          return this._entities;
       }
-      
+
       public function get logger() : ILogger
       {
          return this._logger;
       }
-      
+
       public function get tiles() : Tiles
       {
          return this._tiles;
       }
-      
+
       public function get triggers() : IBattleBoardTriggers
       {
          return this._triggers;
       }
-      
+
       public function getEntityByIdOrByDefId(param1:String, param2:TileRect, param3:Boolean) : IBattleEntity
       {
          var _loc4_:IBattleEntity = this._entities[param1];
@@ -1176,12 +1173,12 @@ package engine.battle.board.model
          }
          return this.getEntityByDefId(param1,param2,param3);
       }
-      
+
       public function getEntity(param1:String) : IBattleEntity
       {
          return this._entities[param1];
       }
-      
+
       public function getEntityByDefId(param1:String, param2:TileRect, param3:Boolean) : IBattleEntity
       {
          var _loc4_:IBattleEntity = null;
@@ -1224,31 +1221,43 @@ package engine.battle.board.model
          }
          return _loc4_;
       }
-      
-      public function getNthSpeakerEntity(param1:int) : IBattleEntity
+
+      public function getEntityByIndex(param1:String, param2:int, param3:Boolean) : IBattleEntity
       {
          var _loc8_:String = null;
          var _loc9_:IBattleEntity = null;
+         if(!param2)
+         {
+            param2 = int(this.turnEntityRect);
+         }
+         var _loc6_:* = param1.indexOf(this._player_prefix) == 0;
+         var _loc7_:* = param1.indexOf(this._npc_prefix) == 0;
          for(_loc8_ in this._entities)
          {
             _loc9_ = this._entities[_loc8_];
-            if(_loc9_ && _loc9_.alive && _loc9_.isPlayer && _loc9_.def.entityClass.race != "horseborn" && _loc9_.def.entityClass.race != "dredge")
+            if(_loc9_)
             {
-               if(!param1)
+               if(!(!_loc9_.alive && !param3) && _loc9_.def.entityClass.race != "horseborn" && _loc9_.def.entityClass.race != "dredge")
                {
-                  return _loc9_;
+                  if(Boolean(_loc9_.isPlayer) && _loc6_ || !_loc9_.isPlayer && _loc7_)
+                  {
+                     if(!param2)
+                     {
+                        return _loc9_;
+                     }
+                     param2--;
+                  }
                }
-               param1--;
             }
          }
          return null;
       }
-      
+
       public function get abilityManager() : IBattleAbilityManager
       {
          return this._abilityManager;
       }
-      
+
       public function autoDeployPartyById(param1:String) : void
       {
          var _loc3_:BattleDeployer_Saga = null;
@@ -1273,12 +1282,12 @@ package engine.battle.board.model
             _loc6_.autoDeployParty(_loc2_);
          }
       }
-      
+
       public function attemptDeploy(param1:IBattleEntity, param2:BattleFacing, param3:TileLocationArea, param4:TileLocation) : Boolean
       {
          return this._deploy.attemptDeploy(param1,param2,param3,param4);
       }
-      
+
       public function findNextMoveFloodTile(param1:IBattleEntity, param2:IBattleMove, param3:TileLocation, param4:Point) : Tile
       {
          var _loc6_:TileLocation = null;
@@ -1299,22 +1308,22 @@ package engine.battle.board.model
          }
          return null;
       }
-      
+
       public function get def() : BattleBoardDef
       {
          return this._def;
       }
-      
+
       public function set def(param1:BattleBoardDef) : void
       {
          this._def = param1;
       }
-      
+
       public function get fake() : Boolean
       {
          return this._fake;
       }
-      
+
       public function set fake(param1:Boolean) : void
       {
          var _loc2_:BattleEntity = null;
@@ -1329,7 +1338,7 @@ package engine.battle.board.model
             _loc2_.setFakeEntityStats(this._fake,this._logger);
          }
       }
-      
+
       public function update(param1:int) : void
       {
          var _loc2_:BattleEntity = null;
@@ -1341,12 +1350,12 @@ package engine.battle.board.model
          this.updating = false;
          this.fsm.update(param1);
       }
-      
+
       public function get boardSetup() : Boolean
       {
          return this._boardSetup;
       }
-      
+
       public function set boardSetup(param1:Boolean) : void
       {
          if(this._boardSetup != param1)
@@ -1367,12 +1376,12 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function get boardDeploymentStarted() : Boolean
       {
          return this._boardDeploymentStarted;
       }
-      
+
       public function set boardDeploymentStarted(param1:Boolean) : void
       {
          if(this._boardDeploymentStarted != param1)
@@ -1384,17 +1393,17 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function get boardFinishedSetup() : Boolean
       {
          return this._boardFinishedSetup;
       }
-      
+
       public function get resman() : IResourceManager
       {
          return this._resman;
       }
-      
+
       private function expireDeadEntitiesEffects() : void
       {
          var _loc1_:BattleEntity = null;
@@ -1403,12 +1412,12 @@ package engine.battle.board.model
             _loc1_.expireDeadEntitiesEffects();
          }
       }
-      
+
       public function get scene() : IScene
       {
          return this._scene;
       }
-      
+
       public function handleTraumaChanged(param1:IBattleParty) : void
       {
          if(this.suppressPartyVitality)
@@ -1420,18 +1429,18 @@ package engine.battle.board.model
             this._scene.handleTraumaChanged(param1);
          }
       }
-      
+
       public function setVitalities(param1:Dictionary) : void
       {
          this.vitalities = param1;
       }
-      
+
       public function showInfoBanner(param1:IBattleEntity) : void
       {
          this._showInfoEntity = param1;
          this.updateInfoBanners();
       }
-      
+
       public function updateInfoBanners() : void
       {
          var _loc1_:BattleEntity = null;
@@ -1440,7 +1449,7 @@ package engine.battle.board.model
             this.updateInfoBannerForEntity(_loc1_);
          }
       }
-      
+
       public function updateInfoBannerForEntity(param1:BattleEntity) : void
       {
          var _loc2_:Boolean = param1.enabled && param1.alive && param1.attackable && (this._showInfoBanners || this._showInfoEntity == param1);
@@ -1453,18 +1462,18 @@ package engine.battle.board.model
          }
          param1.battleInfoFlagVisible = _loc2_;
       }
-      
+
       public function set showInfoBanners(param1:Boolean) : void
       {
          this._showInfoBanners = param1;
          this.updateInfoBanners();
       }
-      
+
       public function get isTutorialActive() : Boolean
       {
          return Boolean(this.tutorial) && this.tutorial.isActive;
       }
-      
+
       public function performBattleUnitEnable(param1:String, param2:Boolean) : void
       {
          var _loc4_:String = null;
@@ -1486,7 +1495,7 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function get turnEntity() : IBattleEntity
       {
          if(Boolean(this._fsm) && Boolean(this._fsm._turn))
@@ -1495,13 +1504,13 @@ package engine.battle.board.model
          }
          return null;
       }
-      
+
       public function get turnEntityRect() : TileRect
       {
          var _loc1_:IBattleEntity = this.turnEntity;
          return !!_loc1_ ? _loc1_.rect : null;
       }
-      
+
       public function handleEntityTileChanged(param1:IBattleEntity) : void
       {
          if(this.tiles)
@@ -1513,12 +1522,12 @@ package engine.battle.board.model
             dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_TILE_CHANGED,param1));
          }
       }
-      
+
       public function get scenario() : IBattleScenario
       {
          return this._scenario;
       }
-      
+
       public function fetchEntityId() : uint
       {
          ++this._lastEntityNumericId;
@@ -1528,7 +1537,7 @@ package engine.battle.board.model
          }
          return this._lastEntityNumericId;
       }
-      
+
       public function applyBoardPassives(param1:BattleEntity) : void
       {
          if(param1.party)
@@ -1543,12 +1552,12 @@ package engine.battle.board.model
             }
          }
       }
-      
+
       public function makeSnapshot() : BattleSnapshot
       {
          return new BattleSnapshot(this);
       }
-      
+
       public function loadSnapshot(param1:BattleSnapshot) : void
       {
          if(!param1)
@@ -1558,7 +1567,7 @@ package engine.battle.board.model
          this.snapSrc = param1;
          param1.applySnapshot(this);
       }
-      
+
       public function recomputePartyVitality() : void
       {
          var _loc1_:BattleParty = null;
@@ -1567,64 +1576,64 @@ package engine.battle.board.model
             _loc1_.recomputeVitality();
          }
       }
-      
+
       public function get isUsingEntity() : Boolean
       {
          return this._isUsingEntity;
       }
-      
+
       public function handleEntityUsingStart(param1:IBattleEntity, param2:IBattleEntity, param3:BattleAbility) : void
       {
          this._isUsingEntity = true;
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_USING_START,param2,param1));
       }
-      
+
       public function handleEntityUsingEnd(param1:IBattleEntity, param2:BattleAbility) : void
       {
          this._isUsingEntity = false;
          dispatchEvent(new BattleBoardEvent(BattleBoardEvent.BOARD_ENTITY_USING_END,param1,null));
       }
-      
+
       public function get deploy() : BattleBoard_Deploy
       {
          return this._deploy;
       }
-      
+
       public function get redeploy() : BattleBoard_Redeploy
       {
          return this._redeploy;
       }
-      
+
       public function getSaga() : ISaga
       {
          return this.saga;
       }
-      
+
       public function get tileConfiguration() : int
       {
          return this._tileConfiguration;
       }
-      
+
       public function get spatial() : BattleBoard_Spatial
       {
          return this._spatial;
       }
-      
+
       public function getAttractorById(param1:String) : IBattleAttractor
       {
          return !!this._attractors ? this._attractors.getAttractorById(param1) : null;
       }
-      
+
       public function get entityAssetBundleManager() : IEntityAssetBundleManager
       {
          return this._entityAssetBundleManager;
       }
-      
+
       public function get abilityAssetBundleManager() : IAbilityAssetBundleManager
       {
          return this._entityAssetBundleManager.abilityAssetBundleManager;
       }
-      
+
       public function recomputeIncorporealFades() : void
       {
          var _loc1_:BattleEntity = null;
@@ -1633,7 +1642,7 @@ package engine.battle.board.model
             _loc1_.computeIncorporealFade();
          }
       }
-      
+
       public function onStartedTurn() : void
       {
          var _loc1_:BattleEntity = null;
@@ -1648,7 +1657,7 @@ package engine.battle.board.model
          this._triggers.clearEntitiesHitThisTurn();
          this._abilityManager.handleStartTurn();
       }
-      
+
       public function checkVars() : void
       {
          if(this._triggers)
@@ -1656,17 +1665,17 @@ package engine.battle.board.model
             this._triggers.checkTriggerVars();
          }
       }
-      
+
       public function getAbilityDefFactory() : IBattleAbilityDefFactory
       {
          return this.abilityFactory;
       }
-      
+
       public function performResourceCollectionBucket(param1:SagaBucket) : void
       {
          this._spawn && this._spawn.performResourceCollectionBucket(param1);
       }
-      
+
       public function centerOnBoardPoint(param1:Number, param2:Number, param3:Function) : void
       {
          var _loc4_:BattleCameraEvent = null;
@@ -1674,22 +1683,22 @@ package engine.battle.board.model
          _loc4_.setIsoPoint(param1,param2);
          dispatchEvent(_loc4_);
       }
-      
+
       public function get artifactMaxUseCount() : int
       {
          return this._artifactMaxUseCount;
       }
-      
+
       public function set artifactMaxUseCount(param1:int) : void
       {
          this._artifactMaxUseCount = param1;
       }
-      
+
       public function get soundController() : ISoundController
       {
          return !!this.soundControllerManager ? this.soundControllerManager.soundController : null;
       }
-      
+
       public function get danger() : int
       {
          return !!this._spawn ? this._spawn._bucket_quota : 0;

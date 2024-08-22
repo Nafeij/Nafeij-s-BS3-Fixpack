@@ -1525,7 +1525,7 @@ package engine.battle.entity.model
          {
             this._deploymentReady = param1;
             dispatchEvent(new BattleEntityEvent(BattleEntityEvent.DEPLOYMENT_READY,this));
-            this.enabled = this.enabled || this._deploymentReady;
+            this.enabled ||= this._deploymentReady;
          }
       }
       
@@ -1642,7 +1642,7 @@ package engine.battle.entity.model
             delete this._pulsatorsById[param1];
             if(_loc2_)
             {
-               _loc3_ = this._pulsators.indexOf(_loc2_);
+               _loc3_ = int(this._pulsators.indexOf(_loc2_));
                if(_loc3_ >= 0)
                {
                   this._pulsators.splice(_loc3_,1);
@@ -1775,6 +1775,11 @@ package engine.battle.entity.model
             if(_loc3_)
             {
                param1.stats.getStat(StatType.WILLPOWER).base = param1.stats.getStat(StatType.WILLPOWER).base + _loc3_;
+            }
+            _loc3_ = int(param1.stats.getValue(StatType.KILL_STR));
+            if(_loc3_)
+            {
+               param1.stats.getStat(StatType.STRENGTH).base = param1.stats.getStat(StatType.STRENGTH).base + _loc3_;
             }
          }
          if(param1.isPlayer)
@@ -2205,7 +2210,7 @@ package engine.battle.entity.model
       
       public function setBattleDamageFlagVisible(param1:Boolean, param2:int) : void
       {
-         param1 = param1 && this._alive;
+         param1 &&= this._alive;
          if(this._battleDamageFlagValue != param2)
          {
             this._battleDamageFlagValue = param2;

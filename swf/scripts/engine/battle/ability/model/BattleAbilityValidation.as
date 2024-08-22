@@ -264,7 +264,6 @@ package engine.battle.ability.model
       
       public static function findValidFacingFor1x2(param1:IBattleEntity, param2:Tile) : BattleFacing
       {
-         var _loc4_:Tile = null;
          var _loc13_:BattleFacing = null;
          if(!param2 || Boolean(param2._numResidents))
          {
