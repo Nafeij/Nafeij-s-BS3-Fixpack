@@ -1,4 +1,4 @@
-# Nafeij's BS3 Fixpack - version 1.1
+# Nafeij's BS3 Fixpack - version 1.3
 
 > for Banner Saga 3, Steam version 2.61.04 / GOG version 2.60.22
 
